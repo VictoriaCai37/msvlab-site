@@ -1,31 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
   <title>Ms V Lab — CMS</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000; background-color: #f9f9f9}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 12.0px 'PingFang SC'; font-kerning: none}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    .cms-loading { display: flex; align-items: center; justify-content: center; height: 100vh; background: #fafafa; }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="zh-Hans"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;</span><span class="s2">内容管理后台</span><span class="s1">&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- </span><span class="s2">引入</span><span class="s1"> Netlify Identity </span><span class="s2">身份验证脚本</span><span class="s1"> --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script src="https://identity.netlify.com/v1/netlify-identity-widget.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- </span><span class="s2">引入</span><span class="s1"> Decap CMS </span><span class="s2">主程序</span><span class="s1"> --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+  <div class="cms-loading">Loading CMS…</div>
+  <script>
+    // Initialize Decap CMS
+    if (window.CMS) {
+      window.CMS.init({ config: { load_config_file: true } });
+    }
+    // Netlify Identity (for Git Gateway auth)
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) window.netlifyIdentity.on('login', () => document.location.reload());
+      });
+    }
+  </script>
 </body>
 </html>
