@@ -98,7 +98,7 @@ collections:
 
 site_url: https://msvlab.site
 display_url: https://msvlab.site
-logo_url: /assets/images/logo.svg
+logo_url: /favicon.svg
 slug:
   encoding: "ascii"
   sanitize_replacement: "-"
