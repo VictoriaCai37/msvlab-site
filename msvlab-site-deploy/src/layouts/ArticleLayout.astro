@@ -1,0 +1,215 @@
+---
+import BaseLayout from './BaseLayout';
+import { formatDate } from '@/utils/helpers';
+import ProsCons from '@/components/ProsCons';
+import type { ImageMetadata } from 'astro';
+interface Props {
+  title: string;
+  excerpt: string;
+  heroImage: ImageMetadata | string;
+  heroAlt: string;
+  images: { src: ImageMetadata | string; alt: string; caption?: string }[];
+  category: string;
+  tags: string[];
+  publishDate: string;
+  updateDate?: string;
+  readTime: string;
+  rating: number;
+  pros: string[];
+  cons: string[];
+  whoShouldBuy: string[];
+  verdict: string;
+  specs?: Record<string, string>;
+  price?: number;
+  affiliateUrl?: string;
+  description?: string;
+  ogImage?: string;
+}
+const {
+  title, excerpt, heroImage, heroAlt, images, category, tags,
+  publishDate, updateDate, readTime, rating, pros, cons,
+  whoShouldBuy, verdict, specs, price, affiliateUrl,
+  description, ogImage
+} = Astro.props;
+
+const heroSrc = typeof heroImage === 'string' ? heroImage : heroImage.src;
+const imageSrcs = images.map(img => typeof img.src === 'string' ? img.src : img.src.src);
+
+function getBadgeClass(cat: string) {
+  switch(cat) {
+    case 'smart-home': return 'badge-smart-home';
+    case 'computing': return 'badge-computing';
+    default: return 'badge-audio';
+  }
+}
+---
+<BaseLayout title={title} description={description || excerpt} ogImage={ogImage || heroSrc}>
+  <article class="container-main py-8 md:py-12 lg:py-16">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm text-surface-500" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2">
+        <li><a href="/" class="hover:text-brand-600 transition-colors">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/reviews" class="hover:text-brand-600 transition-colors">Reviews</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href={`/categories/${category}`} class="hover:text-brand-600 transition-colors capitalize">{category.replace('-', ' ')}</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-surface-900 font-medium truncate max-w-xs">{title}</li>
+      </ol>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="mb-8 md:mb-12">
+      <div class="flex flex-wrap items-center gap-2 mb-4">
+        <span class="badge {getBadgeClass(category)}">
+          {category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}
+        </span>
+        {tags.map(tag => (
+          <span class="badge bg-surface-100 text-surface-700">{tag}</span>
+        ))}
+      </div>
+      <h1 class="font-editorial text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{title}</h1>
+      <p class="text-lg md:text-xl text-surface-600 mb-6 max-w-3xl">{excerpt}</p>
+      <div class="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-surface-500">
+        <time datetime={publishDate} class="flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+          {formatDate(publishDate)}
+        </time>
+        {updateDate && (
+          <time datetime={updateDate} class="flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+            Updated {formatDate(updateDate)}
+          </time>
+        )}
+        <span class="flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          {readTime}
+        </span>
+        <div class="flex items-center gap-1 text-amber-500">
+          {[...Array(5)].map((_, i) => (
+            <svg class="w-4 h-4" fill={i < Math.floor(rating) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-1.175 0z" /></svg>
+          ))}
+          <span class="text-surface-600 ml-1 font-medium">{rating.toFixed(1)}</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <figure class="mb-10 md:mb-12">
+      <img src={heroSrc} alt={heroAlt} class="w-full rounded-xl shadow-lg" loading="eager" fetchpriority="high" />
+    </figure>
+
+    <!-- Affiliate Disclosure Banner -->
+    <div class="mb-10 p-4 bg-brand-50 border border-brand-200 rounded-xl">
+      <p class="text-sm text-brand-800">
+        <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links, at no extra cost to you. This supports our independent testing. <a href="/affiliate-disclosure" class="underline hover:text-brand-700">Learn more</a>.
+      </p>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav id="toc" class="hidden lg:block fixed left-0 top-24 w-56 -ml-64">
+      <h4 class="font-medium text-surface-900 mb-3 sticky top-24">On This Page</h4>
+      <ul class="space-y-1 text-sm text-surface-600" id="toc-list"></ul>
+    </nav>
+
+    <!-- Article Content -->
+    <div class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
+      <slot name="content" />
+    </div>
+
+    <!-- Gallery Images -->
+    {images.length > 0 && (
+      <section class="mt-12 md:mt-16" aria-label="Product gallery">
+        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-6">Gallery</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          {images.map((img, i) => (
+            <figure class="rounded-xl overflow-hidden">
+              <img src={imageSrcs[i]} alt={img.alt} class="w-full h-64 md:h-80 object-cover" loading="lazy" />
+              {img.caption && <figcaption class="text-sm text-surface-500 mt-2 text-center">{img.caption}</figcaption>}
+            </figure>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Pros & Cons -->
+    <ProsCons pros={pros} cons={cons} />
+
+    <!-- Who Should Buy -->
+    <section class="mt-10 md:mt-14">
+      <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-4">Who Should Buy This</h2>
+      <ul class="space-y-3">
+        {whoShouldBuy.map((reason) => (
+          <li class="flex items-start gap-3 p-4 bg-surface-50 rounded-xl">
+            <svg class="w-5 h-5 mt-0.5 flex-shrink-0 text-brand-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="text-surface-700">{reason}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Verdict -->
+    <section class="mt-10 md:mt-14 p-6 bg-brand-50 border border-brand-200 rounded-xl">
+      <h2 class="font-editorial text-xl font-medium text-brand-900 mb-3">Our Verdict</h2>
+      <p class="text-brand-800">{verdict}</p>
+    </section>
+
+    <!-- Specs Table -->
+    {specs && (
+      <section class="mt-10 md:mt-14">
+        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-4">Specifications</h2>
+        <dl class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+          {Object.entries(specs).map(([key, value]) => (
+            <>
+              <dt class="text-surface-500 font-medium">{key}</dt>
+              <dd class="text-surface-900">{value}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+    )}
+
+    <!-- Buy Button -->
+    {affiliateUrl && price && (
+      <div class="mt-10 md:mt-14 text-center">
+        <a href={affiliateUrl} target="_blank" rel="noopener sponsored nofollow" class="btn-primary text-lg px-8 py-3 inline-flex items-center gap-2">
+          <span>Check Price: ${price.toLocaleString()}</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+        </a>
+        <p class="mt-2 text-sm text-surface-500">Price checked daily. We may earn a commission.</p>
+      </div>
+    )}
+  </article>
+
+  <script is:inline>
+    // Generate Table of Contents from headings
+    const tocList = document.getElementById('toc-list');
+    const content = document.querySelector('.prose-custom');
+    if (tocList && content) {
+      const headings = content.querySelectorAll('h2, h3');
+      headings.forEach((heading, index) => {
+        const id = heading.id || `heading-${index}`;
+        heading.id = id;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = `#${id}`;
+        a.textContent = heading.textContent;
+        a.className = `block py-1 hover:text-brand-600 transition-colors ${heading.tagName === 'H3' ? 'pl-4 text-sm' : ''}`;
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, '', this.getAttribute('href'));
+        }
+      });
+    });
+  </script>
+</BaseLayout>

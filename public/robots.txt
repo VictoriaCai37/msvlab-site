@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msvlab.site/sitemap-index.xml
+
+# Disallow admin
+Disallow: /admin/

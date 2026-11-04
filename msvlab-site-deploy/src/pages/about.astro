@@ -1,0 +1,41 @@
+---
+import PageLayout from '@/layouts/PageLayout';
+import { siteConfig } from '@/data/site';
+---
+<PageLayout title="About Ms V Lab" description="Learn about Ms V Lab - independent, in-depth product reviews for modern living.">
+  <article class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
+    <h2>Our Mission</h2>
+    <p>{siteConfig.name} was founded with a simple goal: <strong>help people make confident buying decisions</strong> for the products that shape their daily lives — from robot vacuums that clean while you sleep, to laptops that power your creativity, to headphones that make commutes bearable.</p>
+
+    <h2>How We Test</h2>
+    <p>Every product we review is tested in real-world conditions for weeks, not hours. We measure:</p>
+    <ul>
+      <li><strong>Performance</strong> — standardized benchmarks + subjective experience</li>
+      <li><strong>Durability</strong> — extended use, stress tests, drop/spill resistance where applicable</li>
+      <li><strong>Usability</strong> — setup, daily workflow, app experience, edge cases</li>
+      <li><strong>Value</strong> — price vs. performance vs. alternatives</li>
+    </ul>
+    <p>We buy most products ourselves. When manufacturers provide review units, we disclose it and return them after testing. No product stays in our possession permanently.</p>
+
+    <h2>Independence & Ethics</h2>
+    <ul>
+      <li><strong>No sponsored reviews</strong> — we never accept payment for coverage or ratings</li>
+      <li><strong>No pre-publication review</strong> — manufacturers don't see our reviews before they go live</li>
+      <li><strong>Affiliate links</strong> — we earn commissions on some links; this never influences what we recommend</li>
+      <li><strong>Corrections policy</strong> — if we get something wrong, we fix it prominently and note the change</li>
+    </ul>
+    <p>Read our full <a href="/affiliate-disclosure">Affiliate Disclosure</a> and <a href="/privacy">Privacy Policy</a>.</p>
+
+    <h2>The Team</h2>
+    <p><strong>Victoria Cai</strong> — Founder & Editor-in-Chief. 10+ years in consumer tech journalism. Previously at major tech publications. Believes good design is invisible.</p>
+    <p><strong>Contributors</strong> — A network of subject-matter experts: audio engineers, software developers, smart home installers, and professional organizers.</p>
+
+    <h2>Contact</h2>
+    <p>Have a tip, correction, or product suggestion? <a href="/contact">Get in touch</a>.</p>
+
+    <h2>Legal</h2>
+    <p>{siteConfig.name}<br />
+    {siteConfig.author.address}<br />
+    Email: <a href="mailto:{siteConfig.author.email}">{siteConfig.author.email}</a></p>
+  </article>
+</PageLayout>

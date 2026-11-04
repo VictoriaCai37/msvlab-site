@@ -1,0 +1,40 @@
+---
+import PageLayout from '@/layouts/PageLayout';
+import { siteConfig } from '@/data/site';
+---
+<PageLayout title="Contact Ms V Lab" description="Get in touch with the Ms V Lab team for tips, corrections, partnerships, or product suggestions.">
+  <article class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
+    <h2>Get in Touch</h2>
+    <p>We read every message. Here's how to reach us:</p>
+
+    <h3>Email</h3>
+    <p><a href="mailto:{siteConfig.author.email}" class="text-brand-600 hover:text-brand-700">{siteConfig.author.email}</a></p>
+    <p class="text-sm text-surface-500">Best for: tips, corrections, press inquiries, partnership proposals.</p>
+
+    <h3>Mail</h3>
+    <address class="not-italic">
+      {siteConfig.author.address}<br />
+      {siteConfig.name}
+    </address>
+    <p class="text-sm text-surface-500">Best for: physical media, legal correspondence.</p>
+
+    <h3>Response Time</h3>
+    <p>We aim to reply within <strong>2 business days</strong>. If you don't hear back, check your spam folder or try again.</p>
+
+    <h2 id="submit">Submit a Product for Review</h2>
+    <p>We consider products that fit our categories (Smart Home, Computing, Audio). Guidelines:</p>
+    <ul>
+      <li>Must be shipping to consumers (no prototypes/vaporware)</li>
+      <li>We keep the product for the review period (4-6 weeks), then return or donate</li>
+      <li>No guarantee of coverage or positive review</li>
+      <li>We do not accept paid placements</li>
+    </ul>
+    <p>Email <a href="mailto:{siteConfig.author.email}">{siteConfig.author.email}</a> with "Product Submission" in the subject line.</p>
+
+    <h2>Press & Partnerships</h2>
+    <p>For media inquiries, affiliate program questions, or syndication requests, email <a href="mailto:{siteConfig.author.email}">{siteConfig.author.email}</a> with "Press" or "Partnership" in the subject.</p>
+
+    <h2>Found an Error?</h2>
+    <p>We appreciate corrections! Email us with the article URL and the specific correction. We'll update the article and add a correction note.</p>
+  </article>
+</PageLayout>

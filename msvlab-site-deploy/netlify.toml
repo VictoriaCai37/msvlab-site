@@ -1,0 +1,71 @@
+# Netlify 配置文件 - Ms V Lab
+# 放在项目根目录，推送 GitHub 后 Netlify 自动识别
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# 环境变量（构建时可用）
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+# 重定向与头部
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# 函数配置（如需要）
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["src/**/*"]
+
+# 部署上下文
+[context.production]
+  command = "npm run build"
+  publish = "dist"
+
+[context.deploy-preview]
+  command = "npm run build"
+  publish = "dist"
+
+[context.branch-deploy]
+  command = "npm run build"
+  publish = "dist"
+  # 分支部署不建议开启，省构建分钟
+  # command = "exit 0"
+
+# 边缘函数（如需）
+# [edge_functions]
+#   path = "edge-functions/*"
+
+# 表单处理（如用 Netlify Forms）
+# [forms]
+#   name = "contact"
+
+# 插件（如需）
+# [[plugins]]
+#   package = "@netlify/plugin-lighthouse"
+
+# 忽略构建（可选，用于特定分支）
+# [build.ignore]
+#   command = "git diff --quiet HEAD^ HEAD -- . '!public/admin/**'"

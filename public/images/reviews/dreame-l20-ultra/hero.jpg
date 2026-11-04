@@ -1,0 +1,103 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient - studio lighting -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16"/>
+      <stop offset="40%" style="stop-color:#064e1b"/>
+      <stop offset="100%" style="stop-color:#166534"/>
+    </linearGradient>
+    
+    <!-- Floor reflection gradient -->
+    <linearGradient id="floorGrad" x1="0%" y1="50%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e1b;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#052e16;stop-opacity:0"/>
+    </linearGradient>
+    
+    <!-- Rim light gradient -->
+    <radialGradient id="rimLight" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </radialGradient>
+    
+    <!-- Soft shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#064e1b" flood-opacity="0.4"/>
+    </filter>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Subtle noise texture -->
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  
+  <!-- Rim light / key light simulation -->
+  <ellipse cx="600" cy="101.25" rx="720" ry="202.5" fill="url(#rimLight)"/>
+  
+  <!-- Floor / surface reflection -->
+  <rect x="0" y="371.25000000000006" width="1200" height="303.75" fill="url(#floorGrad)"/>
+  
+  <!-- Subtle vignette -->
+  <rect width="1200" height="675" fill="none" stroke="#052e16" stroke-width="360" opacity="0.3" filter="url(#noise)"/>
+  
+  
+    <g transform="translate(600, 337) scale(1.2)">
+      <!-- Main body -->
+      <circle cx="0" cy="0" r="70" fill="#064e1b" filter="url(#shadow)"/>
+      <circle cx="0" cy="0" r="60" fill="#166534"/>
+      <!-- Top cover -->
+      <ellipse cx="0" cy="-10" rx="55" ry="50" fill="none" stroke="#86efac" stroke-width="2" opacity="0.4"/>
+      <!-- LIDAR turret -->
+      <circle cx="0" cy="-20" r="18" fill="#064e1b" filter="url(#shadow)"/>
+      <circle cx="0" cy="-20" r="12" fill="#22c55e" opacity="0.3" filter="url(#glow)"/>
+      <circle cx="0" cy="-20" r="6" fill="#22c55e" opacity="0.6"/>
+      <!-- Bumper -->
+      <ellipse cx="0" cy="55" rx="65" ry="15" fill="#064e1b" opacity="0.7" filter="url(#shadow)"/>
+      <!-- Wheels -->
+      <ellipse cx="-55" cy="45" rx="15" ry="10" fill="#064e1b" filter="url(#shadow)"/>
+      <ellipse cx="55" cy="45" rx="15" ry="10" fill="#064e1b" filter="url(#shadow)"/>
+      <!-- Brushes -->
+      <g stroke="#22c55e" stroke-width="3" fill="none" opacity="0.6">
+        <line x1="-45" y1="60" x2="-55" y2="75"/>
+        <line x1="-40" y1="60" x2="-48" y2="75"/>
+        <line x1="45" y1="60" x2="55" y2="75"/>
+        <line x1="40" y1="60" x2="48" y2="75"/>
+      </g>
+    </g>
+  
+  
+  <!-- Category badge -->
+  <rect x="40" y="40" width="140" height="36" rx="18" fill="#064e1b" opacity="0.8" filter="url(#shadow)"/>
+  <text x="110" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16.5375" font-weight="700" fill="#22c55e" letter-spacing="0.5px">
+    SMART-HOME
+  </text>
+  
+  <!-- Title (only for hero) -->
+  
+  <text x="600" y="595" text-anchor="middle" font-family="system-ui, sans-serif" font-size="37.125" font-weight="700" fill="#dcfce7" filter="url(#shadow)">
+    Dreame L20 Ultra Review: 70°C Wash and MopExtend at a K...
+  </text>
+  
+  
+  <!-- Placeholder label -->
+  <text x="600" y="635" text-anchor="middle" font-family="system-ui, sans-serif" font-size="23.625000000000004" font-weight="400" fill="#dcfce7" opacity="0.5">
+    Hero Image Placeholder
+  </text>
+  
+  <!-- Ms V Lab watermark -->
+  <text x="1160" y="645" text-anchor="end" font-family="system-ui, sans-serif" font-size="14.175000000000002" fill="#dcfce7" opacity="0.15">
+    Ms V Lab
+  </text>
+</svg>

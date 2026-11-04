@@ -1,0 +1,94 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient - studio lighting -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16"/>
+      <stop offset="40%" style="stop-color:#064e1b"/>
+      <stop offset="100%" style="stop-color:#166534"/>
+    </linearGradient>
+    
+    <!-- Floor reflection gradient -->
+    <linearGradient id="floorGrad" x1="0%" y1="50%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e1b;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#052e16;stop-opacity:0"/>
+    </linearGradient>
+    
+    <!-- Rim light gradient -->
+    <radialGradient id="rimLight" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </radialGradient>
+    
+    <!-- Soft shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#064e1b" flood-opacity="0.4"/>
+    </filter>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Subtle noise texture -->
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  
+  <!-- Rim light / key light simulation -->
+  <ellipse cx="600" cy="101.25" rx="720" ry="202.5" fill="url(#rimLight)"/>
+  
+  <!-- Floor / surface reflection -->
+  <rect x="0" y="371.25000000000006" width="1200" height="303.75" fill="url(#floorGrad)"/>
+  
+  <!-- Subtle vignette -->
+  <rect width="1200" height="675" fill="none" stroke="#052e16" stroke-width="360" opacity="0.3" filter="url(#noise)"/>
+  
+  
+    <g transform="translate(600, 337) scale(1.6)">
+      <!-- Outer ring -->
+      <circle cx="0" cy="0" r="55" fill="#064e1b" filter="url(#shadow)"/>
+      <circle cx="0" cy="0" r="48" fill="#166534"/>
+      <!-- Display -->
+      <circle cx="0" cy="0" r="35" fill="#0a0f1a"/>
+      <!-- Temperature -->
+      <text x="0" y="5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#22c55e">22°</text>
+      <text x="0" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#166534">Target 21°</text>
+      <!-- Ring indicator -->
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#22c55e" stroke-width="4" stroke-dasharray="180,200" filter="url(#glow)"/>
+      <!-- Outer dial texture -->
+      <line x1="3.061616997868383e-15" y1="-50" x2="3.3677786976552213e-15" y2="-55" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="5.226423163382673" y1="-49.72609476841367" x2="5.74906547972094" y2="-54.69870424525503" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="10.395584540887972" y1="-48.90738003669028" x2="11.43514299497677" y2="-53.798118040359306" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="15.450849718747373" y1="-47.552825814757675" x2="16.99593469062211" y2="-52.30810839623344" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="20.33683215379001" y1="-45.67727288213004" x2="22.370515369169013" y2="-50.24500017034305" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="25.000000000000007" y1="-43.30127018922193" x2="27.500000000000007" y2="-47.63139720814412" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="29.389262614623657" y1="-40.45084971874737" x2="32.328188876086024" y2="-44.49593469062211" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="33.456530317942914" y1="-37.157241273869715" x2="36.802183349737206" y2="-40.872965401256685" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="37.157241273869715" y1="-33.456530317942914" x2="40.872965401256685" y2="-36.802183349737206" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="40.45084971874737" y1="-29.389262614623657" x2="44.49593469062211" y2="-32.328188876086024" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="43.30127018922194" y1="-24.999999999999996" x2="47.63139720814413" y2="-27.499999999999996" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="45.67727288213004" y1="-20.336832153790006" x2="50.24500017034305" y2="-22.37051536916901" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="47.552825814757675" y1="-15.450849718747369" x2="52.30810839623344" y2="-16.995934690622107" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="48.907380036690284" y1="-10.395584540887965" x2="53.79811804035931" y2="-11.435142994976763" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="49.72609476841367" y1="-5.226423163382673" x2="54.69870424525503" y2="-5.74906547972094" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="50" y1="0" x2="55" y2="0" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="49.72609476841367" y1="5.226423163382673" x2="54.69870424525503" y2="5.74906547972094" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="48.907380036690284" y1="10.395584540887965" x2="53.79811804035931" y2="11.435142994976763" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="47.552825814757675" y1="15.450849718747369" x2="52.30810839623344" y2="16.995934690622107" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="45.67727288213004" y1="20.336832153790006" x2="50.24500017034305" y2="22.37051536916901" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="43.30127018922194" y1="24.999999999999996" x2="47.63139720814413" y2="27.499999999999996" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="40.45084971874737" y1="29.389262614623657" x2="44.49593469062211" y2="32.328188876086024" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="37.157241273869715" y1="33.456530317942914" x2="40.872965401256685" y2="36.802183349737206" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="33.456530317942914" y1="37.157241273869715" x2="36.802183349737206" y2="40.872965401256685" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="29.389262614623657" y1="40.45084971874737" x2="32.328188876086024" y2="44.49593469062211" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="25.000000000000007" y1="43.30127018922193" x2="27.500000000000007" y2="47.63139720814412" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="20.33683215379001" y1="45.67727288213004" x2="22.370515369169013" y2="50.24500017034305" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="15.450849718747373" y1="47.552825814757675" x2="16.99593469062211" y2="52.30810839623344" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="10.395584540887972" y1="48.90738003669028" x2="11.43514299497677" y2="53.798118040359306" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="5.226423163382673" y1="49.72609476841367" x2="5.74906547972094" y2="54.69870424525503" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="3.061616997868383e-15" y1="50" x2="3.3677786976552213e-15" y2="55" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-5.226423163382667" y1="49.72609476841367" x2="-5.749065479720933" y2="54.69870424525504" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-10.395584540887956" y1="48.907380036690284" x2="-11.435142994976752" y2="53.79811804035931" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-15.450849718747367" y1="47.55282581475768" x2="-16.995934690622104" y2="52.30810839623345" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-20.336832153790006" y1="45.67727288213005" x2="-22.370515369169006" y2="50.245000170343054" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-24.99999999999999" y1="43.30127018922194" x2="-27.49999999999999" y2="47.63139720814413" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-29.38926261462365" y1="40.45084971874737" x2="-32.32818887608602" y2="44.49593469062211" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-33.456530317942914" y1="37.157241273869715" x2="-36.802183349737206" y2="40.872965401256685" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-37.15724127386971" y1="33.45653031794292" x2="-40.87296540125668" y2="36.802183349737206" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-40.450849718747364" y1="29.38926261462366" x2="-44.49593469062211" y2="32.32818887608603" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-43.30127018922194" y1="24.999999999999996" x2="-47.63139720814413" y2="27.499999999999996" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-45.67727288213004" y1="20.33683215379002" x2="-50.24500017034304" y2="22.370515369169024" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-47.552825814757675" y1="15.450849718747376" x2="-52.30810839623344" y2="16.995934690622114" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-48.907380036690284" y1="10.395584540887965" x2="-53.79811804035931" y2="11.435142994976763" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-49.72609476841367" y1="5.2264231633826865" x2="-54.69870424525503" y2="5.749065479720955" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-50" y1="6.123233995736766e-15" x2="-55" y2="6.735557395310443e-15" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-49.72609476841367" y1="-5.226423163382653" x2="-54.69870424525504" y2="-5.749065479720918" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-48.907380036690284" y1="-10.395584540887953" x2="-53.79811804035931" y2="-11.435142994976749" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-47.552825814757675" y1="-15.450849718747387" x2="-52.30810839623344" y2="-16.995934690622125" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-45.677272882130055" y1="-20.33683215378999" x2="-50.24500017034306" y2="-22.37051536916899" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-43.30127018922193" y1="-25.000000000000007" x2="-47.63139720814412" y2="-27.500000000000007" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-40.45084971874737" y1="-29.38926261462365" x2="-44.49593469062211" y2="-32.32818887608602" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-37.157241273869715" y1="-33.456530317942914" x2="-40.872965401256685" y2="-36.802183349737206" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-33.45653031794292" y1="-37.1572412738697" x2="-36.80218334973721" y2="-40.87296540125667" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-29.38926261462366" y1="-40.450849718747364" x2="-32.32818887608603" y2="-44.49593469062211" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-25.00000000000002" y1="-43.301270189221924" x2="-27.500000000000025" y2="-47.631397208144115" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-20.336832153790006" y1="-45.67727288213005" x2="-22.370515369169006" y2="-50.245000170343054" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-15.450849718747378" y1="-47.552825814757675" x2="-16.995934690622114" y2="-52.30810839623344" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-10.39558454088799" y1="-48.90738003669028" x2="-11.435142994976788" y2="-53.798118040359306" stroke="#86efac" stroke-width="1" opacity="0.3"/><line x1="-5.226423163382668" y1="-49.72609476841367" x2="-5.749065479720935" y2="-54.69870424525504" stroke="#86efac" stroke-width="1" opacity="0.3"/>
+    </g>
+  
+  
+  <!-- Category badge -->
+  <rect x="40" y="40" width="140" height="36" rx="18" fill="#064e1b" opacity="0.8" filter="url(#shadow)"/>
+  <text x="110" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16.5375" font-weight="700" fill="#22c55e" letter-spacing="0.5px">
+    SMART-HOME
+  </text>
+  
+  <!-- Title (only for hero) -->
+  
+  <text x="600" y="595" text-anchor="middle" font-family="system-ui, sans-serif" font-size="37.125" font-weight="700" fill="#dcfce7" filter="url(#shadow)">
+    Ecobee Smart Thermostat Premium Review: The Only Thermo...
+  </text>
+  
+  
+  <!-- Placeholder label -->
+  <text x="600" y="635" text-anchor="middle" font-family="system-ui, sans-serif" font-size="23.625000000000004" font-weight="400" fill="#dcfce7" opacity="0.5">
+    Hero Image Placeholder
+  </text>
+  
+  <!-- Ms V Lab watermark -->
+  <text x="1160" y="645" text-anchor="end" font-family="system-ui, sans-serif" font-size="14.175000000000002" fill="#dcfce7" opacity="0.15">
+    Ms V Lab
+  </text>
+</svg>

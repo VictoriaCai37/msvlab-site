@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '@/layouts/PageLayout';
+import ProductCard from '@/components/ProductCard';
+import Search from '@/components/Search';
+---
+<PageLayout title="Best Products" description="Our top picks across categories — tested, ranked, and compared to help you find the best gear.">
+  <Search />
+
+  {(async () => {
+    const allBest = await getCollection('best-products', (entry) => !entry.data.draft);
+    const sortedBest = allBest.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+    
+    return (
+      <>
+        <div class="space-y-16">
+          {sortedBest.map(list => (
+            <article class="border-t border-surface-200 pt-12 first:border-0 first:pt-0">
+              <header class="mb-8">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="badge badge-{list.data.category === 'smart-home' ? 'smart-home' : list.data.category === 'computing' ? 'computing' : 'audio'}">
+                    {list.data.category.charAt(0).toUpperCase() + list.data.category.slice(1).replace('-', ' ')}
+                  </span>
+                  {list.data.featured && <span class="badge badge-amber">Featured</span>}
+                </div>
+                <h2 class="font-editorial text-2xl md:text-3xl font-medium text-surface-900">{list.data.title}</h2>
+                <p class="text-lg text-surface-600 mt-2 max-w-2xl">{list.data.excerpt}</p>
+              </header>
+
+              <div class="grid md:grid-cols-3 gap-6">
+                {list.data.products.slice(0, 3).map((product, i) => (
+                  <ProductCard
+                    title={product.name}
+                    excerpt={product.bestFor}
+                    image={product.image}
+                    imageAlt={product.name}
+                    href={`/reviews/${list.slug}`}
+                    category={list.data.category}
+                    publishDate={list.data.publishDate}
+                    readTime={`${Math.ceil(list.data.products.length / 3)} min read`}
+                    rating={product.rating}
+                  />
+                ))}
+              </div>
+
+              <div class="mt-6 text-center">
+                <a href={`/best-products/${list.slug}`} class="btn-secondary">View Full Guide →</a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {sortedBest.length === 0 && (
+          <div class="text-center py-16">
+            <p class="text-surface-600">No best product guides published yet.</p>
+          </div>
+        )}
+      </>
+    );
+  })()}
+</PageLayout>

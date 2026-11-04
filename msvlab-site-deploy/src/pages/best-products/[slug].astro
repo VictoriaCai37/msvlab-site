@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '@/layouts/PageLayout';
+import { formatDate } from '@/utils/helpers';
+import { getCategoryColor } from '@/data/categories';
+export async function getStaticPaths() {
+  const lists = await getCollection('best-products', (entry) => !entry.data.draft);
+  return lists.map(list => ({
+    params: { slug: list.slug },
+    props: { list },
+  }));
+}
+interface Props {
+  list: any;
+}
+const { list } = Astro.props;
+const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, products, featured } = list.data;
+---
+<PageLayout title={title} description={excerpt} ogImage={typeof heroImage === 'string' ? heroImage : heroImage.src}>
+  <article class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
+    <header class="mb-10">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="badge {getCategoryColor(category)}">{category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}</span>
+        {featured && <span class="badge badge-amber">Featured</span>}
+      </div>
+      <h1 class="font-editorial text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{title}</h1>
+      <p class="text-lg md:text-xl text-surface-600 max-w-3xl">{excerpt}</p>
+      <div class="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-surface-500 mt-6">
+        <time datetime={publishDate}>{formatDate(publishDate)}</time>
+        {updateDate && <time datetime={updateDate}>Updated {formatDate(updateDate)}</time>}
+      </div>
+    </header>
+
+    <figure class="mb-10">
+      <img src={typeof heroImage === 'string' ? heroImage : heroImage.src} alt={heroAlt} class="w-full rounded-xl shadow-lg" loading="eager" />
+    </figure>
+
+    <div class="mb-10 p-4 bg-brand-50 border border-brand-200 rounded-xl">
+      <p class="text-sm text-brand-800"><strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links. <a href="/affiliate-disclosure" class="underline hover:text-brand-700">Learn more</a>.</p>
+    </div>
+
+    <slot name="content">
+      <div set:html={list.rendered?.html || ''} />
+    </slot>
+
+    {products.length > 0 && (
+      <section class="mt-12" aria-label="Top picks">
+        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-6">Our Top Picks</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {products.map((product, i) => (
+            <article class="card p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-3xl font-bold text-brand-200">{product.rank}</span>
+                <img src={product.image} alt={product.name} class="w-16 h-16 object-cover rounded-lg" loading="lazy" />
+              </div>
+              <h3 class="font-editorial text-lg font-medium text-surface-900 mb-2">{product.name}</h3>
+              <p class="text-sm text-surface-600 mb-3">{product.bestFor}</p>
+              <div class="flex items-center gap-2 text-amber-500 mb-3">
+                {[...Array(5)].map((_, j) => (
+                  <svg class="w-4 h-4" fill={j < Math.floor(product.rating) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                ))}
+              </div>
+              <div class="space-y-1 text-sm mb-4">
+                <p class="text-green-700"><strong>Pro:</strong> {product.pros}</p>
+                <p class="text-red-700"><strong>Con:</strong> {product.cons}</p>
+              </div>
+              <a href={product.affiliateUrl} target="_blank" rel="noopener sponsored nofollow" class="btn-primary text-sm w-full justify-center">${product.price.toLocaleString()}</a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+  </article>
+</PageLayout>

@@ -1,0 +1,58 @@
+---
+import PageLayout from '@/layouts/PageLayout';
+import { siteConfig } from '@/data/site';
+---
+<PageLayout title="Affiliate Disclosure" description="Ms V Lab Affiliate Disclosure - how we earn revenue and maintain editorial independence." noIndex={true}>
+  <article class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
+    <p class="text-sm text-surface-500 mb-8">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+
+    <div class="p-4 bg-brand-50 border border-brand-200 rounded-xl mb-8">
+      <p class="font-medium text-brand-900"><strong>TL;DR:</strong> We earn commissions on some product links. This never influences what we review, how we rate, or what we recommend. Our independence is non-negotiable.</p>
+    </div>
+
+    <h2>How We Make Money</h2>
+    <p>{siteConfig.name} participates in affiliate programs including, but not limited to:</p>
+    <ul>
+      <li>Amazon Associates</li>
+      <li>Impact (various brand programs)</li>
+      <li>ShareASale</li>
+      <li>Commission Junction (CJ)</li>
+      <li>Direct brand partnerships</li>
+    </ul>
+    <p>When you click a product link and make a purchase, we may earn a commission at <strong>no extra cost to you</strong>. Commissions vary by merchant and product category (typically 1-8%).</p>
+
+    <h2>What This Means for You</h2>
+    <ul>
+      <li><strong>Same price</strong> — you pay exactly what you'd pay going directly</li>
+      <li><strong>Supports our work</strong> — commissions fund testing, writing, hosting</li>
+      <li><strong>No obligation</strong> — you're free to buy anywhere</li>
+    </ul>
+
+    <h2>Our Editorial Firewall</h2>
+    <p><strong>Affiliate revenue never influences editorial decisions.</strong> Period.</p>
+    <ul>
+      <li>Review assignments made by editors, not commercial team</li>
+      <li>Writers don't know which products have affiliate links</li>
+      <li>Ratings based solely on testing criteria</li>
+      <li>We recommend non-affiliate products when they're better</li>
+      <li>We disclose when we don't have an affiliate relationship</li>
+    </ul>
+
+    <h2>FTC Compliance</h2>
+    <p>We follow FTC Endorsement Guides. Every review page and deal post includes a clear, conspicuous disclosure near the top and at the point of purchase links.</p>
+
+    <h2>Product Sourcing</h2>
+    <ul>
+      <li><strong>Purchased by us</strong> — most products (we buy retail)</li>
+      <li><strong>Loaned by manufacturers</strong> — returned after testing, disclosed in review</li>
+      <li><strong>Never kept</strong> — no product stays with reviewers</li>
+    </ul>
+
+    <h2>Transparency</h2>
+    <p>We publish our <a href="/about">testing methodology</a> and <a href="/about">ethics policy</a>. If you spot a conflict or have questions, email <a href="mailto:{siteConfig.author.email}">{siteConfig.author.email}</a>.</p>
+
+    <hr class="my-10" />
+
+    <p class="text-sm text-surface-500"><strong>Disclosure required by FTC:</strong> {siteConfig.name} is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participate in other affiliate programs.</p>
+  </article>
+</PageLayout>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Ms V Lab — CMS</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    .cms-loading { display: flex; align-items: center; justify-content: center; height: 100vh; background: #fafafa; }
+  </style>
+</head>
+<body>
+  <div class="cms-loading">Loading CMS…</div>
+  <script>
+    // Initialize Decap CMS
+    if (window.CMS) {
+      window.CMS.init({ config: { load_config_file: true } });
+    }
+    // Netlify Identity (for Git Gateway auth)
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) window.netlifyIdentity.on('login', () => document.location.reload());
+      });
+    }
+  </script>
+</body>
+</html>
