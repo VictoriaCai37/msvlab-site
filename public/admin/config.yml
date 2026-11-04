@@ -7,8 +7,8 @@ backend:
 
 locale: 'zh'
 
-media_folder: "src/assets/images"
-public_folder: "/assets/images"
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "reviews"
