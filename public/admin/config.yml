@@ -37,7 +37,7 @@ collections:
       - {label: "缺点 (至少2条)", name: "cons", widget: "list", required: true, min: 2, fields: [{label: "缺点", name: "con", widget: "string", required: true}]}
       - {label: "适用人群 (至少3条)", name: "whoShouldBuy", widget: "list", required: true, min: 3, fields: [{label: "理由", name: "reason", widget: "string", required: true}]}
       - {label: "结论", name: "verdict", widget: "text", required: true}
-      - {label: "规格参数 (可选)", name: "specs", widget: "object", required: false, fields: []}
+      - {label: "规格参数 (可选)", name: "specs", widget: "object", required: false}
       - {label: "价格 (可选)", name: "price", widget: "number", required: false, min: 0}
       - {label: "联盟链接 (可选)", name: "affiliateUrl", widget: "string", required: false, pattern: ["^https?://.+", "必须是有效 URL"]}
       - {label: "推荐", name: "featured", widget: "boolean", required: false, default: false}
