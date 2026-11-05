@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npx pagefind --site dist",
+    "build": "astro build",
     "preview": "astro preview",
     "preview:build": "npm run build && npm run preview",
-    "astro": "astro",
-    "pagefind": "pagefind --site dist"
+    "astro": "astro"
   },
   "dependencies": {
     "astro": "^4.15.0",
