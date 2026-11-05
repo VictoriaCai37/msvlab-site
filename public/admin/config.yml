@@ -8,7 +8,8 @@ backend:
 locale: 'zh'
 
 media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+# 👇 就是这里，去掉了开头的斜杠
+public_folder: "images/uploads"
 
 collections:
   - name: "reviews"
