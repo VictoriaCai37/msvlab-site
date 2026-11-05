@@ -1,60 +1,71 @@
 ---
 title: "Samsung 990 Pro 2TB Review: PCIe 4.0 Speed King for PS5, PC, and Laptops"
-excerpt: "7,450/6,900 MB/s read/write, 1.4M IOPS, DRAM cache, 5-year warranty, and a heatsink option — the SSD to beat in 2024."
-heroImage: "/images/reviews/samsung-990-pro-2tb/hero.jpg"
-heroAlt: "Samsung 990 Pro 2TB SSD with heatsink installed in a PS5 expansion slot"
+excerpt: 7,450/6,900 MB/s read/write, 1.4M IOPS, DRAM cache, 5-year warranty,
+  and a heatsink option — the SSD to beat in 2024.
+heroImage: /images/uploads/samsung-990-pro-2tb1.jpg
+heroAlt: Samsung 990 Pro 2TB SSD with heatsink installed in a PS5 expansion slot
 images:
-  - src: "/images/reviews/samsung-990-pro-2tb/heatsink.jpg"
-    alt: "Samsung 990 Pro with pre-installed heatsink showing copper heat pipe"
-    caption: "Heatsink model (2TB): copper heat pipe + graphene thermal pad — drops 15°C under load"
-  - src: "/images/reviews/samsung-990-pro-2tb/ps5-install.jpg"
-    alt: "PS5 console open showing 990 Pro heatsink installed in M.2 slot"
-    caption: "Official PS5 compatible — fits under cover, no throttle in 4K gaming"
-  - src: "/images/reviews/samsung-990-pro-2tb/magician.jpg"
-    alt: "Samsung Magician software showing drive health, performance benchmark, and over-provisioning"
-    caption: "Magician software: health monitoring, benchmark, secure erase, over-provisioning"
-category: "computing"
-tags: ["SSD", "NVMe", "PCIe 4.0", "PS5", "gaming", "storage"]
-publishDate: "2024-11-12"
-readTime: "7 min read"
+  - src: /images/uploads/samsung-990-pro-2tb2.jpg
+    alt: Samsung 990 Pro 2TB
+  - src: /images/uploads/samsung-990-pro-2tb3.jpg
+    alt: Samsung 990 Pro 2TB
+  - src: /images/uploads/samsung-990-pro-2tb5.jpg
+    alt: Samsung 990 Pro 2TB
+  - src: /images/uploads/samsung-990-pro-2tb4.jpg
+    alt: Samsung 990 Pro 2TB
+category: computing
+tags:
+  - SSD
+  - NVMe
+  - PCIe 4.0
+  - PS5
+  - gaming
+  - storage
+publishDate: 2024-11-12
+readTime: 7 min read
 rating: 4.8
 pros:
   - "Class-leading PCIe 4.0 speeds: 7,450 / 6,900 MB/s seq R/W, 1.4M IOPS"
-  - "Samsung Pascal controller + 8th-gen V-NAND + 2 GB LPDDR4 DRAM cache"
-  - "Heatsink model drops 15°C — essential for PS5 / thin laptops"
-  - "5-year warranty, 1,200 TBW (2TB) — industry-best endurance"
+  - Samsung Pascal controller + 8th-gen V-NAND + 2 GB LPDDR4 DRAM cache
+  - Heatsink model drops 15°C — essential for PS5 / thin laptops
+  - 5-year warranty, 1,200 TBW (2TB) — industry-best endurance
   - "Magician software: health, benchmarks, encryption, over-provisioning"
   - "Power efficient: 5.5W active, 3mW idle — great for laptop battery"
 cons:
-  - "PCIe 4.0 only — no 5.0 support (marginal real-world difference today)"
-  - "Heatsink model adds 3.5mm height — check laptop clearance"
-  - "Firmware 5B2QGXA7 (2023) had health reporting bug — fixed in 4B2QGXA7"
-  - "Premium pricing vs. WD SN850X, Crucial T500, Kingston KC3000"
+  - PCIe 4.0 only — no 5.0 support (marginal real-world difference today)
+  - Heatsink model adds 3.5mm height — check laptop clearance
+  - Firmware 5B2QGXA7 (2023) had health reporting bug — fixed in 4B2QGXA7
+  - Premium pricing vs. WD SN850X, Crucial T500, Kingston KC3000
 whoShouldBuy:
-  - "PS5 owners needing official, no-throttle 2TB expansion"
-  - "PC builders wanting the most reliable, proven PCIe 4.0 drive"
-  - "Laptop upgraders valuing power efficiency and thermal control"
-verdict: "The **Samsung 990 Pro 2TB** remains the **gold-standard PCIe 4.0 SSD**. It's not the absolute cheapest, but the combination of class-leading speed, DRAM cache, industry-best endurance (1,200 TBW), 5-year warranty, Samsung Magician, and PS5-verified heatsink option makes it the safest high-performance purchase. For PS5, it's the default choice. For PC/laptop, it's the reliability pick."
-specs:
-  Interface: "PCIe 4.0 x4, NVMe 2.0"
-  Controller: "Samsung Pascal (in-house)"
-  NAND: "8th-gen V-NAND (TLC)"
-  DRAM Cache: "2 GB LPDDR4 (2TB model)"
-  Capacities: "1 TB, 2 TB, 4 TB"
-  Seq Read/Write: "7,450 / 6,900 MB/s (2TB)"
-  Random Read/Write: "1,400K / 1,550K IOPS (2TB)"
-  Endurance: "600 TBW (1TB), 1,200 TBW (2TB), 2,400 TBW (4TB)"
-  Warranty: "5 years limited"
-  Power: "5.5W active avg, 3mW idle (L1.2)"
-  Dimensions: "80.15 x 22.15 x 2.38 mm (bare) / 3.5 mm (heatsink)"
-  Weight: "8 g (bare) / 18 g (heatsink)"
-  Operating Temp: "0-70°C (controller throttles at 85°C)"
-  Software: "Samsung Magician (Windows/macOS/Android)"
-  Encryption: "AES 256-bit, TCG Opal 2.0, IEEE 1667"
+  - PS5 owners needing official, no-throttle 2TB expansion
+  - PC builders wanting the most reliable, proven PCIe 4.0 drive
+  - Laptop upgraders valuing power efficiency and thermal control
+verdict: The **Samsung 990 Pro 2TB** remains the **gold-standard PCIe 4.0 SSD**.
+  It's not the absolute cheapest, but the combination of class-leading speed,
+  DRAM cache, industry-best endurance (1,200 TBW), 5-year warranty, Samsung
+  Magician, and PS5-verified heatsink option makes it the safest
+  high-performance purchase. For PS5, it's the default choice. For PC/laptop,
+  it's the reliability pick.
 price: 180
-affiliateUrl: "https://samsung.com/us/computing/memory-storage/solid-state-drives/990-pro/"
+affiliateUrl: https://samsung.com/us/computing/memory-storage/solid-state-drives/990-pro/
 featured: true
 draft: false
+specs:
+  Random Read/Write: 1,400K / 1,550K IOPS (2TB)
+  Encryption: AES 256-bit, TCG Opal 2.0, IEEE 1667
+  Power: 5.5W active avg, 3mW idle (L1.2)
+  Seq Read/Write: 7,450 / 6,900 MB/s (2TB)
+  Software: Samsung Magician (Windows/macOS/Android)
+  Endurance: 600 TBW (1TB), 1,200 TBW (2TB), 2,400 TBW (4TB)
+  NAND: 8th-gen V-NAND (TLC)
+  Dimensions: 80.15 x 22.15 x 2.38 mm (bare) / 3.5 mm (heatsink)
+  Operating Temp: 0-70°C (controller throttles at 85°C)
+  Weight: 8 g (bare) / 18 g (heatsink)
+  Capacities: 1 TB, 2 TB, 4 TB
+  Interface: PCIe 4.0 x4, NVMe 2.0
+  DRAM Cache: 2 GB LPDDR4 (2TB model)
+  Warranty: 5 years limited
+  Controller: Samsung Pascal (in-house)
 ---
 
 ## The SSD That Sets the Standard
