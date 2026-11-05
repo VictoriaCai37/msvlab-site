@@ -1,58 +1,71 @@
 ---
-title: "LG UltraFine 27\" 5K (27MD5KL-B) Review: The Only True 5K Mac Monitor — Still"
-excerpt: "Native 5K (5120×2880), Thunderbolt 3, 94% DCI-P3, and macOS-perfect scaling — the display Apple should have made."
-heroImage: "/images/reviews/lg-ultrafine-27-5k/hero.jpg"
-heroAlt: "LG UltraFine 27 5K monitor on a Mac Studio setup showing crisp text at 2x scaling"
+title: 'LG UltraFine 27" 5K (27MD5KL-B) Review: The Only True 5K Mac Monitor — Still'
+excerpt: Native 5K (5120×2880), Thunderbolt 3, 94% DCI-P3, and macOS-perfect
+  scaling — the display Apple should have made.
+heroImage: /images/uploads/lg-ultrafine-27-5k-27md5kl-b-1.jpg
+heroAlt: LG UltraFine 27 5K monitor on a Mac Studio setup showing crisp text at
+  2x scaling
 images:
-  - src: "/images/reviews/lg-ultrafine-27-5k/scaling.jpg"
-    alt: "macOS display settings showing 5120×2880 resolution at 2x Retina scaling"
-    caption: "Native 5K = perfect 2x Retina scaling on macOS — no fractional scaling blur"
-  - src: "/images/reviews/lg-ultrafine-27-5k/ports.jpg"
-    alt: "Rear ports: Thunderbolt 3 upstream, 3× USB-C downstream, 3.5mm"
-    caption: "Thunderbolt 3 (96W PD) + 3× USB-C 5Gbps downstream — single-cable Mac docking"
-  - src: "/images/reviews/lg-ultrafine-27-5k/stand.jpg"
-    alt: "Height-adjustable stand with tilt and portrait rotation"
-    caption: "Fully adjustable stand (height, tilt, pivot) — rare at this price"
-category: "computing"
-tags: ["monitor", "5K", "Mac", "Thunderbolt", "Retina", "color accuracy"]
-publishDate: "2024-11-30"
-readTime: "8 min read"
+  - src: /images/uploads/lg-ultrafine-27-5k-27md5kl-b-3.jpg
+    alt: LG UltraFine 27" 5K (27MD5KL-B)
+  - src: /images/uploads/lg-ultrafine-27-5k-27md5kl-b-4.jpg
+    alt: LG UltraFine 27" 5K (27MD5KL-B)
+  - src: /images/uploads/lg-ultrafine-27-5k-27md5kl-b-5.jpg
+    alt: LG UltraFine 27" 5K (27MD5KL-B)
+category: computing
+tags:
+  - monitor
+  - 5K
+  - Mac
+  - Thunderbolt
+  - Retina
+  - color accuracy
+publishDate: 2024-11-30
+readTime: 8 min read
 rating: 4.6
 pros:
-  - "Only widely available native 5K monitor (5120×2880) — perfect 2x Retina on macOS"
-  - "Thunderbolt 3 with 96W power delivery — single cable charges MacBook Pro 16\""
-  - "94% DCI-P3, factory calibrated ΔE < 1 — excellent out-of-box color"
-  - "3× USB-C downstream ports (5 Gbps) + 3.5 mm audio — built-in dock"
-  - "Fully adjustable stand (height, tilt, 90° pivot) included"
-  - "Zero-flicker, low blue light mode, hardware calibration support"
+  - Only widely available native 5K monitor (5120×2880) — perfect 2x Retina on
+    macOS
+  - Thunderbolt 3 with 96W power delivery — single cable charges MacBook Pro 16"
+  - 94% DCI-P3, factory calibrated ΔE < 1 — excellent out-of-box color
+  - 3× USB-C downstream ports (5 Gbps) + 3.5 mm audio — built-in dock
+  - Fully adjustable stand (height, tilt, 90° pivot) included
+  - Zero-flicker, low blue light mode, hardware calibration support
 cons:
-  - "Thunderbolt 3 only (not TB4/USB4) — limited to 40 Gbps, no daisy-chain 5K"
-  - "60 Hz only — no high refresh rate option"
-  - "IPS glow visible in dark rooms; contrast ~1000:1 (not OLED/Mini-LED)"
-  - "Design hasn't changed since 2019 — thick bezels, plastic back"
-  - "Expensive vs. 4K 27\" alternatives; Windows scaling still imperfect"
+  - Thunderbolt 3 only (not TB4/USB4) — limited to 40 Gbps, no daisy-chain 5K
+  - 60 Hz only — no high refresh rate option
+  - IPS glow visible in dark rooms; contrast ~1000:1 (not OLED/Mini-LED)
+  - Design hasn't changed since 2019 — thick bezels, plastic back
+  - Expensive vs. 4K 27" alternatives; Windows scaling still imperfect
 whoShouldBuy:
-  - "Mac users wanting true Retina sharpness at 27\" (not 24\" or 32\")"
-  - "Developers/designers needing integer scaling without blur"
-  - "Anyone wanting single-cable 96W docking for MacBook Pro"
-verdict: "The **LG UltraFine 27\" 5K (27MD5KL-B)** remains the **only monitor that gives macOS users true 2x Retina scaling at 27 inches**. Thunderbolt 3 + 96W PD + 3× USB-C = perfect Mac dock. Color accuracy is excellent. But it's showing age: TB3 not TB4, 60 Hz only, IPS contrast, dated design. For Mac users, it's still the default choice. For Windows, look at 4K 120 Hz or 5K2K alternatives."
-specs:
-  Panel: "27\" IPS, 5120×2880 (5K), 218 PPI, 60 Hz"
-  Color: "94% DCI-P3, 100% sRGB, 10-bit (8-bit + FRC)"
-  Brightness: "500 nits typical"
-  Contrast: "1000:1 (typical)"
-  Response: "5 ms (GtG)"
-  HDR: "HDR10 support (no local dimming)"
-  Connectivity: "1× Thunderbolt 3 (upstream, 96W PD, DP 1.4), 3× USB-C (downstream, 5 Gbps), 3.5 mm audio out"
-  Stand: "Height (110 mm), tilt (-5°~25°), pivot (90°), VESA 100×100"
-  Features: "Hardware calibration (LG Calibration Studio), Auto Brightness, Low Blue Light, Flicker Safe"
-  Power: "140W max (96W PD + 44W monitor)"
-  Dimensions: "24.5 x 17.8-22.8 x 9.5 in (with stand)"
-  Weight: "15.2 lb (6.9 kg) with stand"
+  - Mac users wanting true Retina sharpness at 27" (not 24" or 32")
+  - Developers/designers needing integer scaling without blur
+  - Anyone wanting single-cable 96W docking for MacBook Pro
+verdict: "The **LG UltraFine 27\" 5K (27MD5KL-B)** remains the **only monitor
+  that gives macOS users true 2x Retina scaling at 27 inches**. Thunderbolt 3 +
+  96W PD + 3× USB-C = perfect Mac dock. Color accuracy is excellent. But it's
+  showing age: TB3 not TB4, 60 Hz only, IPS contrast, dated design. For Mac
+  users, it's still the default choice. For Windows, look at 4K 120 Hz or 5K2K
+  alternatives."
 price: 1299
-affiliateUrl: "https://www.lg.com/us/monitors/lg-27md5kl-b"
+affiliateUrl: https://www.lg.com/us/monitors/lg-27md5kl-b
 featured: false
 draft: false
+specs:
+  Response: 5 ms (GtG)
+  Contrast: 1000:1 (typical)
+  Color: 94% DCI-P3, 100% sRGB, 10-bit (8-bit + FRC)
+  Panel: 27" IPS, 5120×2880 (5K), 218 PPI, 60 Hz
+  Power: 140W max (96W PD + 44W monitor)
+  Dimensions: 24.5 x 17.8-22.8 x 9.5 in (with stand)
+  Brightness: 500 nits typical
+  HDR: HDR10 support (no local dimming)
+  Stand: Height (110 mm), tilt (-5°~25°), pivot (90°), VESA 100×100
+  Connectivity: 1× Thunderbolt 3 (upstream, 96W PD, DP 1.4), 3× USB-C (downstream,
+    5 Gbps), 3.5 mm audio out
+  Weight: 15.2 lb (6.9 kg) with stand
+  Features: Hardware calibration (LG Calibration Studio), Auto Brightness, Low
+    Blue Light, Flicker Safe
 ---
 
 ## The Monitor Apple Forgot to Update
