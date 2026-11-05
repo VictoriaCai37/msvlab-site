@@ -2,7 +2,7 @@
 title: "Sony WH-1000XM5 Review: Still the Noise-Canceling King for Commuters"
 excerpt: Best-in-class ANC, 30-hour battery, multipoint, and comfort for all-day
   wear — the travel headphone benchmark.
-heroImage: /images/uploads/sony-wh-1000xm51.jpg
+heroImage: /images/uploads/sony-wh-1000xm52.jpg
 heroAlt: Sony WH-1000XM5 in Midnight Blue on a traveler's neck in an airport terminal
 images:
   - src: /images/uploads/sony-wh-1000xm52.jpg
