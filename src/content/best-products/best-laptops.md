@@ -54,7 +54,7 @@ products:
     price: 1999
     name: MacBook Pro 14" M3 Pro (18GB/512GB)
     rank: 4
-    cons: "缺点: $1,999+, heavier (3.5lb), notch"
+    cons: " $1,999+, heavier (3.5lb), notch"
     image: /images/uploads/macbook-air-13-m3-2024-5.jpg
     rating: 4
 featured: true
