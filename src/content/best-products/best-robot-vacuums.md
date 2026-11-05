@@ -1,56 +1,48 @@
 ---
 title: "Best Robot Vacuums of 2024: Tested & Ranked"
-excerpt: "We tested 12 robot vacuums for 6 months. These 5 stand out for navigation, mopping, pet hair, and value."
-heroImage: "/images/best-products/best-robot-vacuums/hero.jpg"
-heroAlt: "Top 5 robot vacuums lined up on a hardwood floor"
-category: "smart-home"
-publishDate: "2024-12-20"
+excerpt: We tested 12 robot vacuums for 6 months. These 5 stand out for
+  navigation, mopping, pet hair, and value.
+heroImage: /images/uploads/roborock-s8-maxv-ultra3.jpg
+heroAlt: Top 5 robot vacuums lined up on a hardwood floor
+category: smart-home
+publishDate: 2024-12-20
 products:
-  - rank: 1
-    name: "Roborock S8 MaxV Ultra"
-    image: "/images/reviews/roborock-s8-maxv-ultra/hero.jpg"
-    rating: 4.8
-    pros: "Dual mechanical arms, 80°C mop wash, Reactive AI 2.0, 10,000 Pa"
-    cons: "$1,799, large dock, complex app"
-    bestFor: "Hands-free cleaning perfectionists"
+  - affiliateUrl: https://www.roborock.com/products/s8-maxv-ultra
+    bestFor: Hands-free cleaning perfectionists
+    pros: Dual mechanical arms, 80°C mop wash, Reactive AI 2.0, 10,000 Pa
     price: 1799
-    affiliateUrl: "https://www.roborock.com/products/s8-maxv-ultra"
-  - rank: 2
-    name: "Ecovacs Deebot X2 Omni"
-    image: "/images/reviews/ecovacs-deebot-x2-omni/hero.jpg"
-    rating: 4.6
-    pros: "Square design cleans corners, 15mm mop lift, 60°C wash, compact dock"
-    cons: "Taller LiDAR module, single extending arm"
-    bestFor: "Corner-heavy homes, tighter dock space"
+    name: Roborock S8 MaxV Ultra
+    rank: 1
+    cons: $1,799, large dock, complex app
+    image: /images/uploads/roborock-s8-maxv-ultra1.jpg
+    rating: 4.8
+  - affiliateUrl: https://www.ecovacs.com/us/deebot-x2-omni
+    bestFor: Corner-heavy homes, tighter dock space
+    pros: Square design cleans corners, 15mm mop lift, 60°C wash, compact dock
     price: 1499
-    affiliateUrl: "https://www.ecovacs.com/us/deebot-x2-omni"
-  - rank: 3
-    name: "Dreame L20 Ultra"
-    image: "/images/reviews/dreame-l20-ultra/hero.jpg"
-    rating: 4.5
-    pros: "70°C wash, MopExtend, 7,000 Pa, $1,299 value king"
-    cons: "Single extending arm, bulkier dock, app quirks"
-    bestFor: "Best bang-for-buck flagship"
+    name: Ecovacs Deebot X2 Omni
+    rank: 2
+    cons: Taller LiDAR module, single extending arm
+    image: /images/uploads/ecovacs-deebot-x2-omni3.jpg
+    rating: 4.6
+  - affiliateUrl: https://www.dreame.tech/products/l20-ultra
+    bestFor: Best bang-for-buck flagship
+    pros: 70°C wash, MopExtend, 7,000 Pa, $1,299 value king
     price: 1299
-    affiliateUrl: "https://www.dreame.tech/products/l20-ultra"
-  - rank: 4
-    name: "Narwal Freo X Ultra"
-    image: "/images/reviews/narwal-freo-x-ultra/hero.jpg"
-    rating: 4.4
-    pros: "Zero-tangle brush, 78°C + electrolyzed water, DirtSense, quiet dock"
-    cons: "No extending arms, basic app, proprietary solution"
-    bestFor: "Pet owners, hygiene-focused homes"
+    name: Dreame L20 Ultra
+    rank: 3
+    cons: Single extending arm, bulkier dock, app quirks
+    image: /images/uploads/dreame-l20-ultra1.jpg
+    rating: 4.5
+  - affiliateUrl: https://narwal.com/products/freo-x-ultra
+    bestFor: Pet owners, hygiene-focused homes
+    pros: Zero-tangle brush, 78°C + electrolyzed water, DirtSense, quiet dock
     price: 1399
-    affiliateUrl: "https://narwal.com/products/freo-x-ultra"
-  - rank: 5
-    name: "Roborock Q Revo"
-    image: "/images/best-products/best-robot-vacuums/q-revo.jpg"
-    rating: 4.3
-    pros: "5,500 Pa, 60°C wash, extending mop, $899"
-    cons: "No AI obstacle avoidance, smaller dock"
-    bestFor: "Budget flagship with heated mop wash"
-    price: 899
-    affiliateUrl: "https://www.roborock.com/products/q-revo"
+    name: Narwal Freo X Ultra
+    rank: 4
+    cons: No extending arms, basic app, proprietary solution
+    image: /images/uploads/narwal-freo-x-ultra1.jpg
+    rating: 4.4
 featured: true
 draft: false
 ---
