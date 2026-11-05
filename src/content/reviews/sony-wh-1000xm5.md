@@ -1,56 +1,67 @@
 ---
 title: "Sony WH-1000XM5 Review: Still the Noise-Canceling King for Commuters"
-excerpt: "Best-in-class ANC, 30-hour battery, multipoint, and comfort for all-day wear — the travel headphone benchmark."
-heroImage: "/images/reviews/sony-wh-1000xm5/hero.jpg"
-heroAlt: "Sony WH-1000XM5 in Midnight Blue on a traveler's neck in an airport terminal"
+excerpt: Best-in-class ANC, 30-hour battery, multipoint, and comfort for all-day
+  wear — the travel headphone benchmark.
+heroImage: /images/uploads/homepage-1.jpg
+heroAlt: Sony WH-1000XM5 in Midnight Blue on a traveler's neck in an airport terminal
 images:
-  - src: "/images/reviews/sony-wh-1000xm5/anc-demo.jpg"
-    alt: "Graph showing ANC performance across frequencies"
-    caption: "Dual Processor (V1 + QN1) + 8 mics = best low-frequency isolation in class"
-  - src: "/images/reviews/sony-wh-1000xm5/comfort.jpg"
-    alt: "Side view showing soft leatherette earcups and stepless slider"
+  - src: /images/reviews/sony-wh-1000xm5/anc-demo.jpg
+    alt: Graph showing ANC performance across frequencies
+    caption: Dual Processor (V1 + QN1) + 8 mics = best low-frequency isolation in class
+  - src: /images/reviews/sony-wh-1000xm5/comfort.jpg
+    alt: Side view showing soft leatherette earcups and stepless slider
     caption: "New design: softer pads, stepless slider, 250g — wears for 8+ hours"
-  - src: "/images/reviews/sony-wh-1000xm5/multipoint.jpg"
-    alt: "Phone and laptop both connected via Bluetooth multipoint"
+  - src: /images/reviews/sony-wh-1000xm5/multipoint.jpg
+    alt: Phone and laptop both connected via Bluetooth multipoint
     caption: "Seamless multipoint: pause video on laptop, take call on phone"
-category: "audio"
-tags: ["headphones", "noise canceling", "wireless", "travel", "commute"]
-publishDate: "2024-12-22"
-readTime: "9 min read"
+category: audio
+tags:
+  - headphones
+  - noise canceling
+  - wireless
+  - travel
+  - commute
+publishDate: 2024-12-22
+readTime: 9 min read
 rating: 4.8
 pros:
-  - "Industry-leading ANC: dual processor (V1+QN1) + 8 mics silence planes, trains, offices"
-  - "30-hour battery (ANC on), 3-min charge = 1 hour, USB-C"
+  - "Industry-leading ANC: dual processor (V1+QN1) + 8 mics silence planes,
+    trains, offices"
+  - 30-hour battery (ANC on), 3-min charge = 1 hour, USB-C
   - "Multipoint Bluetooth 5.2: two devices, seamless switching"
-  - "Speak-to-Chat, Adaptive Sound Control, Auto Pause — smart features that work"
-  - "LDAC + DSEE Extreme + 360 Reality Audio for high-res streaming"
-  - "Lightweight (250g), soft fit leather, stepless slider — all-day comfort"
+  - Speak-to-Chat, Adaptive Sound Control, Auto Pause — smart features that work
+  - LDAC + DSEE Extreme + 360 Reality Audio for high-res streaming
+  - Lightweight (250g), soft fit leather, stepless slider — all-day comfort
 cons:
-  - "No aptX Adaptive / Lossless (LDAC only for hi-res)"
-  - "Case is bulky semi-hard shell — doesn't fold flat"
-  - "Touch controls can be trigger-happy in wind/rain"
+  - No aptX Adaptive / Lossless (LDAC only for hi-res)
+  - Case is bulky semi-hard shell — doesn't fold flat
+  - Touch controls can be trigger-happy in wind/rain
   - "Sound signature: warm/V-shaped — not neutral/reference"
-  - "No wired USB-C audio (3.5mm only, passive)"
+  - No wired USB-C audio (3.5mm only, passive)
 whoShouldBuy:
-  - "Frequent flyers/commuters needing maximum ANC"
-  - "Office workers in open-plan needing focus"
-  - "Anyone wanting 30+ hour battery with quick charge"
-verdict: "The **Sony WH-1000XM5** remains the **gold standard for ANC headphones**. No competitor matches the combination of low-frequency isolation, 30-hour battery, multipoint reliability, and all-day comfort. Sound is consumer-tuned (warm, bass-forward) — EQ in app fixes it. For travel and focus work, it's still the one to beat."
-specs:
-  Driver: "30mm dynamic, carbon fiber composite dome"
-  ANC: "Dual Processor (V1 + QN1), 8 mics (4 ANC + 4 voice)"
-  Bluetooth: "5.2, Multipoint (2 devices), SBC, AAC, LDAC"
-  Codec: "LDAC (990 kbps), AAC, SBC"
-  Battery: "30 hrs (ANC on), 40 hrs (ANC off), 3 min = 1 hr"
-  Charging: "USB-C (no wireless)"
-  Weight: "250 g (8.8 oz)"
-  Colors: "Black, Midnight Blue, Silver, Rose"
-  App: "Sony Headphones Connect (iOS/Android)"
-  Wired: "3.5mm analog (included cable), no USB-C DAC"
+  - Frequent flyers/commuters needing maximum ANC
+  - Office workers in open-plan needing focus
+  - Anyone wanting 30+ hour battery with quick charge
+verdict: The **Sony WH-1000XM5** remains the **gold standard for ANC
+  headphones**. No competitor matches the combination of low-frequency
+  isolation, 30-hour battery, multipoint reliability, and all-day comfort. Sound
+  is consumer-tuned (warm, bass-forward) — EQ in app fixes it. For travel and
+  focus work, it's still the one to beat.
 price: 399
-affiliateUrl: "https://www.sony.com/electronics/headband-headphones/wh-1000xm5"
+affiliateUrl: https://www.sony.com/electronics/headband-headphones/wh-1000xm5
 featured: true
 draft: false
+specs:
+  App: Sony Headphones Connect (iOS/Android)
+  Driver: 30mm dynamic, carbon fiber composite dome
+  Battery: 30 hrs (ANC on), 40 hrs (ANC off), 3 min = 1 hr
+  Bluetooth: 5.2, Multipoint (2 devices), SBC, AAC, LDAC
+  Colors: Black, Midnight Blue, Silver, Rose
+  Charging: USB-C (no wireless)
+  ANC: Dual Processor (V1 + QN1), 8 mics (4 ANC + 4 voice)
+  Codec: LDAC (990 kbps), AAC, SBC
+  Weight: 250 g (8.8 oz)
+  Wired: 3.5mm analog (included cable), no USB-C DAC
 ---
 
 ## The Benchmark That Refuses to Budge
