@@ -1,56 +1,65 @@
 ---
-title: "MacBook Air 13\" M3 (2024) Review: The Near-Perfect Laptop for Almost Everyone"
-excerpt: "18-hour battery, fanless silence, M3 speed, and that iconic thin design — the default choice for students, travelers, and office workers."
-heroImage: "/images/reviews/macbook-air-m3-13/hero.jpg"
-heroAlt: "MacBook Air 13-inch M3 in Midnight color on a minimal desk setup"
+title: 'MacBook Air 13" M3 (2024) Review: The Near-Perfect Laptop for Almost Everyone'
+excerpt: 18-hour battery, fanless silence, M3 speed, and that iconic thin design
+  — the default choice for students, travelers, and office workers.
+heroImage: /images/uploads/macbook-air-13-m3-2024-1.jpg
+heroAlt: MacBook Air 13-inch M3 in Midnight color on a minimal desk setup
 images:
-  - src: "/images/reviews/macbook-air-m3-13/ports.jpg"
-    alt: "Left side showing MagSafe 3, two Thunderbolt/USB 4 ports, and headphone jack"
-    caption: "MagSafe 3 charging frees up both Thunderbolt 4 ports"
-  - src: "/images/reviews/macbook-air-m3-13/keyboard-trackpad.jpg"
-    alt: "Close-up of Magic Keyboard with Touch ID and Force Touch trackpad"
-    caption: "Best-in-class keyboard feel and haptic trackpad"
-  - src: "/images/reviews/macbook-air-m3-13/external-display.jpg"
-    alt: "MacBook Air M3 driving an external 4K monitor in clamshell mode"
-    caption: "Supports one external display (up to 6K) — two with lid closed on M3"
-category: "computing"
-tags: ["laptop", "MacBook", "Apple Silicon", "M3", "ultraportable"]
-publishDate: "2024-12-20"
-readTime: "10 min read"
+  - src: /images/uploads/macbook-air-13-m3-2024-2.jpg
+    alt: MacBook Air 13" M3 (2024)
+  - src: /images/uploads/macbook-air-13-m3-2024-4.jpg
+    alt: MacBook Air 13" M3 (2024)
+  - src: /images/uploads/macbook-air-13-m3-2024-5.jpg
+    alt: MacBook Air 13" M3 (2024)
+  - src: /images/uploads/macbook-air-13-m3-2024-6.jpg
+    alt: MacBook Air 13" M3 (2024)
+category: computing
+tags:
+  - laptop
+  - MacBook
+  - Apple Silicon
+  - M3
+  - ultraportable
+publishDate: 2024-12-20
+readTime: 10 min read
 rating: 4.9
 pros:
-  - "Incredible 18+ hour real-world battery life (web browsing, video)"
-  - "Completely fanless — dead silent under any workload"
+  - Incredible 18+ hour real-world battery life (web browsing, video)
+  - Completely fanless — dead silent under any workload
   - "M3 chip: 15-20% faster CPU, 30% faster GPU than M2"
-  - "Supports 2 external displays (with lid closed)"
-  - "1080p webcam finally looks good in low light"
-  - "MagSafe 3 + 2× Thunderbolt 4 + 3.5mm jack"
+  - Supports 2 external displays (with lid closed)
+  - 1080p webcam finally looks good in low light
+  - MagSafe 3 + 2× Thunderbolt 4 + 3.5mm jack
 cons:
-  - "Only 2 Thunderbolt ports (both on left side)"
-  - "60 Hz display (no ProMotion 120 Hz)"
-  - "8 GB base RAM is tight in 2024; 16 GB upgrade costs $200"
-  - "Midnight finish shows fingerprints easily"
-  - "No Face ID, no cellular option"
+  - Only 2 Thunderbolt ports (both on left side)
+  - 60 Hz display (no ProMotion 120 Hz)
+  - 8 GB base RAM is tight in 2024; 16 GB upgrade costs $200
+  - Midnight finish shows fingerprints easily
+  - No Face ID, no cellular option
 whoShouldBuy:
-  - "Students needing all-day battery and silent operation in libraries"
-  - "Travelers wanting the lightest full-power Mac (2.7 lb)"
-  - "Office workers living in browser, Office, Slack, Zoom"
-verdict: "The **MacBook Air 13\" M3** is the **closest thing to a perfect mainstream laptop**. Fanless silence, 18-hour battery, M3 performance, and a design that still feels futuristic after 4 years. The 60 Hz screen and 2-port limit are the only real compromises. For 90% of users, this is the Mac to buy. Spend the $200 on 16 GB RAM — future-you will thank you."
-specs:
-  Chip: "Apple M3 (8-core CPU, 8/10-core GPU, 16-core Neural Engine)"
-  Memory: "8 GB / 16 GB / 24 GB unified (not upgradable)"
-  Storage: "256 GB / 512 GB / 1 TB / 2 TB SSD"
-  Display: "13.6\" Liquid Retina (2560×1664), 500 nits, P3, 60 Hz"
-  Camera: "1080p FaceTime HD with computational video"
-  Audio: "4-speaker system with Spatial Audio, 3-mic array"
-  Ports: "MagSafe 3, 2× Thunderbolt/USB 4, 3.5 mm headphone"
-  Battery: "52.6 Wh (up to 18 hrs web, 15 hrs video)"
-  Weight: "2.7 lb (1.24 kg)"
-  Colors: "Midnight, Starlight, Silver, Space Gray"
+  - Students needing all-day battery and silent operation in libraries
+  - Travelers wanting the lightest full-power Mac (2.7 lb)
+  - Office workers living in browser, Office, Slack, Zoom
+verdict: The **MacBook Air 13" M3** is the **closest thing to a perfect
+  mainstream laptop**. Fanless silence, 18-hour battery, M3 performance, and a
+  design that still feels futuristic after 4 years. The 60 Hz screen and 2-port
+  limit are the only real compromises. For 90% of users, this is the Mac to buy.
+  Spend the $200 on 16 GB RAM — future-you will thank you.
 price: 1099
-affiliateUrl: "https://www.apple.com/macbook-air-13/"
+affiliateUrl: https://www.apple.com/macbook-air-13/
 featured: true
 draft: false
+specs:
+  Memory: 8 GB / 16 GB / 24 GB unified (not upgradable)
+  Display: 13.6" Liquid Retina (2560×1664), 500 nits, P3, 60 Hz
+  Camera: 1080p FaceTime HD with computational video
+  Chip: Apple M3 (8-core CPU, 8/10-core GPU, 16-core Neural Engine)
+  Battery: 52.6 Wh (up to 18 hrs web, 15 hrs video)
+  Colors: Midnight, Starlight, Silver, Space Gray
+  Ports: MagSafe 3, 2× Thunderbolt/USB 4, 3.5 mm headphone
+  Audio: 4-speaker system with Spatial Audio, 3-mic array
+  Weight: 2.7 lb (1.24 kg)
+  Storage: 256 GB / 512 GB / 1 TB / 2 TB SSD
 ---
 
 ## The Laptop Everyone Should Buy (Unless They Need More)
