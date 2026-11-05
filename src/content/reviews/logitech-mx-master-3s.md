@@ -1,59 +1,69 @@
 ---
 title: "Logitech MX Master 3S Review: Still the Productivity Mouse King After 3 Years"
-excerpt: "8000 DPI on glass, silent clicks, MagSpeed wheel, multi-device flow — the mouse that makes every other mouse feel like a toy."
-heroImage: "/images/reviews/logitech-mx-master-3s/hero.jpg"
-heroAlt: "Logitech MX Master 3S in Graphite on a desk with dual monitor setup"
+excerpt: 8000 DPI on glass, silent clicks, MagSpeed wheel, multi-device flow —
+  the mouse that makes every other mouse feel like a toy.
+heroImage: /images/uploads/logitech-mx-master-3s1.jpg
+heroAlt: Logitech MX Master 3S in Graphite on a desk with dual monitor setup
 images:
-  - src: "/images/reviews/logitech-mx-master-3s/glass-tracking.jpg"
-    alt: "MX Master 3S tracking on a glass table surface"
-    caption: "8000 DPI Darkfield sensor tracks on glass (min 4mm thickness)"
-  - src: "/images/reviews/logitech-mx-master-3s/magspeed-wheel.jpg"
-    alt: "Close-up of MagSpeed electromagnetic scroll wheel"
-    caption: "MagSpeed wheel: ratchet-to-free-spin auto-shift, 1000 lines/sec"
-  - src: "/images/reviews/logitech-mx-master-3s/flow-demo.jpg"
-    alt: "Flow feature demo: cursor moving seamlessly between Mac and Windows"
-    caption: "Logitech Flow: copy on Mac, paste on Windows — clipboard syncs across OS"
-category: "computing"
-tags: ["mouse", "productivity", "ergonomic", "multi-device", "Flow"]
-publishDate: "2024-11-18"
-readTime: "7 min read"
+  - src: /images/uploads/logitech-mx-master-3s2.jpg
+    alt: Logitech MX Master 3S
+  - src: /images/uploads/logitech-mx-master-3s3.jpg
+    alt: Logitech MX Master 3S
+  - src: /images/uploads/logitech-mx-master-3s4.jpg
+    alt: Logitech MX Master 3S
+  - src: /images/uploads/logitech-mx-master-3s5.jpg
+    alt: Logitech MX Master 3S
+category: computing
+tags:
+  - mouse
+  - productivity
+  - ergonomic
+  - multi-device
+  - Flow
+publishDate: 2024-11-18
+readTime: 7 min read
 rating: 4.7
 pros:
-  - "8000 DPI Darkfield tracks on glass, high-gloss, any surface"
-  - "Silent clicks (90% noise reduction) — office-friendly"
+  - 8000 DPI Darkfield tracks on glass, high-gloss, any surface
+  - Silent clicks (90% noise reduction) — office-friendly
   - "MagSpeed wheel: auto-shift ratchet/free-spin, 1000 lines/sec"
-  - "Flow: seamless cursor + clipboard + file transfer across 3 devices (Win/Mac/Linux)"
-  - "Thumb wheel + gesture button + 2 side buttons = 7 programmable controls"
-  - "70-day battery, 1-min charge = 3 hours, USB-C charging"
-  - "Logi Options+ software is polished, cross-platform, cloud sync"
+  - "Flow: seamless cursor + clipboard + file transfer across 3 devices
+    (Win/Mac/Linux)"
+  - Thumb wheel + gesture button + 2 side buttons = 7 programmable controls
+  - 70-day battery, 1-min charge = 3 hours, USB-C charging
+  - Logi Options+ software is polished, cross-platform, cloud sync
 cons:
-  - "Large size — not for small hands or claw grip"
-  - "Heavy (141g) — not for gaming"
-  - "No horizontal scroll on main wheel (thumb wheel only)"
-  - "Bluetooth latency slightly higher than Bolt receiver"
+  - Large size — not for small hands or claw grip
+  - Heavy (141g) — not for gaming
+  - No horizontal scroll on main wheel (thumb wheel only)
+  - Bluetooth latency slightly higher than Bolt receiver
   - "Price: $99-109 (often on sale ~$80)"
 whoShouldBuy:
-  - "Knowledge workers living in browser, spreadsheets, docs, code"
-  - "Multi-device users (desktop + laptop, Win + Mac)"
-  - "Anyone scrolling long pages/documents daily"
-verdict: "The **Logitech MX Master 3S** remains the **undisputed productivity mouse champion**. Glass tracking, silent clicks, MagSpeed wheel, and Flow multi-device magic create a workflow accelerator that cheaper mice can't match. It's large, heavy, and expensive — but for 8+ hours daily use, it pays for itself in comfort and speed. Still the one to beat after 3 years."
-specs:
-  Sensor: "Darkfield High Precision (8000 DPI max, tracks on glass ≥4mm)"
-  Buttons: "7 (Left, Right, Wheel click, Thumb wheel, Gesture, Forward, Back)"
-  Scroll Wheel: "MagSpeed electromagnetic (ratchet + free-spin, auto-shift, 1000 lines/sec)"
-  Thumb Wheel: "Horizontal scroll / programmable"
-  Gesture Button: "Hold + move for app switch, desktop view, custom"
-  Connectivity: "Bluetooth LE / Logi Bolt USB receiver (multi-device up to 3)"
-  Flow: "Cross-OS cursor, clipboard (text/images/files), file drag-drop"
-  Battery: "70 days (5 min charge = 3 hrs, USB-C)"
-  Weight: "141 g (with battery)"
-  Dimensions: "5.1 x 3.3 x 2.0 in"
-  Colors: "Graphite, Pale Gray"
-  Compatibility: "Windows 10+, macOS 11+, Linux, ChromeOS, iPadOS 14+"
+  - Knowledge workers living in browser, spreadsheets, docs, code
+  - Multi-device users (desktop + laptop, Win + Mac)
+  - Anyone scrolling long pages/documents daily
+verdict: The **Logitech MX Master 3S** remains the **undisputed productivity
+  mouse champion**. Glass tracking, silent clicks, MagSpeed wheel, and Flow
+  multi-device magic create a workflow accelerator that cheaper mice can't
+  match. It's large, heavy, and expensive — but for 8+ hours daily use, it pays
+  for itself in comfort and speed. Still the one to beat after 3 years.
 price: 99
-affiliateUrl: "https://www.logitech.com/en-us/products/mice/mx-master-3s.html"
+affiliateUrl: https://www.logitech.com/en-us/products/mice/mx-master-3s.html
 featured: true
 draft: false
+specs:
+  Buttons: 7 (Left, Right, Wheel click, Thumb wheel, Gesture, Forward, Back)
+  Scroll Wheel: MagSpeed electromagnetic (ratchet + free-spin, auto-shift, 1000 lines/sec)
+  Gesture Button: Hold + move for app switch, desktop view, custom
+  Battery: 70 days (5 min charge = 3 hrs, USB-C)
+  Dimensions: 5.1 x 3.3 x 2.0 in
+  Flow: Cross-OS cursor, clipboard (text/images/files), file drag-drop
+  Compatibility: Windows 10+, macOS 11+, Linux, ChromeOS, iPadOS 14+
+  Colors: Graphite, Pale Gray
+  Thumb Wheel: Horizontal scroll / programmable
+  Connectivity: Bluetooth LE / Logi Bolt USB receiver (multi-device up to 3)
+  Weight: 141 g (with battery)
+  Sensor: Darkfield High Precision (8000 DPI max, tracks on glass ≥4mm)
 ---
 
 ## Three Years Later, Still Unbeaten
