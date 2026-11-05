@@ -1,57 +1,60 @@
 ---
 title: "Dell XPS 14 (9440) Review: OLED Beauty Meets Creator Power in 3.2 lbs"
-excerpt: "3.2K OLED 120 Hz, optional RTX 4050, and Intel Core Ultra — the most compelling 14-inch creator laptop since the M3 MacBook Air."
-heroImage: "/images/reviews/dell-xps-14-9440/hero.jpg"
-heroAlt: "Dell XPS 14 9440 in Platinum with 3.2K OLED display showing color grading timeline"
-images:
-  - src: "/images/reviews/dell-xps-14-9440/oled-closeup.jpg"
-    alt: "Close-up of 3.2K OLED panel showing perfect blacks and vibrant colors"
-    caption: "3.2K (3200×2000) 120 Hz OLED — 100% DCI-P3, 0.2ms response"
-  - src: "/images/reviews/dell-xps-14-9440/ports.jpg"
-    alt: "Left and right ports: Thunderbolt 4, USB-C, microSD, headphone"
-    caption: "2× Thunderbolt 4, 1× USB-C 3.2, microSD, 3.5mm — no HDMI, no USB-A"
-  - src: "/images/reviews/dell-xps-14-9440/keyboard.jpg"
-    alt: "XPS 14 keyboard with zero-lattice design and haptic touchpad"
-    caption: "Zero-lattice keyboard, seamless haptic touchpad — polarizing but precise"
-category: "computing"
-tags: ["laptop", "creator", "OLED", "RTX 4050", "Intel Core Ultra"]
-publishDate: "2024-12-18"
-readTime: "11 min read"
+excerpt: 3.2K OLED 120 Hz, optional RTX 4050, and Intel Core Ultra — the most
+  compelling 14-inch creator laptop since the M3 MacBook Air.
+heroImage: /images/uploads/dell-xps-14-9440-3.jpg
+heroAlt: Dell XPS 14 9440 in Platinum with 3.2K OLED display showing color
+  grading timeline
+images: []
+category: computing
+tags:
+  - laptop
+  - creator
+  - OLED
+  - RTX 4050
+  - Intel Core Ultra
+publishDate: 2024-12-18
+readTime: 11 min read
 rating: 4.5
 pros:
-  - "Gorgeous 3.2K 120 Hz OLED — perfect blacks, 100% DCI-P3, touch optional"
-  - "Intel Core Ultra 7 155H + RTX 4050 (50W) handles 4K video, 3D, gaming"
-  - "Machined aluminum unibody — premium feel, 3.2 lbs (1.45 kg)"
-  - "Quad speakers with Waves Nx 3D audio — best Windows laptop sound"
-  - "1080p IR webcam with privacy shutter and Windows Hello"
+  - Gorgeous 3.2K 120 Hz OLED — perfect blacks, 100% DCI-P3, touch optional
+  - Intel Core Ultra 7 155H + RTX 4050 (50W) handles 4K video, 3D, gaming
+  - Machined aluminum unibody — premium feel, 3.2 lbs (1.45 kg)
+  - Quad speakers with Waves Nx 3D audio — best Windows laptop sound
+  - 1080p IR webcam with privacy shutter and Windows Hello
 cons:
-  - "No HDMI, no USB-A — dongle life mandatory"
-  - "Zero-lattice keyboard and invisible haptic touchpad have steep learning curve"
+  - No HDMI, no USB-A — dongle life mandatory
+  - Zero-lattice keyboard and invisible haptic touchpad have steep learning curve
   - "Battery life: 6-7 hrs (OLED + RTX) vs. 10+ hrs on MacBook Air"
-  - "Fans audible under load; coil whine reported on some units"
-  - "Soldered RAM (32 GB max), single SSD slot"
+  - Fans audible under load; coil whine reported on some units
+  - Soldered RAM (32 GB max), single SSD slot
 whoShouldBuy:
-  - "Video editors/colorists needing OLED accuracy on the go"
-  - "3D artists wanting RTX 4050 in a 14-inch chassis"
-  - "Windows loyalists who want MacBook Air build quality + touch/OLED"
-verdict: "The **Dell XPS 14 (9440)** is the **best 14-inch Windows creator laptop** — if you accept the compromises. The 3.2K OLED is stunning, RTX 4050 adds real GPU horsepower, and the build rivals MacBook Air. But the keyboard/touchpad redesign, port poverty, and 6-hour battery make it a niche tool. For pure productivity, MacBook Air M3 wins. For creative workflows needing Windows + GPU + OLED, this is the one."
-specs:
-  CPU: "Intel Core Ultra 7 155H (16-core: 6P+8E+2LPE, up to 4.8 GHz)"
-  GPU: "Intel Arc (integrated) or NVIDIA RTX 4050 6 GB (50W)"
-  NPU: "Intel AI Boost (11 TOPS)"
-  RAM: "16 / 32 GB LPDDR5x-7467 (soldered)"
-  Storage: "512 GB / 1 TB / 2 TB / 4 TB PCIe 4.0 (1 slot)"
-  Display: "14.5\" 3.2K (3200×2000) 120 Hz OLED, 100% DCI-P3, 400 nits HDR, touch optional"
-  Camera: "1080p IR + RGB, privacy shutter, Windows Hello"
-  Audio: "Quad speakers (2× woofer + 2× tweeter), Waves Nx 3D"
-  Ports: "2× Thunderbolt 4, 1× USB-C 3.2 Gen 2, microSD, 3.5 mm"
-  Battery: "72 Wh, 60W USB-C adapter (100W with dGPU)"
-  Weight: "3.2 lb (1.45 kg) / 3.4 lb (1.54 kg) with RTX 4050"
-  Colors: "Platinum, Graphite"
+  - Video editors/colorists needing OLED accuracy on the go
+  - 3D artists wanting RTX 4050 in a 14-inch chassis
+  - Windows loyalists who want MacBook Air build quality + touch/OLED
+verdict: The **Dell XPS 14 (9440)** is the **best 14-inch Windows creator
+  laptop** — if you accept the compromises. The 3.2K OLED is stunning, RTX 4050
+  adds real GPU horsepower, and the build rivals MacBook Air. But the
+  keyboard/touchpad redesign, port poverty, and 6-hour battery make it a niche
+  tool. For pure productivity, MacBook Air M3 wins. For creative workflows
+  needing Windows + GPU + OLED, this is the one.
 price: 1699
-affiliateUrl: "https://www.dell.com/en-us/shop/laptops/xps-14"
+affiliateUrl: https://www.dell.com/en-us/shop/laptops/xps-14
 featured: true
 draft: false
+specs:
+  Display: 14.5" 3.2K (3200×2000) 120 Hz OLED, 100% DCI-P3, 400 nits HDR, touch optional
+  Camera: 1080p IR + RGB, privacy shutter, Windows Hello
+  CPU: "Intel Core Ultra 7 155H (16-core: 6P+8E+2LPE, up to 4.8 GHz)"
+  GPU: Intel Arc (integrated) or NVIDIA RTX 4050 6 GB (50W)
+  Battery: 72 Wh, 60W USB-C adapter (100W with dGPU)
+  Colors: Platinum, Graphite
+  Ports: 2× Thunderbolt 4, 1× USB-C 3.2 Gen 2, microSD, 3.5 mm
+  NPU: Intel AI Boost (11 TOPS)
+  Audio: Quad speakers (2× woofer + 2× tweeter), Waves Nx 3D
+  Weight: 3.2 lb (1.45 kg) / 3.4 lb (1.54 kg) with RTX 4050
+  Storage: 512 GB / 1 TB / 2 TB / 4 TB PCIe 4.0 (1 slot)
+  RAM: 16 / 32 GB LPDDR5x-7467 (soldered)
 ---
 
 ## The Windows Answer to MacBook Air (With a Twist)
