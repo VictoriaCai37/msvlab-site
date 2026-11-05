@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+
 const reviews = defineCollection({
   type: 'content',
   schema: z.object({
@@ -6,20 +7,35 @@ const reviews = defineCollection({
     excerpt: z.string().max(200),
     heroImage: z.string(),
     heroAlt: z.string(),
+    // Decap CMS stores images as list of objects: [{src, alt, caption?}]
+    // Existing content may not have this field
     images: z.array(z.object({
       src: z.string(),
       alt: z.string(),
       caption: z.string().optional(),
-    })).min(3),
+    })).optional(),
     category: z.enum(['smart-home', 'computing', 'audio']),
     tags: z.array(z.string()).default([]),
-    publishDate: z.string(),
-    updateDate: z.string().optional(),
+    // Decap CMS datetime widget may pass string (YYYY-MM-DD) or Date object
+    publishDate: z.union([z.string(), z.date()]),
+    updateDate: z.union([z.string(), z.date()]).optional(),
     readTime: z.string(),
     rating: z.number().min(1).max(5),
-    pros: z.array(z.string()).min(3),
-    cons: z.array(z.string()).min(2),
-    whoShouldBuy: z.array(z.string()).min(3),
+    // Support both formats:
+    // - Old content: array of strings: ["pro 1", "pro 2"]
+    // - New CMS content: array of objects: [{pro: "..."}, {con: "..."}, {reason: "..."}]
+    pros: z.union([
+      z.array(z.string()),
+      z.array(z.object({ pro: z.string() }))
+    ]).optional(),
+    cons: z.union([
+      z.array(z.string()),
+      z.array(z.object({ con: z.string() }))
+    ]).optional(),
+    whoShouldBuy: z.union([
+      z.array(z.string()),
+      z.array(z.object({ reason: z.string() }))
+    ]).optional(),
     verdict: z.string(),
     specs: z.record(z.string()).optional(),
     price: z.number().optional(),
@@ -37,8 +53,8 @@ const bestProducts = defineCollection({
     heroImage: z.string(),
     heroAlt: z.string(),
     category: z.enum(['smart-home', 'computing', 'audio']),
-    publishDate: z.string(),
-    updateDate: z.string().optional(),
+    publishDate: z.union([z.string(), z.date()]),
+    updateDate: z.union([z.string(), z.date()]).optional(),
     products: z.array(z.object({
       rank: z.number(),
       name: z.string(),
@@ -69,8 +85,8 @@ const deals = defineCollection({
     category: z.enum(['smart-home', 'computing', 'audio']),
     merchant: z.string(),
     affiliateUrl: z.string().url(),
-    expiresAt: z.string().optional(),
-    publishDate: z.string(),
+    expiresAt: z.union([z.string(), z.date()]).optional(),
+    publishDate: z.union([z.string(), z.date()]),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),
