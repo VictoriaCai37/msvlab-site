@@ -3,21 +3,24 @@ import BaseLayout from './BaseLayout';
 import { formatDate } from '@/utils/helpers';
 import ProsCons from '@/components/ProsCons';
 import type { ImageMetadata } from 'astro';
+
 interface Props {
   title: string;
   excerpt: string;
   heroImage: ImageMetadata | string;
   heroAlt: string;
-  images: { src: ImageMetadata | string; alt: string; caption?: string }[];
+  // Optional fields - use fallback empty arrays
+  images?: { src: ImageMetadata | string; alt: string; caption?: string }[];
   category: string;
   tags: string[];
   publishDate: string;
   updateDate?: string;
   readTime: string;
   rating: number;
-  pros: string[];
-  cons: string[];
-  whoShouldBuy: string[];
+  // Support both old string[] and new object[] formats
+  pros?: string[] | { pro: string }[];
+  cons?: string[] | { con: string }[];
+  whoShouldBuy?: string[] | { reason: string }[];
   verdict: string;
   specs?: Record<string, string>;
   price?: number;
@@ -25,15 +28,29 @@ interface Props {
   description?: string;
   ogImage?: string;
 }
+
 const {
-  title, excerpt, heroImage, heroAlt, images, category, tags,
-  publishDate, updateDate, readTime, rating, pros, cons,
-  whoShouldBuy, verdict, specs, price, affiliateUrl,
+  title, excerpt, heroImage, heroAlt, images = [], category, tags = [],
+  publishDate, updateDate, readTime, rating, pros = [], cons = [],
+  whoShouldBuy = [], verdict, specs, price, affiliateUrl,
   description, ogImage
 } = Astro.props;
 
 const heroSrc = typeof heroImage === 'string' ? heroImage : heroImage.src;
-const imageSrcs = images.map(img => typeof img.src === 'string' ? img.src : img.src.src);
+const imageSrcs = (images || []).map(img => typeof img.src === 'string' ? img.src : img.src.src);
+
+// Helper to extract string from either format
+function extractString(item: string | { pro: string } | { con: string } | { reason: string }): string {
+  if (typeof item === 'string') return item;
+  if ('pro' in item) return item.pro;
+  if ('con' in item) return item.con;
+  if ('reason' in item) return item.reason;
+  return '';
+}
+
+const prosStrings = (pros || []).map(extractString);
+const consStrings = (cons || []).map(extractString);
+const whoShouldBuyStrings = (whoShouldBuy || []).map(extractString);
 
 function getBadgeClass(cat: string) {
   switch(cat) {
@@ -64,7 +81,7 @@ function getBadgeClass(cat: string) {
         <span class="badge {getBadgeClass(category)}">
           {category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}
         </span>
-        {tags.map(tag => (
+        {(tags || []).map(tag => (
           <span class="badge bg-surface-100 text-surface-700">{tag}</span>
         ))}
       </div>
@@ -87,7 +104,7 @@ function getBadgeClass(cat: string) {
         </span>
         <div class="flex items-center gap-1 text-amber-500">
           {[...Array(5)].map((_, i) => (
-            <svg class="w-4 h-4" fill={i < Math.floor(rating) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-1.175 0z" /></svg>
+            <svg class="w-4 h-4" fill={i < Math.floor(rating) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034a1 1 0 00-1.175 0z" /></svg>
           ))}
           <span class="text-surface-600 ml-1 font-medium">{rating.toFixed(1)}</span>
         </div>
@@ -118,11 +135,11 @@ function getBadgeClass(cat: string) {
     </div>
 
     <!-- Gallery Images -->
-    {images.length > 0 && (
+    {(images || []).length > 0 && (
       <section class="mt-12 md:mt-16" aria-label="Product gallery">
         <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-6">Gallery</h2>
         <div class="grid md:grid-cols-2 gap-4">
-          {images.map((img, i) => (
+          {(images || []).map((img, i) => (
             <figure class="rounded-xl overflow-hidden">
               <img src={imageSrcs[i]} alt={img.alt} class="w-full h-64 md:h-80 object-cover" loading="lazy" />
               {img.caption && <figcaption class="text-sm text-surface-500 mt-2 text-center">{img.caption}</figcaption>}
@@ -133,20 +150,22 @@ function getBadgeClass(cat: string) {
     )}
 
     <!-- Pros & Cons -->
-    <ProsCons pros={pros} cons={cons} />
+    <ProsCons pros={prosStrings} cons={consStrings} />
 
     <!-- Who Should Buy -->
-    <section class="mt-10 md:mt-14">
-      <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-4">Who Should Buy This</h2>
-      <ul class="space-y-3">
-        {whoShouldBuy.map((reason) => (
-          <li class="flex items-start gap-3 p-4 bg-surface-50 rounded-xl">
-            <svg class="w-5 h-5 mt-0.5 flex-shrink-0 text-brand-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-surface-700">{reason}</span>
-          </li>
-        ))}
-      </ul>
-    </section>
+    {whoShouldBuyStrings.length > 0 && (
+      <section class="mt-10 md:mt-14">
+        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-4">Who Should Buy This</h2>
+        <ul class="space-y-3">
+          {whoShouldBuyStrings.map((reason) => (
+            <li class="flex items-start gap-3 p-4 bg-surface-50 rounded-xl">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0 text-brand-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-surface-700">{reason}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <!-- Verdict -->
     <section class="mt-10 md:mt-14 p-6 bg-brand-50 border border-brand-200 rounded-xl">
