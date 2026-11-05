@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout';
-import { formatDate } from '@/utils/helpers';
+import { formatDate, getImageUrl } from '@/utils/helpers';
 import { getCategoryColor } from '@/data/categories';
 export async function getStaticPaths() {
   const deals = await getCollection('deals', (entry) => !entry.data.draft);
@@ -16,7 +16,7 @@ interface Props {
 const { deal } = Astro.props;
 const { title, excerpt, heroImage, heroAlt, productName, originalPrice, salePrice, discountPercent, category, merchant, affiliateUrl, expiresAt, publishDate, featured } = deal.data;
 ---
-<PageLayout title={title} description={excerpt} ogImage={typeof heroImage === 'string' ? heroImage : heroImage.src}>
+<PageLayout title={title} description={excerpt} ogImage={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)}>
   <article class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
     <header class="mb-8">
       <div class="flex flex-wrap items-center gap-2 mb-4">
@@ -34,7 +34,7 @@ const { title, excerpt, heroImage, heroAlt, productName, originalPrice, salePric
     </header>
 
     <figure class="mb-8">
-      <img src={typeof heroImage === 'string' ? heroImage : heroImage.src} alt={heroAlt} class="w-full rounded-xl shadow-lg" loading="eager" />
+      <img src={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)} alt={heroAlt} class="w-full rounded-xl shadow-lg" loading="eager" />
     </figure>
 
     <div class="grid md:grid-cols-2 gap-8 mb-10">
