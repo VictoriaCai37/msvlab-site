@@ -1,19 +1,20 @@
 ---
-title: "Deal: MacBook Air 13\" M3 (16GB/512GB) — $1,149 ($150 Off)"
-excerpt: "Apple's fanless 18-hour laptop with M3 chip hits a new low at Amazon. Best price for the 16GB config we've seen."
-heroImage: "/images/reviews/macbook-air-m3-13/hero.jpg"
-heroAlt: "MacBook Air M3 in Midnight with sale tag"
-productName: "MacBook Air 13\" M3 (16GB/512GB)"
+title: 'Deal: MacBook Air 13" M3 (16GB/512GB) — $1,149 ($150 Off)'
+excerpt: Apple's fanless 18-hour laptop with M3 chip hits a new low at Amazon.
+  Best price for the 16GB config we've seen.
+heroImage: /images/uploads/macbook-air-13-m3-2024-1.jpg
+heroAlt: MacBook Air M3 in Midnight with sale tag
+productName: MacBook Air 13" M3 (16GB/512GB)
 originalPrice: 1299
 salePrice: 1149
 discountPercent: 12
-category: "computing"
-merchant: "Amazon"
-affiliateUrl: "https://www.amazon.com/dp/B0CX1Y7Z7Z?tag=msvlab-20"
-expiresAt: "2025-01-10T23:59:59Z"
-publishDate: "2024-12-18"
+category: computing
+merchant: Amazon
+affiliateUrl: https://www.amazon.com/dp/B0CX1Y7Z7Z?tag=msvlab-20
+publishDate: 2024-12-18
 featured: true
 draft: false
+expiresAt: 2025-01-10T23:59:59Z
 ---
 
 ## The Sweet Spot Config, Discounted
