@@ -1,60 +1,80 @@
 ---
-title: "Apple AirPods Pro (2nd Gen, USB-C) Review: The Apple Ecosystem Earbuds Perfected"
-excerpt: "H2 chip, Adaptive Audio, Conversation Awareness, USB-C case, Precision Finding — the only earbuds that feel like an extension of your iPhone."
-heroImage: "/images/reviews/airpods-pro-2-usbc/hero.jpg"
-heroAlt: "AirPods Pro 2nd Gen USB-C in white case with earbuds on a minimal desk"
+title: "Apple AirPods Pro (2nd Gen, USB-C) Review: The Apple Ecosystem Earbuds
+  Perfected"
+excerpt: H2 chip, Adaptive Audio, Conversation Awareness, USB-C case, Precision
+  Finding — the only earbuds that feel like an extension of your iPhone.
+heroImage: https://www.apple.com/newsroom/images/2023/09/apple-introduces-new-airpods-pro-2nd-generation/article/Apple-AirPods-Pro-2nd-generation-USB-C-connection-230912_inline.jpg.large.jpg
+heroAlt: AirPods Pro 2nd Gen USB-C in white case with earbuds on a minimal desk
 images:
-  - src: "/images/reviews/airpods-pro-2-usbc/adaptive-audio.jpg"
-    alt: "iOS Control Center showing Adaptive Audio mode blending ANC and Transparency"
-    caption: "Adaptive Audio: dynamically blends ANC + Transparency based on environment"
-  - src: "/images/reviews/airpods-pro-2-usbc/conversation.jpg"
+  - src: /images/reviews/airpods-pro-2-usbc/adaptive-audio.jpg
+    alt: iOS Control Center showing Adaptive Audio mode blending ANC and
+      Transparency
+    caption: "Adaptive Audio: dynamically blends ANC + Transparency based on
+      environment"
+  - src: /images/reviews/airpods-pro-2-usbc/conversation.jpg
     alt: "Conversation Awareness demo: music lowers, voices amplify when you speak"
-    caption: "Conversation Awareness: detects your voice, lowers media, amplifies people"
-  - src: "/images/reviews/airpods-pro-2-usbc/usb-c-case.jpg"
-    alt: "AirPods Pro USB-C case showing USB-C port and speaker for Find My"
-    caption: "USB-C charging + built-in speaker for Precision Finding + lanyard loop"
-category: "audio"
-tags: ["earbuds", "Apple", "H2 chip", "Adaptive Audio", "USB-C", "ecosystem"]
-publishDate: "2024-12-15"
-readTime: "8 min read"
+    caption: "Conversation Awareness: detects your voice, lowers media, amplifies
+      people"
+  - src: /images/reviews/airpods-pro-2-usbc/usb-c-case.jpg
+    alt: AirPods Pro USB-C case showing USB-C port and speaker for Find My
+    caption: USB-C charging + built-in speaker for Precision Finding + lanyard loop
+category: audio
+tags:
+  - earbuds
+  - Apple
+  - H2 chip
+  - Adaptive Audio
+  - USB-C
+  - ecosystem
+publishDate: 2024-12-15
+readTime: 8 min read
 rating: 4.7
 pros:
-  - "H2 chip: 2x ANC vs. gen 1, Adaptive Audio, Conversation Awareness, Personalized Spatial Audio"
-  - "USB-C case: universal charging, built-in speaker for Find My Precision Finding, lanyard loop"
-  - "Seamless Apple ecosystem: auto-switch, Audio Sharing, Find My, Siri, iCloud sync"
-  - "IP54 dust/sweat/water resistance (earbuds + case)"
-  - "5.5 hrs (ANC on), 30 hrs total with case, 5-min charge = 1 hr"
+  - "H2 chip: 2x ANC vs. gen 1, Adaptive Audio, Conversation Awareness,
+    Personalized Spatial Audio"
+  - "USB-C case: universal charging, built-in speaker for Find My Precision
+    Finding, lanyard loop"
+  - "Seamless Apple ecosystem: auto-switch, Audio Sharing, Find My, Siri, iCloud
+    sync"
+  - IP54 dust/sweat/water resistance (earbuds + case)
+  - 5.5 hrs (ANC on), 30 hrs total with case, 5-min charge = 1 hr
   - "Touch controls: swipe volume, press stem — intuitive and reliable"
 cons:
-  - "No multipoint (Apple-only auto-switch, not true Bluetooth multipoint)"
-  - "No aptX / LDAC — AAC only (limits Android/Windows quality)"
-  - "Fit still ear-dependent; no wingtips in box (sold separately)"
-  - "Case speaker is quiet; Precision Finding needs UWB iPhone (11+)"
-  - "$249 MSRP — premium over competitors with similar ANC"
+  - No multipoint (Apple-only auto-switch, not true Bluetooth multipoint)
+  - No aptX / LDAC — AAC only (limits Android/Windows quality)
+  - Fit still ear-dependent; no wingtips in box (sold separately)
+  - Case speaker is quiet; Precision Finding needs UWB iPhone (11+)
+  - $249 MSRP — premium over competitors with similar ANC
 whoShouldBuy:
-  - "iPhone/Mac/iPad users wanting zero-friction audio"
-  - "Commuters needing Adaptive Audio + Conversation Awareness"
-  - "Anyone invested in Find My network for lost device recovery"
-verdict: "The **AirPods Pro 2 (USB-C)** are the **best earbuds for Apple users** — not because they have the best ANC or sound (Sony WF-1000XM5 beats them), but because the **ecosystem integration is magic**. H2 chip features (Adaptive Audio, Conversation Awareness, Personalized Spatial Audio) work seamlessly. USB-C case + IP54 + Precision Finding complete the package. For Android/Windows users, look elsewhere."
-specs:
-  Chip: "Apple H2 (custom silicon, 2x ANC performance vs H1)"
-  Driver: "Custom high-excursion, low-distortion dynamic driver"
-  ANC: "Adaptive ANC (real-time adjustment 48k times/sec)"
-  Modes: "Noise Cancellation, Transparency, Adaptive Audio, Off"
-  Smart Features: "Conversation Awareness, Personalized Spatial Audio (head-tracked), Auto-Switch, Audio Sharing"
-  Bluetooth: "5.3, Apple auto-switch (not standard multipoint)"
-  Codec: "AAC, SBC"
-  Battery: "5.5 hrs (ANC on), 6 hrs (Off), 30 hrs (case), 5-min = 1 hr"
-  Charging: "USB-C (case), MagSafe, Qi wireless, Apple Watch charger"
-  Resistance: "IP54 (earbuds + case)"
-  Find My: "Precision Finding (UWB, iPhone 11+), case speaker, separation alerts"
-  Weight: "5.3 g (each), 50.8 g (case)"
-  Colors: "White only"
-  Fit: "4 silicone tips (XS, S, M, L)"
+  - iPhone/Mac/iPad users wanting zero-friction audio
+  - Commuters needing Adaptive Audio + Conversation Awareness
+  - Anyone invested in Find My network for lost device recovery
+verdict: The **AirPods Pro 2 (USB-C)** are the **best earbuds for Apple users**
+  — not because they have the best ANC or sound (Sony WF-1000XM5 beats them),
+  but because the **ecosystem integration is magic**. H2 chip features (Adaptive
+  Audio, Conversation Awareness, Personalized Spatial Audio) work seamlessly.
+  USB-C case + IP54 + Precision Finding complete the package. For
+  Android/Windows users, look elsewhere.
 price: 249
-affiliateUrl: "https://www.apple.com/airpods-pro/"
+affiliateUrl: https://www.apple.com/airpods-pro/
 featured: true
 draft: false
+specs:
+  Driver: Custom high-excursion, low-distortion dynamic driver
+  Chip: Apple H2 (custom silicon, 2x ANC performance vs H1)
+  Battery: 5.5 hrs (ANC on), 6 hrs (Off), 30 hrs (case), 5-min = 1 hr
+  Bluetooth: 5.3, Apple auto-switch (not standard multipoint)
+  Colors: White only
+  Modes: Noise Cancellation, Transparency, Adaptive Audio, Off
+  Charging: USB-C (case), MagSafe, Qi wireless, Apple Watch charger
+  Fit: 4 silicone tips (XS, S, M, L)
+  Find My: Precision Finding (UWB, iPhone 11+), case speaker, separation alerts
+  Smart Features: Conversation Awareness, Personalized Spatial Audio
+    (head-tracked), Auto-Switch, Audio Sharing
+  ANC: Adaptive ANC (real-time adjustment 48k times/sec)
+  Codec: AAC, SBC
+  Weight: 5.3 g (each), 50.8 g (case)
+  Resistance: IP54 (earbuds + case)
 ---
 
 ## The Ecosystem Earbuds, Perfected
