@@ -1,6 +1,28 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout';
 import { siteConfig } from '@/data/site';
+import { getCollection } from 'astro:content';
+import { getImageUrl } from '@/utils/helpers';
+import ProductCard from '@/components/ProductCard.astro';
+import { formatDate } from '@/utils/helpers';
+
+// Fetch latest review (featured first, then by publishDate)
+const allReviews = await getCollection('reviews', ({ data }) => !data.draft);
+const sortedReviews = allReviews.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime();
+});
+const latestReview = sortedReviews[0];
+
+// Fetch latest best-products (featured first, then by publishDate)
+const allBestProducts = await getCollection('best-products', ({ data }) => !data.draft);
+const sortedBestProducts = allBestProducts.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime();
+});
+const latestBestProduct = sortedBestProducts[0];
 ---
 <BaseLayout title={siteConfig.name} description={siteConfig.description}>
   <section class="relative bg-gradient-to-b from-brand-50 to-white py-16 md:py-24 lg:py-32">
@@ -27,14 +49,34 @@ import { siteConfig } from '@/data/site';
           </a>
         </div>
         
-        <!-- Hero Image Placeholder -->
-        <div class="max-w-4xl mx-auto">
-          <img
-            src="/images/uploads/homepage-1.jpg"
-            alt="Expert product reviews and testing"
-            class="w-full max-h-[400px] h-auto object-cover object-center rounded-xl shadow-lg"
-            loading="lazy"
-          />
+        <!-- Featured Articles Grid -->
+        <div class="max-w-4xl mx-auto mt-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Latest Review Card -->
+            <ProductCard
+              title={latestReview?.data.title ?? 'Latest Review'}
+              excerpt={latestReview?.data.excerpt ?? ''}
+              image={getImageUrl(latestReview?.data.heroImage)}
+              imageAlt={latestReview?.data.heroAlt ?? ''}
+              href={`/reviews/${latestReview?.slug}`}
+              category={latestReview?.data.category ?? 'reviews'}
+              publishDate={String(latestReview?.data.publishDate ?? '')}
+              readTime={latestReview?.data.readTime ?? ''}
+              rating={latestReview?.data.rating}
+            />
+
+            <!-- Latest Best Products Card -->
+            <ProductCard
+              title={latestBestProduct?.data.title ?? 'Latest Best Products'}
+              excerpt={latestBestProduct?.data.excerpt ?? ''}
+              image={getImageUrl(latestBestProduct?.data.heroImage)}
+              imageAlt={latestBestProduct?.data.heroAlt ?? ''}
+              href={`/best-products/${latestBestProduct?.slug}`}
+              category={latestBestProduct?.data.category ?? 'best-products'}
+              publishDate={String(latestBestProduct?.data.publishDate ?? '')}
+              readTime={latestBestProduct?.data.readTime ?? ''}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -15,29 +15,14 @@ const { title, excerpt, image, imageAlt, href, category, publishDate, readTime, 
 import { formatDate, getImageUrl } from '@/utils/helpers';
 import { getCategoryColor } from '@/data/categories';
 
-// Helper: normalize image path to use /images/uploads/ for local files
-function normalizeImagePath(path: string): string {
-  if (!path) return '';
-  const trimmed = path.trim();
-  if (!trimmed) return '';
-  // Already a full URL
-  if (/^https?:\/\//i.test(trimmed)) return trimmed;
-  // Already points to uploads
-  if (trimmed.startsWith('/images/uploads/')) return trimmed;
-  // If it's an absolute /images/... path, extract filename and use uploads
-  if (trimmed.startsWith('/images/')) {
-    const filename = trimmed.split('/').pop();
-    return `/images/uploads/${filename}`;
-  }
-  // Relative path - prepend uploads
-  return `/images/uploads/${trimmed}`;
-}
+const categoryColor = getCategoryColor(category);
+const categoryLabel = category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ');
 ---
 <article class="card group animate-fade-in">
   <a href={href} class="block" aria-label={`Read review: ${title}`}>
     <div class="relative w-full h-56 md:h-64 overflow-hidden bg-surface-100">
       <img
-        src={normalizeImagePath(image)}
+        src={getImageUrl(image)}
         alt={imageAlt}
         loading="lazy"
         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -45,8 +30,8 @@ function normalizeImagePath(path: string): string {
       {featured && (
         <span class="absolute top-3 left-3 badge badge-amber">Featured</span>
       )}
-      <span class="absolute top-3 right-3 {getCategoryColor(category)} text-xs font-medium px-2.5 py-1 rounded-full">
-        {category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}
+      <span class={`absolute top-3 right-3 ${categoryColor} text-xs font-medium px-2.5 py-1 rounded-full`}>
+        {categoryLabel}
       </span>
       {rating && (
         <div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1 text-sm font-medium text-surface-700">
