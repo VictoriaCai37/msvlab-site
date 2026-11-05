@@ -1,50 +1,62 @@
 ---
 title: "Roborock S8 MaxV Ultra Review: The Ultimate Hands-Free Cleaning Station"
-excerpt: "Dual robotic arms, 80°C hot water mop washing, and Reactive AI 2.0 make this the most advanced robot vacuum we've tested."
-heroImage: "/images/reviews/roborock-s8-maxv-ultra/hero.jpg"
-heroAlt: "Roborock S8 MaxV Ultra robot vacuum and charging dock in a modern living room"
+excerpt: Dual robotic arms, 80°C hot water mop washing, and Reactive AI 2.0 make
+  this the most advanced robot vacuum we've tested.
+heroImage: /images/uploads/roborock-s8-maxv-ultra1.jpg
+heroAlt: Roborock S8 MaxV Ultra robot vacuum and charging dock in a modern living room
 images:
-  - src: "/images/reviews/roborock-s8-maxv-ultra/dock-detail.jpg"
-    alt: "Close-up of the Roborock S8 MaxV Ultra RockDock Ultra with dual mechanical arms"
-    caption: "The RockDock Ultra features dual mechanical arms for mop washing and drying"
-  - src: "/images/reviews/roborock-s8-maxv-ultra/robot-top.jpg"
-    alt: "Top view of the Roborock S8 MaxV Ultra showing LiDAR and RGB camera"
-    caption: "LiDAR navigation plus RGB camera for Reactive AI 2.0 obstacle avoidance"
-  - src: "/images/reviews/roborock-s8-maxv-ultra/mop-arms.jpg"
-    alt: "Roborock S8 MaxV Ultra extending its dual mop arms for edge cleaning"
-    caption: "Dual extending mop arms reach into corners and along baseboards"
-category: "smart-home"
-tags: ["robot vacuum", "mopping", "premium", "hands-free"]
-publishDate: "2024-12-15"
-readTime: "12 min read"
+  - src: /images/uploads/roborock-s8-maxv-ultra2.jpg
+    alt: Roborock S8 MaxV Ultra
+  - src: /images/uploads/roborock-s8-maxv-ultra3.jpg
+    alt: Roborock S8 MaxV Ultra
+  - src: /images/uploads/roborock-s8-maxv-ultra4.jpg
+    alt: Roborock S8 MaxV Ultra
+  - src: /images/uploads/roborock-s8-maxv-ultra5.jpg
+    alt: Roborock S8 MaxV Ultra
+category: smart-home
+tags:
+  - robot vacuum
+  - mopping
+  - premium
+  - hands-free
+publishDate: 2024-12-15
+readTime: 12 min read
 rating: 4.8
 pros:
-  - "True hands-free maintenance with 80°C hot water mop washing and hot air drying"
-  - "Dual mechanical arms extend to clean edges and corners other robots miss"
-  - "Reactive AI 2.0 avoids obstacles like cables, shoes, and pet waste with precision"
-  - "10,000 Pa suction handles deep carpet cleaning effortlessly"
-  - "Voice control via built-in assistant works without Wi-Fi"
+  - True hands-free maintenance with 80°C hot water mop washing and hot air
+    drying
+  - Dual mechanical arms extend to clean edges and corners other robots miss
+  - Reactive AI 2.0 avoids obstacles like cables, shoes, and pet waste with
+    precision
+  - 10,000 Pa suction handles deep carpet cleaning effortlessly
+  - Voice control via built-in assistant works without Wi-Fi
 cons:
-  - "At $1,799, it's a significant investment"
-  - "RockDock Ultra is large (18.5 x 15.7 x 22.8 inches) — needs dedicated floor space"
-  - "App can feel overwhelming with dozens of settings and maps"
+  - At $1,799, it's a significant investment
+  - RockDock Ultra is large (18.5 x 15.7 x 22.8 inches) — needs dedicated floor
+    space
+  - App can feel overwhelming with dozens of settings and maps
 whoShouldBuy:
-  - "Homeowners who want truly zero-maintenance floor cleaning"
-  - "Pet owners dealing with hair, litter, and occasional accidents"
-  - "Large homes with mixed flooring (hardwood, tile, carpet)"
-verdict: "The Roborock S8 MaxV Ultra sets a new benchmark for hands-free cleaning. Its dual mechanical arms, 80°C hot water washing, and best-in-class obstacle avoidance justify the premium price if you value time over money. For most households, the S8 Pro Ultra offers 90% of the performance at a lower cost — but if you want the absolute best and never want to touch a dirty mop again, this is it."
-specs:
-  Suction: "10,000 Pa"
-  Battery: "5,200 mAh (up to 180 min)"
-  Navigation: "LiDAR + RGB Camera (Reactive AI 2.0)"
-  Mop: "Dual rotating + extending arms, 80°C wash"
-  Dustbin: "2.5 L (dock) / 0.35 L (robot)"
-  Water Tank: "4 L clean / 3.5 L dirty (dock)"
-  Dimensions: "13.8 x 13.8 x 4.1 in (robot)"
+  - Homeowners who want truly zero-maintenance floor cleaning
+  - Pet owners dealing with hair, litter, and occasional accidents
+  - Large homes with mixed flooring (hardwood, tile, carpet)
+verdict: The Roborock S8 MaxV Ultra sets a new benchmark for hands-free
+  cleaning. Its dual mechanical arms, 80°C hot water washing, and best-in-class
+  obstacle avoidance justify the premium price if you value time over money. For
+  most households, the S8 Pro Ultra offers 90% of the performance at a lower
+  cost — but if you want the absolute best and never want to touch a dirty mop
+  again, this is it.
 price: 1799
-affiliateUrl: "https://www.roborock.com/products/s8-maxv-ultra"
+affiliateUrl: https://www.roborock.com/products/s8-maxv-ultra
 featured: true
 draft: false
+specs:
+  Suction: 10,000 Pa
+  Battery: 5,200 mAh (up to 180 min)
+  Navigation: LiDAR + RGB Camera (Reactive AI 2.0)
+  Mop: Dual rotating + extending arms, 80°C wash
+  Dustbin: 2.5 L (dock) / 0.35 L (robot)
+  Water Tank: 4 L clean / 3.5 L dirty (dock)
+  Dimensions: 13.8 x 13.8 x 4.1 in (robot)
 ---
 
 ## Introduction: The End of Mop Maintenance
