@@ -1,19 +1,20 @@
 ---
 title: "Deal: Roborock S8 MaxV Ultra Drops to $1,599 ($200 Off)"
-excerpt: "The flagship robot vacuum with dual mechanical arms and 80°C mop wash is $200 off at Amazon — lowest price since launch."
-heroImage: "/images/reviews/roborock-s8-maxv-ultra/hero.jpg"
-heroAlt: "Roborock S8 MaxV Ultra on sale badge"
-productName: "Roborock S8 MaxV Ultra"
+excerpt: The flagship robot vacuum with dual mechanical arms and 80°C mop wash
+  is $200 off at Amazon — lowest price since launch.
+heroImage: /images/uploads/roborock-s8-maxv-ultra1.jpg
+heroAlt: Roborock S8 MaxV Ultra on sale badge
+productName: Roborock S8 MaxV Ultra
 originalPrice: 1799
 salePrice: 1599
 discountPercent: 11
-category: "smart-home"
-merchant: "Amazon"
-affiliateUrl: "https://www.amazon.com/dp/B0D1X7Y7Z7?tag=msvlab-20"
-expiresAt: "2025-01-15T23:59:59Z"
-publishDate: "2024-12-20"
+category: smart-home
+merchant: Amazon
+affiliateUrl: https://www.amazon.com/dp/B0D1X7Y7Z7?tag=msvlab-20
+publishDate: 2024-12-20
 featured: true
 draft: false
+expiresAt: 2025-01-15T23:59:59Z
 ---
 
 ## Why This Deal Matters
