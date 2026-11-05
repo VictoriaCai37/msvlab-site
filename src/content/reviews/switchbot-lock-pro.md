@@ -1,51 +1,60 @@
 ---
 title: "SwitchBot Lock Pro Review: The Smart Lock That Fits Your Existing Deadbolt"
-excerpt: "No lock replacement, no drilling, fingerprint + keypad + app control in 10 minutes. The best retrofit smart lock for renters and homeowners alike."
-heroImage: "/images/reviews/switchbot-lock-pro/hero.jpg"
-heroAlt: "SwitchBot Lock Pro installed on a standard deadbolt with Keypad Touch beside the door"
+excerpt: No lock replacement, no drilling, fingerprint + keypad + app control in
+  10 minutes. The best retrofit smart lock for renters and homeowners alike.
+heroImage: /images/uploads/switchbot-lock-pro1.jpg
+heroAlt: SwitchBot Lock Pro installed on a standard deadbolt with Keypad Touch
+  beside the door
 images:
-  - src: "/images/reviews/switchbot-lock-pro/keypad-touch.jpg"
-    alt: "SwitchBot Keypad Touch with fingerprint sensor and backlit keys"
-    caption: "Keypad Touch adds fingerprint, passcode, and NFC card entry"
-  - src: "/images/reviews/switchbot-lock-pro/inside-view.jpg"
-    alt: "Interior view showing Lock Pro mounted over existing thumbturn"
-    caption: "Clamps over your existing deadbolt — no removal, no tools"
-  - src: "/images/reviews/switchbot-lock-pro/app-screen.jpg"
-    alt: "SwitchBot app showing lock status, access logs, and auto-lock settings"
-    caption: "App provides access logs, auto-lock timers, and temporary codes"
-category: "smart-home"
-tags: ["smart lock", "retrofit", "fingerprint", "renter-friendly"]
-publishDate: "2024-11-20"
-readTime: "8 min read"
+  - src: /images/uploads/switchbot-lock-pro2.jpg
+    alt: SwitchBot Lock Pro
+  - src: /images/uploads/switchbot-lock-pro3.jpg
+    alt: SwitchBot Lock Pro
+  - src: /images/uploads/switchbot-lock-pro4.jpg
+    alt: SwitchBot Lock Pro
+  - src: /images/uploads/switchbot-lock-pro5.jpg
+    alt: SwitchBot Lock Pro
+category: smart-home
+tags:
+  - smart lock
+  - retrofit
+  - fingerprint
+  - renter-friendly
+publishDate: 2024-11-20
+readTime: 8 min read
 rating: 4.7
 pros:
-  - "True retrofit — fits 99% of standard deadbolts without removing hardware"
-  - "Install in 10 minutes with just a screwdriver (included)"
-  - "Fingerprint (0.5s), passcode, NFC card, app, Apple Watch, voice"
-  - "Matter/Thread support for Apple Home, Google Home, Alexa, SmartThings"
-  - "Keypad Touch is gorgeous — backlit, weatherproof, responsive"
+  - True retrofit — fits 99% of standard deadbolts without removing hardware
+  - Install in 10 minutes with just a screwdriver (included)
+  - Fingerprint (0.5s), passcode, NFC card, app, Apple Watch, voice
+  - Matter/Thread support for Apple Home, Google Home, Alexa, SmartThings
+  - Keypad Touch is gorgeous — backlit, weatherproof, responsive
 cons:
-  - "Requires SwitchBot Hub for Matter/remote access (sold separately or bundle)"
-  - "Battery life ~6 months (4× CR123A) — shorter than competitors"
-  - "No built-in Wi-Fi — relies on Bluetooth + Hub"
-  - "Auto-unlock (geofencing) can be hit-or-miss on Android"
+  - Requires SwitchBot Hub for Matter/remote access (sold separately or bundle)
+  - Battery life ~6 months (4× CR123A) — shorter than competitors
+  - No built-in Wi-Fi — relies on Bluetooth + Hub
+  - Auto-unlock (geofencing) can be hit-or-miss on Android
 whoShouldBuy:
-  - "Renters who can't replace landlord's lock"
-  - "Homeowners wanting smart features without a locksmith"
-  - "Households needing fingerprint + keypad + temporary codes"
-verdict: "The **SwitchBot Lock Pro + Keypad Touch** is the **smartest retrofit lock** on the market. Zero damage install, Matter support, and a gorgeous keypad with fingerprint make it the default choice for renters and non-DIYers. Battery life and Hub requirement are minor annoyances. At ~$230 for the bundle, it's exceptional value."
-specs:
-  Compatibility: "Standard US deadbolts (1–1.5 in diameter thumbturn)"
-  Connectivity: "Bluetooth 5.0 + Matter over Thread (via Hub)"
-  Unlock Methods: "Fingerprint, Passcode, NFC, App, Apple Watch, Voice, Key"
-  Fingerprint: "0.5s recognition, 100 prints storage"
-  Battery: "4× CR123A (~6 months)"
-  Keypad Touch: "IP65, backlit, capacitive touch, fingerprint sensor"
-  Dimensions: "3.3 x 2.8 x 1.8 in (lock body)"
+  - Renters who can't replace landlord's lock
+  - Homeowners wanting smart features without a locksmith
+  - Households needing fingerprint + keypad + temporary codes
+verdict: The **SwitchBot Lock Pro + Keypad Touch** is the **smartest retrofit
+  lock** on the market. Zero damage install, Matter support, and a gorgeous
+  keypad with fingerprint make it the default choice for renters and non-DIYers.
+  Battery life and Hub requirement are minor annoyances. At ~$230 for the
+  bundle, it's exceptional value.
 price: 230
-affiliateUrl: "https://www.switchbot.com/products/switchbot-lock-pro"
+affiliateUrl: https://www.switchbot.com/products/switchbot-lock-pro
 featured: true
 draft: false
+specs:
+  Compatibility: Standard US deadbolts (1–1.5 in diameter thumbturn)
+  Connectivity: Bluetooth 5.0 + Matter over Thread (via Hub)
+  Unlock Methods: Fingerprint, Passcode, NFC, App, Apple Watch, Voice, Key
+  Fingerprint: 0.5s recognition, 100 prints storage
+  Battery: 4× CR123A (~6 months)
+  Keypad Touch: IP65, backlit, capacitive touch, fingerprint sensor
+  Dimensions: 3.3 x 2.8 x 1.8 in (lock body)
 ---
 
 ## The Renter's Dream Lock
