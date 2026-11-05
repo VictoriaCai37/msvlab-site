@@ -2,10 +2,18 @@
 title: "Dell XPS 14 (9440) Review: OLED Beauty Meets Creator Power in 3.2 lbs"
 excerpt: 3.2K OLED 120 Hz, optional RTX 4050, and Intel Core Ultra — the most
   compelling 14-inch creator laptop since the M3 MacBook Air.
-heroImage: /images/uploads/dell-xps-14-9440-3.jpg
+heroImage: /images/uploads/Dell XPS 14 (9440)1.jpg
 heroAlt: Dell XPS 14 9440 in Platinum with 3.2K OLED display showing color
   grading timeline
-images: []
+images:
+  - src: /images/uploads/Dell XPS 14 (9440)5.jpg
+    alt: Dell XPS 14 (9440)
+  - src: /images/uploads/Dell XPS 14 (9440)3.jpg
+    alt: Dell XPS 14 (9440)
+  - src: /images/uploads/Dell XPS 14 (9440)4.jpg
+    alt: Dell XPS 14 (9440)
+  - src: /images/uploads/Dell XPS 14 (9440)6.jpg
+    alt: Dell XPS 14 (9440)
 category: computing
 tags:
   - laptop
