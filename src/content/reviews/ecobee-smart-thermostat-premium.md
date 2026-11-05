@@ -1,53 +1,65 @@
 ---
-title: "Ecobee Smart Thermostat Premium Review: The Only Thermostat with Air Quality Radar"
-excerpt: "Built-in air quality sensor, radar occupancy, Siri/Alexa/Google voice control, and sleek design — the smartest thermostat for healthy homes."
-heroImage: "/images/reviews/ecobee-smart-thermostat-premium/hero.jpg"
-heroAlt: "Ecobee Smart Thermostat Premium on a white wall showing temperature and air quality"
+title: "Ecobee Smart Thermostat Premium Review: The Only Thermostat with Air
+  Quality Radar"
+excerpt: Built-in air quality sensor, radar occupancy, Siri/Alexa/Google voice
+  control, and sleek design — the smartest thermostat for healthy homes.
+heroImage: /images/uploads/Ecobee Smart Thermostat Premium1.jpg
+heroAlt: Ecobee Smart Thermostat Premium on a white wall showing temperature and
+  air quality
 images:
-  - src: "/images/reviews/ecobee-smart-thermostat-premium/air-quality.jpg"
-    alt: "Ecobee display showing AQI, VOC, CO2, and humidity readings"
-    caption: "Real-time air quality: AQI, VOC, CO2, relative humidity"
-  - src: "/images/reviews/ecobee-smart-thermostat-premium/radar.jpg"
-    alt: "Close-up of the radar occupancy sensor behind the glass"
-    caption: "Radar detects presence up to 15 ft — no motion sensor blind spots"
-  - src: "/images/reviews/ecobee-smart-thermostat-premium/install.jpg"
-    alt: "Ecobee Premium installed with C-wire adapter in a standard HVAC setup"
-    caption: "Includes Power Extender Kit for homes without C-wire"
-category: "smart-home"
-tags: ["smart thermostat", "air quality", "radar", "Matter", "health"]
-publishDate: "2024-11-10"
-readTime: "8 min read"
+  - src: /images/uploads/Ecobee Smart Thermostat Premium2.jpg
+    alt: Ecobee Smart Thermostat Premium
+  - src: /images/uploads/Ecobee Smart Thermostat Premium3.jpg
+    alt: Ecobee Smart Thermostat Premium
+  - src: /images/uploads/Ecobee Smart Thermostat Premium5.jpg
+    alt: Ecobee Smart Thermostat Premium
+  - src: /images/uploads/Ecobee Smart Thermostat Premium4.jpg
+    alt: Ecobee Smart Thermostat Premium
+category: smart-home
+tags:
+  - smart thermostat
+  - air quality
+  - radar
+  - Matter
+  - health
+publishDate: 2024-11-10
+readTime: 8 min read
 rating: 4.5
 pros:
-  - "Only thermostat with built-in air quality monitoring (AQI, VOC, CO2, humidity)"
-  - "Radar occupancy detection — knows you're there even if you're still"
-  - "Native Siri, Alexa, Google Assistant — no hub needed"
-  - "Matter over Wi-Fi + Thread border router for future-proofing"
-  - "Beautiful 3.5\" touchscreen with customizable widgets"
-  - "Power Extender Kit included for no-C-wire homes"
+  - Only thermostat with built-in air quality monitoring (AQI, VOC, CO2,
+    humidity)
+  - Radar occupancy detection — knows you're there even if you're still
+  - Native Siri, Alexa, Google Assistant — no hub needed
+  - Matter over Wi-Fi + Thread border router for future-proofing
+  - Beautiful 3.5" touchscreen with customizable widgets
+  - Power Extender Kit included for no-C-wire homes
 cons:
-  - "$279 is premium pricing (vs. $169 Google Nest, $139 Amazon Smart Thermostat)"
-  - "No remote sensors in box (sold separately, $80/2-pack)"
-  - "Radar can't distinguish people from pets"
-  - "App still feels dated vs. Nest's polished UI"
+  - $279 is premium pricing (vs. $169 Google Nest, $139 Amazon Smart Thermostat)
+  - No remote sensors in box (sold separately, $80/2-pack)
+  - Radar can't distinguish people from pets
+  - App still feels dated vs. Nest's polished UI
 whoShouldBuy:
-  - "Health-conscious households (asthma, allergies, wildfire areas)"
-  - "Homes with rooms that stay occupied but motionless (reading, TV, WFH)"
-  - "Apple Home users wanting native Siri thermostat control"
-verdict: "The **Ecobee Smart Thermostat Premium** justifies its $279 price with **unique air quality monitoring** and **radar occupancy** — features no competitor offers. If you care about indoor air health or have 'still occupancy' rooms, it's the only choice. For basic scheduling and energy savings, the Nest Thermostat ($169) does 80% for 60% of the price."
-specs:
-  Display: "3.5\" 320x480 touchscreen, ambient light sensor"
-  Sensors: "Temperature, humidity, occupancy (radar), AQI, VOC, CO2"
-  Connectivity: "Wi-Fi 2.4/5 GHz, Bluetooth 5.0, Thread, Matter"
-  Voice: "Built-in Siri, Alexa, Google Assistant (always listening optional)"
-  Compatibility: "Most 24V HVAC (gas, oil, electric, heat pump, dual fuel)"
-  Wiring: "C-wire required (PEK included for no-C-wire)"
-  Remote Sensors: "Supported (sold separately, up to 32)"
-  Dimensions: "4.3 x 4.3 x 1.1 in"
+  - Health-conscious households (asthma, allergies, wildfire areas)
+  - Homes with rooms that stay occupied but motionless (reading, TV, WFH)
+  - Apple Home users wanting native Siri thermostat control
+verdict: The **Ecobee Smart Thermostat Premium** justifies its $279 price with
+  **unique air quality monitoring** and **radar occupancy** — features no
+  competitor offers. If you care about indoor air health or have 'still
+  occupancy' rooms, it's the only choice. For basic scheduling and energy
+  savings, the Nest Thermostat ($169) does 80% for 60% of the price.
 price: 279
-affiliateUrl: "https://www.ecobee.com/en-us/smart-thermostat-premium/"
+affiliateUrl: https://www.ecobee.com/en-us/smart-thermostat-premium/
 featured: false
 draft: false
+specs:
+  Display: 3.5" 320x480 touchscreen, ambient light sensor
+  Sensors: Temperature, humidity, occupancy (radar), AQI, VOC, CO2
+  Connectivity: Wi-Fi 2.4/5 GHz, Bluetooth 5.0, Thread, Matter
+  Voice: Built-in Siri, Alexa, Google Assistant (always listening optional)
+  Compatibility: Most 24V HVAC (gas, oil, electric, heat pump, dual fuel)
+  Wiring: C-wire required (PEK included for no-C-wire)
+  Remote Sensors: Supported (sold separately, up to 32)
+  Dimensions: 4.3 x 4.3 x 1.1 in
 ---
 
 ## The Thermostat That Breathes With You
