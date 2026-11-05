@@ -10,8 +10,6 @@ images:
     alt: Apple AirPods Pro
   - src: /images/uploads/apple-airpods-pro-2nd-gen-usb-c-1.jpg
     alt: Apple AirPods Pro
-  - src: /images/uploads/apple-airpods-pro-2nd-gen-usb-c-4.jpg
-    alt: Apple AirPods Pro
 category: audio
 tags:
   - earbuds
