@@ -1,51 +1,60 @@
 ---
 title: "Dreame L20 Ultra Review: 70°C Wash and MopExtend at a Killer Price"
-excerpt: "Dreame's flagship matches premium features — 70°C mop wash, extending mop, 7,000 Pa suction — for $500 less than the competition."
-heroImage: "/images/reviews/dreame-l20-ultra/hero.jpg"
-heroAlt: "Dreame L20 Ultra robot vacuum in white with silver accents on a tile floor"
+excerpt: Dreame's flagship matches premium features — 70°C mop wash, extending
+  mop, 7,000 Pa suction — for $500 less than the competition.
+heroImage: /images/uploads/Dreame L20 Ultra1.jpg
+heroAlt: Dreame L20 Ultra robot vacuum in white with silver accents on a tile floor
 images:
-  - src: "/images/reviews/dreame-l20-ultra/mopextend.jpg"
-    alt: "Dreame L20 Ultra extending its right mop pad for edge cleaning"
-    caption: "MopExtend technology deploys the right mop for baseboard cleaning"
-  - src: "/images/reviews/dreame-l20-ultra/base-station.jpg"
-    alt: "Dreame L20 Ultra base station with hot water washing"
-    caption: "Base station washes at 70°C and dries with hot air"
-  - src: "/images/reviews/dreame-l20-ultra/navigation.jpg"
-    alt: "Top view showing LiDAR and 3D structured light sensors"
-    caption: "LiDAR + 3D structured light for navigation and obstacle avoidance"
-category: "smart-home"
-tags: ["robot vacuum", "mopping", "value", "mopextend"]
-publishDate: "2024-12-05"
-readTime: "10 min read"
+  - src: /images/uploads/Dreame L20 Ultra2.jpg
+    alt: Dreame L20 Ultra
+  - src: /images/uploads/Dreame L20 Ultra3.jpg
+    alt: Dreame L20 Ultra
+  - src: /images/uploads/Dreame L20 Ultra4.jpg
+    alt: Dreame L20 Ultra
+  - src: /images/uploads/Dreame L20 Ultra5.jpg
+    alt: Dreame L20 Ultra
+category: smart-home
+tags:
+  - robot vacuum
+  - mopping
+  - value
+  - mopextend
+publishDate: 2024-12-05
+readTime: 10 min read
 rating: 4.5
 pros:
-  - "70°C hot water mop wash + hot air drying at $1,299"
-  - "MopExtend deploys right mop for edges and corners"
-  - "7,000 Pa suction with dual rubber brushes handles pet hair"
-  - "3D structured light + LiDAR navigation is reliable"
-  - "Auto mop removal for carpet detection (10.5mm lift)"
+  - 70°C hot water mop wash + hot air drying at $1,299
+  - MopExtend deploys right mop for edges and corners
+  - 7,000 Pa suction with dual rubber brushes handles pet hair
+  - 3D structured light + LiDAR navigation is reliable
+  - Auto mop removal for carpet detection (10.5mm lift)
 cons:
-  - "Only one extending mop (right side) vs. Roborock's dual arms"
-  - "Base station is bulky (18.1 x 16.5 x 22.4 in)"
-  - "App translation quirks; some menus feel unfinished"
-  - "No built-in voice assistant"
+  - Only one extending mop (right side) vs. Roborock's dual arms
+  - Base station is bulky (18.1 x 16.5 x 22.4 in)
+  - App translation quirks; some menus feel unfinished
+  - No built-in voice assistant
 whoShouldBuy:
-  - "Budget-conscious buyers wanting premium mop-washing features"
-  - "Homes with mixed hard floors and low-pile carpet"
-  - "Users who don't need built-in voice control"
-verdict: "The Dreame L20 Ultra delivers 90% of the S8 MaxV Ultra experience for $500 less. 70°C wash, MopExtend, 7,000 Pa suction, and reliable navigation make it the **best value flagship** on the market. The single extending mop and bulkier dock are acceptable compromises at this price. If you can stretch to $1,799, Roborock's dual arms and 80°C wash are better — but for most, the L20 Ultra is the sweet spot."
-specs:
-  Suction: "7,000 Pa"
-  Battery: "6,400 mAh (up to 210 min)"
-  Navigation: "LiDAR + 3D structured light"
-  Mop: "Dual rotating + right-side MopExtend, 10.5mm lift, 70°C wash"
-  Dustbin: "3.2 L (dock) / 0.3 L (robot)"
-  Water Tank: "4.5 L clean / 4 L dirty (dock)"
-  Dimensions: "13.9 x 13.9 x 3.9 in (robot)"
+  - Budget-conscious buyers wanting premium mop-washing features
+  - Homes with mixed hard floors and low-pile carpet
+  - Users who don't need built-in voice control
+verdict: The Dreame L20 Ultra delivers 90% of the S8 MaxV Ultra experience for
+  $500 less. 70°C wash, MopExtend, 7,000 Pa suction, and reliable navigation
+  make it the **best value flagship** on the market. The single extending mop
+  and bulkier dock are acceptable compromises at this price. If you can stretch
+  to $1,799, Roborock's dual arms and 80°C wash are better — but for most, the
+  L20 Ultra is the sweet spot.
 price: 1299
-affiliateUrl: "https://www.dreame.tech/products/l20-ultra"
+affiliateUrl: https://www.dreame.tech/products/l20-ultra
 featured: true
 draft: false
+specs:
+  Suction: 7,000 Pa
+  Battery: 6,400 mAh (up to 210 min)
+  Navigation: LiDAR + 3D structured light
+  Mop: Dual rotating + right-side MopExtend, 10.5mm lift, 70°C wash
+  Dustbin: 3.2 L (dock) / 0.3 L (robot)
+  Water Tank: 4.5 L clean / 4 L dirty (dock)
+  Dimensions: 13.9 x 13.9 x 3.9 in (robot)
 ---
 
 ## The Value Flagship Has Arrived
