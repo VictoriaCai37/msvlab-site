@@ -44,12 +44,18 @@ export function formatPrice(price: number, currency = 'USD'): string {
 }
 
 /**
- * Normalize image paths to ensure they have proper leading slashes.
- * - Returns empty string if path is empty/falsy
- * - Returns as-is if it's a full HTTP/HTTPS URL
- * - If path starts with '/', returns as-is
- * - If path contains '/images/uploads/' but lacks leading '/', adds it
- * - Otherwise prepends '/images/uploads/' to the path
+ * Robust image URL normalization - single source of truth for all image paths.
+ * Handles all cases:
+ * - Empty/undefined/null → returns empty string
+ * - Full HTTP/HTTPS URLs → returns as-is
+ * - Already normalized /images/uploads/xxx → returns as-is
+ * - Old absolute paths like /images/reviews/xxx/hero.jpg → returns as-is (preserves uniqueness, ensures old images don't break)
+ * - Relative paths like "12.jpeg" or "folder/12.jpg" (no leading slash) → prepends /images/uploads/
+ * - Paths with /images/uploads/ but missing leading slash → adds leading slash
+ * 
+ * For old paths starting with /images/ (but not /images/uploads/):
+ * - We return them as-is to preserve path uniqueness (multiple articles can have hero.jpg)
+ * - This ensures old images don't break
  */
 export function getImageUrl(path: string | undefined | null): string {
   if (!path) return '';
@@ -57,17 +63,23 @@ export function getImageUrl(path: string | undefined | null): string {
   const trimmed = path.trim();
   if (!trimmed) return '';
 
-  // Already a full URL
+  // 1. Full URL - return as-is
   if (/^https?:\/\//i.test(trimmed)) return trimmed;
 
-  // Already has leading slash
-  if (trimmed.startsWith('/')) return trimmed;
+  // 2. Already normalized to /images/uploads/ - return as-is
+  if (trimmed.startsWith('/images/uploads/')) return trimmed;
 
-  // Contains /images/uploads/ but missing leading slash
+  // 3. Old absolute paths under /images/ (including /images/reviews/, /images/best-products/, etc.)
+  // Return as-is to preserve path uniqueness and ensure old images don't break
+  // Multiple articles can have "hero.jpg" - keeping the full path avoids conflicts
+  if (trimmed.startsWith('/images/')) return trimmed;
+
+  // 4. Path contains /images/uploads/ but missing leading slash
   if (trimmed.includes('/images/uploads/')) {
     return '/' + trimmed;
   }
 
-  // Default: prepend /images/uploads/
+  // 5. Relative path (no leading slash) - prepend /images/uploads/
+  // Handles: "12.jpeg", "folder/12.jpg", "uploads/12.jpg"
   return `/images/uploads/${trimmed}`;
 }

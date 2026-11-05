@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout';
 import ProductCard from '@/components/ProductCard';
 import { categories, getCategoryColor } from '@/data/categories';
-import { formatDate } from '@/utils/helpers';
+import { formatDate, getImageUrl } from '@/utils/helpers';
 export async function getStaticPaths() {
   return categories.map(cat => ({ params: { cat: cat.slug } }));
 }
@@ -14,7 +14,7 @@ interface Props {
 <PageLayout
   title="Category Reviews"
   description="Browse reviews by category"
-  ogImage="/images/og-category.jpg"
+  ogImage={getImageUrl('/images/og-category.jpg')}
 >
   {(async () => {
     const { cat } = Astro.params;
@@ -39,7 +39,7 @@ interface Props {
             <ProductCard
               title={review.data.title}
               excerpt={review.data.excerpt}
-              image={review.data.heroImage}
+              image={getImageUrl(review.data.heroImage)}
               imageAlt={review.data.heroAlt}
               href={`/reviews/${review.slug}`}
               category={review.data.category}

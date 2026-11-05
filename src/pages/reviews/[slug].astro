@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import ArticleLayout from '@/layouts/ArticleLayout';
 import { getCategoryColor } from '@/data/categories';
+import { getImageUrl } from '@/utils/helpers';
 export async function getStaticPaths() {
   const reviews = await getCollection('reviews', (entry) => !entry.data.draft);
   return reviews.map(review => ({
@@ -35,7 +36,7 @@ const { title, excerpt, heroImage, heroAlt, images, category, tags, publishDate,
   price={price}
   affiliateUrl={affiliateUrl}
   description={excerpt}
-  ogImage={typeof heroImage === 'string' ? heroImage : heroImage.src}
+  ogImage={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)}
 >
   <slot name="content">
     <!-- Review content is rendered from the MDX file -->
