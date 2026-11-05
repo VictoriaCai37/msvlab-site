@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout';
-import Search from '@/components/Search';
 ---
-<PageLayout title="All Reviews" description="Browse all our in-depth product reviews across Smart Home, Computing, and Audio categories.">
-  <Search />
-
+<PageLayout 
+  title="All Reviews" 
+  description="Browse all our in-depth product reviews across Smart Home, Computing, and Audio categories. Expert-tested, unbiased opinions."
+>
   {(async () => {
     const allReviews = await getCollection('reviews', (entry) => !entry.data.draft);
     const sortedReviews = allReviews.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
@@ -13,7 +13,7 @@ import Search from '@/components/Search';
     return (
       <>
         <div class="mb-8">
-          <h2 class="font-editorial text-2xl md:text-3xl font-medium text-surface-900 mb-4">All Reviews ({sortedReviews.length})</h2>
+          <h2 class="font-sans text-2xl font-semibold text-surface-900 mb-4">All Reviews ({sortedReviews.length})</h2>
         </div>
 
         {sortedReviews.length === 0 && (
@@ -26,7 +26,7 @@ import Search from '@/components/Search';
           <div class="space-y-4">
             {sortedReviews.slice(0, 3).map(review => (
               <div class="p-4 border border-surface-200 rounded-lg">
-                <h3 class="font-medium text-surface-900">{review.data.title}</h3>
+                <h3 class="font-sans text-lg font-semibold text-surface-900">{review.data.title}</h3>
                 <p class="text-sm text-surface-600 mt-1">{review.data.excerpt}</p>
                 <a href={`/reviews/${review.slug}`} class="text-sm text-brand-600 hover:text-brand-700">Read more</a>
               </div>

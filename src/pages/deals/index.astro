@@ -3,11 +3,11 @@ import { getCollection } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout';
 import ProductCard from '@/components/ProductCard';
 import { formatDate, getImageUrl } from '@/utils/helpers';
-import Search from '@/components/Search';
 ---
-<PageLayout title="Deals & Discounts" description="Find the best discounts on tech, smart home, and audio gear. Updated daily with verified deals.">
-  <Search />
-
+<PageLayout 
+  title="Deals & Discounts" 
+  description="Find the best discounts on tech, smart home, and audio gear. Updated daily with verified deals."
+>
   {(async () => {
     const allDeals = await getCollection('deals', (entry) => !entry.data.draft);
     const sortedDeals = allDeals.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
@@ -18,7 +18,7 @@ import Search from '@/components/Search';
           {sortedDeals.map(deal => (
             <article class="card overflow-hidden">
               <a href={`/deals/${deal.slug}`} class="block" aria-label={`View deal: ${deal.data.productName}`}>
-                <div class="relative aspect-[4/3] overflow-hidden bg-surface-100">
+                <div class="relative w-full h-56 md:h-64 overflow-hidden bg-surface-100">
                   <img src={getImageUrl(deal.data.heroImage)} alt={deal.data.heroAlt} loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
                   <div class="absolute top-3 left-3 flex flex-col gap-1">
                     <span class="badge badge-amber">-{deal.data.discountPercent}%</span>
@@ -29,7 +29,7 @@ import Search from '@/components/Search';
                   </span>
                 </div>
                 <div class="p-4">
-                  <h3 class="font-editorial text-lg font-medium text-surface-900 line-clamp-2 mb-1">{deal.data.productName}</h3>
+                  <h3 class="font-sans text-lg font-semibold text-surface-900 line-clamp-2 mb-1">{deal.data.productName}</h3>
                   <p class="text-sm text-surface-600 line-clamp-2 mb-3">{deal.data.excerpt}</p>
                   <div class="flex items-center gap-2 text-sm mb-3">
                     <span class="text-surface-900 font-bold">${deal.data.salePrice.toLocaleString()}</span>

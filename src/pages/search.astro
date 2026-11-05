@@ -1,0 +1,119 @@
+---
+import BaseLayout from '@/layouts/BaseLayout';
+import { siteConfig } from '@/data/site';
+---
+<BaseLayout title="Search" description="Search all reviews and articles">
+  <div class="max-w-3xl mx-auto py-12 md:py-16">
+    <header class="text-center mb-12">
+      <h1 class="font-sans text-3xl md:text-4xl font-medium text-surface-900 mb-4">Search</h1>
+      <p class="text-surface-600 max-w-xl mx-auto">Find reviews, best product guides, and deals across the site.</p>
+    </header>
+
+    <!-- Search UI will be injected here by Pagefind -->
+    <div id="search" class="w-full"></div>
+  </div>
+
+  <!-- Pagefind UI Styles (generated after build) -->
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  
+  <script is:inline>
+    // Initialize Pagefind UI after DOM is ready
+    async function initSearch() {
+      try {
+        // Pagefind files are generated in /pagefind/ after running `npm run pagefind`
+        const { init } = await import('/pagefind/pagefind-ui.js');
+        init({
+          selector: '#search',
+          showImages: false,
+          showSubResults: true,
+          excerptLength: 30,
+          resetStyles: true,
+          translations: {
+            placeholder: 'Search reviews, products, deals...',
+            zeroResults: 'No results found for "{term}"',
+            manyResults: 'Found {count} results for "{term}"',
+            oneResult: 'Found 1 result for "{term}"',
+            loadMore: 'Load more',
+            searchLabel: 'Search',
+          },
+        });
+      } catch (err) {
+        console.warn('Pagefind not available (run npm run pagefind after build):', err);
+        // Fallback: show a message
+        const searchContainer = document.getElementById('search');
+        if (searchContainer) {
+          searchContainer.innerHTML = `
+            <div class="text-center py-12 text-surface-500">
+              <p class="mb-4">Search index not built yet.</p>
+              <p class="text-sm">Run <code class="bg-surface-100 px-2 py-1 rounded">npm run pagefind</code> after building to enable search.</p>
+            </div>
+          `;
+        }
+      }
+    }
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSearch);
+    } else {
+      initSearch();
+    }
+  </script>
+
+  <style is:global>
+    /* Customize Pagefind UI to match our design */
+    #search {
+      --pagefind-ui-scale: 1;
+      --pagefind-ui-primary: #002b5c;
+      --pagefind-ui-text: #1f2937;
+      --pagefind-ui-background: #ffffff;
+      --pagefind-ui-border: #e5e7eb;
+      --pagefind-ui-border-focus: #002b5c;
+      --pagefind-ui-image-border: #e5e7eb;
+      --pagefind-ui-tag: #002b5c;
+      --pagefind-ui-tag-background: #eff6ff;
+    }
+    
+    /* Ensure search input takes full width */
+    #search .pagefind-ui__search-input {
+      font-size: 1.125rem !important;
+      padding: 0.875rem 1.25rem !important;
+    }
+    
+    /* Style results */
+    #search .pagefind-ui__result {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1rem 0 !important;
+    }
+    
+    #search .pagefind-ui__result:last-child {
+      border-bottom: none;
+    }
+    
+    #search .pagefind-ui__result-title {
+      color: #002b5c !important;
+      font-weight: 600 !important;
+    }
+    
+    #search .pagefind-ui__result-url {
+      color: #6b7280 !important;
+      font-size: 0.875rem !important;
+    }
+    
+    #search .pagefind-ui__result-excerpt {
+      color: #4b5563 !important;
+      line-height: 1.6 !important;
+    }
+    
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      #search {
+        --pagefind-ui-text: #f3f4f6;
+        --pagefind-ui-background: #1f2937;
+        --pagefind-ui-border: #374151;
+        --pagefind-ui-image-border: #374151;
+        --pagefind-ui-tag: #60a5fa;
+        --pagefind-ui-tag-background: #1e3a5f;
+      }
+    }
+  </style>
+</BaseLayout>

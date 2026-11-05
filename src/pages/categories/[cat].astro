@@ -4,7 +4,6 @@ import PageLayout from '@/layouts/PageLayout';
 import ProductCard from '@/components/ProductCard';
 import { categories, getCategoryColor } from '@/data/categories';
 import { formatDate } from '@/utils/helpers';
-import Search from '@/components/Search';
 export async function getStaticPaths() {
   return categories.map(cat => ({ params: { cat: cat.slug } }));
 }
@@ -17,8 +16,6 @@ interface Props {
   description="Browse reviews by category"
   ogImage="/images/og-category.jpg"
 >
-  <Search />
-
   {(async () => {
     const { cat } = Astro.params;
     const category = categories.find(c => c.slug === cat);
@@ -33,7 +30,7 @@ interface Props {
           <div class="flex items-center gap-2 mb-3">
             <span class="badge {getCategoryColor(category.slug)}">{category.name}</span>
           </div>
-          <h1 class="font-editorial text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{category.name} Reviews</h1>
+          <h1 class="font-sans text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{category.name} Reviews</h1>
           <p class="text-lg text-surface-600 max-w-2xl">{category.description}</p>
         </header>
 

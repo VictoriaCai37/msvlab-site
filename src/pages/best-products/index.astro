@@ -2,11 +2,11 @@
 import { getCollection } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout';
 import ProductCard from '@/components/ProductCard';
-import Search from '@/components/Search';
 ---
-<PageLayout title="Best Products" description="Our top picks across categories — tested, ranked, and compared to help you find the best gear.">
-  <Search />
-
+<PageLayout 
+  title="Best Products & Buying Guides" 
+  description="Our expert-tested buying guides help you find the best gear across Smart Home, Computing, and Audio categories."
+>
   {(async () => {
     const allBest = await getCollection('best-products', (entry) => !entry.data.draft);
     const sortedBest = allBest.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
@@ -23,7 +23,7 @@ import Search from '@/components/Search';
                   </span>
                   {list.data.featured && <span class="badge badge-amber">Featured</span>}
                 </div>
-                <h2 class="font-editorial text-2xl md:text-3xl font-medium text-surface-900">{list.data.title}</h2>
+                <h2 class="font-sans text-2xl font-semibold text-surface-900">{list.data.title}</h2>
                 <p class="text-lg text-surface-600 mt-2 max-w-2xl">{list.data.excerpt}</p>
               </header>
 

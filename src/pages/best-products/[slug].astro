@@ -23,7 +23,7 @@ const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, p
         <span class="badge {getCategoryColor(category)}">{category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}</span>
         {featured && <span class="badge badge-amber">Featured</span>}
       </div>
-      <h1 class="font-editorial text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{title}</h1>
+      <h1 class="font-sans text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{title}</h1>
       <p class="text-lg md:text-xl text-surface-600 max-w-3xl">{excerpt}</p>
       <div class="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-surface-500 mt-6">
         <time datetime={publishDate}>{formatDate(publishDate)}</time>
@@ -45,7 +45,7 @@ const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, p
 
     {products.length > 0 && (
       <section class="mt-12" aria-label="Top picks">
-        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-6">Our Top Picks</h2>
+        <h2 class="font-sans text-2xl font-medium text-surface-900 mb-6">Our Top Picks</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, i) => (
             <article class="card p-6">
@@ -53,7 +53,7 @@ const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, p
                 <span class="text-3xl font-bold text-brand-200">{product.rank}</span>
                 <img src={getImageUrl(product.image)} alt={product.name} class="w-16 h-16 object-cover rounded-lg" loading="lazy" />
               </div>
-              <h3 class="font-editorial text-lg font-medium text-surface-900 mb-2">{product.name}</h3>
+              <h3 class="font-sans text-lg font-medium text-surface-900 mb-2">{product.name}</h3>
               <p class="text-sm text-surface-600 mb-3">{product.bestFor}</p>
               <div class="flex items-center gap-2 text-amber-500 mb-3">
                 {[...Array(5)].map((_, j) => (

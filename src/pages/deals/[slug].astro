@@ -24,7 +24,7 @@ const { title, excerpt, heroImage, heroAlt, productName, originalPrice, salePric
         {featured && <span class="badge badge-amber">Featured Deal</span>}
         <span class="badge badge-amber">Save {discountPercent}%</span>
       </div>
-      <h1 class="font-editorial text-3xl md:text-4xl font-medium text-surface-900 leading-tight mb-4">{productName}</h1>
+      <h1 class="font-sans text-3xl md:text-4xl font-medium text-surface-900 leading-tight mb-4">{productName}</h1>
       <p class="text-lg text-surface-600 max-w-2xl">{excerpt}</p>
       <div class="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-surface-500 mt-6">
         <time datetime={publishDate}>{formatDate(publishDate)}</time>

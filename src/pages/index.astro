@@ -6,15 +6,35 @@ import { siteConfig } from '@/data/site';
   <section class="relative bg-gradient-to-b from-brand-50 to-white py-16 md:py-24 lg:py-32">
     <div class="container-main">
       <div class="max-w-3xl mx-auto text-center">
-        <h1 class="font-editorial text-4xl md:text-5xl lg:text-6xl font-medium text-surface-900 leading-tight mb-6">
+        <h1 class="font-sans text-4xl md:text-5xl lg:text-6xl font-medium text-surface-900 leading-tight mb-6">
           Expert Reviews for <span class="text-brand-600">Modern Living</span>
         </h1>
-        <p class="text-lg md:text-xl text-surface-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-          We test home appliances, electronics, and smart home devices so you don't have to.
+        <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+          We test <span class="text-blue-600 font-medium">home appliances</span>, <span class="text-blue-600 font-medium">electronics</span>, and <span class="text-blue-600 font-medium">smart home</span> devices so you don't have to.
         </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/reviews" class="btn-primary text-lg px-8 py-3">Read Latest Reviews</a>
-          <a href="/best-products" class="btn-secondary text-lg px-8 py-3">Best Products</a>
+        <div class="inline-flex gap-4 justify-center mb-12">
+          <a
+            href="/reviews"
+            class="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
+          >
+            Read Latest Reviews
+          </a>
+          <a
+            href="/best-products"
+            class="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-blue-600 bg-white border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200"
+          >
+            Best Products
+          </a>
+        </div>
+        
+        <!-- Hero Image Placeholder -->
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/images/uploads/hero-image.jpg"
+            alt="Expert product reviews and testing"
+            class="w-full max-h-[400px] h-auto object-cover object-center rounded-xl shadow-lg"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
@@ -22,20 +42,32 @@ import { siteConfig } from '@/data/site';
   
   <section class="container-main py-12 border-t border-surface-200">
     <div class="flex items-center justify-between mb-8">
-      <h2 class="font-editorial text-2xl md:text-3xl font-medium text-surface-900">Latest Reviews</h2>
+      <h2 class="font-sans text-2xl md:text-3xl font-medium text-surface-900">Latest Reviews</h2>
       <a href="/reviews" class="text-sm text-brand-600 hover:text-brand-700 font-medium">View all</a>
     </div>
   </section>
 
-  <section class="bg-brand-600 py-16">
+  <!-- Newsletter Section - Optimized -->
+  <section class="bg-[#002b5c] py-16">
     <div class="container-main text-center">
-      <h2 class="font-editorial text-2xl md:text-3xl font-medium text-white mb-4">Never Miss a Review</h2>
-      <p class="text-brand-100 mb-6 max-w-xl mx-auto">Get our latest reviews delivered to your inbox.</p>
-      <form class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto" action="https://formspree.io/f/msvlab" method="POST">
-        <input type="email" name="email" placeholder="your@email.com" required class="flex-1 px-4 py-3 rounded-lg text-surface-900 focus:outline-none focus:ring-2 focus:ring-brand-300" />
-        <button type="submit" class="btn-secondary bg-white text-brand-600 hover:bg-brand-50 whitespace-nowrap">Subscribe</button>
+      <h2 class="font-sans text-2xl md:text-3xl font-medium text-white mb-4">Never Miss a Review</h2>
+      <p class="text-gray-300 mb-8 max-w-xl mx-auto">Get our latest reviews delivered to your inbox.</p>
+      <form class="flex flex-col sm:flex-row gap-4 w-full max-w-lg mx-auto" action="https://formspree.io/f/msvlab" method="POST">
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="your@email.com" 
+          required 
+          class="flex-1 w-full px-4 py-3 rounded-lg text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all"
+        />
+        <button 
+          type="submit" 
+          class="whitespace-nowrap px-6 py-3 font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-200"
+        >
+          Subscribe
+        </button>
       </form>
-      <p class="text-brand-200 text-sm mt-4">No spam. Unsubscribe anytime. <a href="/privacy" class="underline">Privacy Policy</a></p>
+      <p class="text-gray-500 text-sm mt-6">No spam. Unsubscribe anytime. <a href="/privacy" class="text-white hover:text-blue-300 underline">Privacy Policy</a></p>
     </div>
   </section>
 </BaseLayout>

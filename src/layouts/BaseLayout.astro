@@ -1,7 +1,6 @@
 ---
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Search from '@/components/Search';
 import { siteConfig } from '@/data/site';
 import type { AstroGlobal } from 'astro';
 interface Props {
@@ -44,10 +43,12 @@ const canonical = canonicalURL || `${siteConfig.url}${Astro.url.pathname}`;
   <body class="flex flex-col min-h-screen">
     <Header />
     <main class="flex-1" id="main-content">
-      <slot />
+      <!-- Global container wrapper for all page content -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <slot />
+      </div>
     </main>
     <Footer />
-    <Search />
     <!-- Netlify Identity Widget for auth callbacks (password reset, login redirect) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>

@@ -76,8 +76,8 @@ function getBadgeClass(cat: string) {
     </nav>
 
     <!-- Article Header -->
-    <header class="mb-8 md:mb-12">
-      <div class="flex flex-wrap items-center gap-2 mb-4">
+    <header class="mb-8 md:mb-12 text-center">
+      <div class="flex flex-wrap items-center gap-2 mb-4 justify-center">
         <span class="badge {getBadgeClass(category)}">
           {category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}
         </span>
@@ -85,9 +85,9 @@ function getBadgeClass(cat: string) {
           <span class="badge bg-surface-100 text-surface-700">{tag}</span>
         ))}
       </div>
-      <h1 class="font-editorial text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{title}</h1>
-      <p class="text-lg md:text-xl text-surface-600 mb-6 max-w-3xl">{excerpt}</p>
-      <div class="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-surface-500">
+      <h1 class="font-sans text-3xl md:text-4xl lg:text-5xl font-medium text-surface-900 leading-tight mb-4">{title}</h1>
+      <p class="text-lg md:text-xl text-surface-600 mb-6 max-w-3xl mx-auto">{excerpt}</p>
+      <div class="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-surface-500 justify-center">
         <time datetime={publishDate} class="flex items-center gap-1">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2v12a2 2 0 002 2z" /></svg>
           {formatDate(publishDate)}
@@ -112,13 +112,13 @@ function getBadgeClass(cat: string) {
     </header>
 
     <!-- Hero Image -->
-    <figure class="mb-10 md:mb-12">
-      <img src={heroSrc} alt={heroAlt} class="w-full rounded-xl shadow-lg" loading="eager" fetchpriority="high" />
+    <figure class="mb-10 md:mb-12 max-w-4xl mx-auto">
+      <img src={heroSrc} alt={heroAlt} class="w-full max-h-[500px] h-auto object-cover object-center rounded-xl shadow-lg" loading="eager" fetchpriority="high" />
     </figure>
 
     <!-- Affiliate Disclosure Banner -->
-    <div class="mb-10 p-4 bg-brand-50 border border-brand-200 rounded-xl">
-      <p class="text-sm text-brand-800">
+    <div class="mb-10 max-w-3xl mx-auto">
+      <p class="text-sm text-brand-800 p-4 bg-brand-50 border border-brand-200 rounded-xl">
         <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links, at no extra cost to you. This supports our independent testing. <a href="/affiliate-disclosure" class="underline hover:text-brand-700">Learn more</a>.
       </p>
     </div>
@@ -129,15 +129,17 @@ function getBadgeClass(cat: string) {
       <ul class="space-y-1 text-sm text-surface-600" id="toc-list"></ul>
     </nav>
 
-    <!-- Article Content -->
-    <div class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
-      <slot name="content" />
+    <!-- Article Content - Constrained width for readability -->
+    <div class="max-w-3xl mx-auto px-4 md:px-8 text-left">
+      <div class="prose-custom lg:prose-lg xl:prose-xl max-w-none leading-relaxed">
+        <slot name="content" />
+      </div>
     </div>
 
     <!-- Gallery Images -->
     {(images || []).length > 0 && (
-      <section class="mt-12 md:mt-16" aria-label="Product gallery">
-        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-6">Gallery</h2>
+      <section class="mt-12 md:mt-16 max-w-3xl mx-auto px-4 md:px-8" aria-label="Product gallery">
+        <h2 class="font-sans text-2xl font-medium text-surface-900 mb-6">Gallery</h2>
         <div class="grid md:grid-cols-2 gap-4">
           {(images || []).map((img, i) => (
             <figure class="rounded-xl overflow-hidden">
@@ -150,12 +152,14 @@ function getBadgeClass(cat: string) {
     )}
 
     <!-- Pros & Cons -->
-    <ProsCons pros={prosStrings} cons={consStrings} />
+    <div class="max-w-3xl mx-auto px-4 md:px-8">
+      <ProsCons pros={prosStrings} cons={consStrings} />
+    </div>
 
     <!-- Who Should Buy -->
     {whoShouldBuyStrings.length > 0 && (
-      <section class="mt-10 md:mt-14">
-        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-4">Who Should Buy This</h2>
+      <section class="mt-10 md:mt-14 max-w-3xl mx-auto px-4 md:px-8">
+        <h2 class="font-sans text-2xl font-medium text-surface-900 mb-4">Who Should Buy This</h2>
         <ul class="space-y-3">
           {whoShouldBuyStrings.map((reason) => (
             <li class="flex items-start gap-3 p-4 bg-surface-50 rounded-xl">
@@ -168,15 +172,17 @@ function getBadgeClass(cat: string) {
     )}
 
     <!-- Verdict -->
-    <section class="mt-10 md:mt-14 p-6 bg-brand-50 border border-brand-200 rounded-xl">
-      <h2 class="font-editorial text-xl font-medium text-brand-900 mb-3">Our Verdict</h2>
-      <p class="text-brand-800">{verdict}</p>
-    </section>
+    <div class="max-w-3xl mx-auto px-4 md:px-8">
+      <section class="mt-10 md:mt-14 p-6 bg-brand-50 border border-brand-200 rounded-xl">
+        <h2 class="font-sans text-xl font-medium text-brand-900 mb-3">Our Verdict</h2>
+        <p class="text-brand-800">{verdict}</p>
+      </section>
+    </div>
 
     <!-- Specs Table -->
     {specs && (
-      <section class="mt-10 md:mt-14">
-        <h2 class="font-editorial text-2xl font-medium text-surface-900 mb-4">Specifications</h2>
+      <section class="mt-10 md:mt-14 max-w-3xl mx-auto px-4 md:px-8">
+        <h2 class="font-sans text-2xl font-medium text-surface-900 mb-4">Specifications</h2>
         <dl class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
           {Object.entries(specs).map(([key, value]) => (
             <>
@@ -190,7 +196,7 @@ function getBadgeClass(cat: string) {
 
     <!-- Buy Button -->
     {affiliateUrl && price && (
-      <div class="mt-10 md:mt-14 text-center">
+      <div class="mt-10 md:mt-14 text-center max-w-3xl mx-auto px-4 md:px-8">
         <a href={affiliateUrl} target="_blank" rel="noopener sponsored nofollow" class="btn-primary text-lg px-8 py-3 inline-flex items-center gap-2">
           <span>Check Price: ${price.toLocaleString()}</span>
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
@@ -231,4 +237,21 @@ function getBadgeClass(cat: string) {
       });
     });
   </script>
+
+  <style is:global>
+    /* Ensure article content is left-aligned with comfortable line height */
+    .prose-custom {
+      text-align: left;
+    }
+    .prose-custom p {
+      line-height: 1.875; /* leading-relaxed equivalent */
+    }
+    .prose-custom h2, .prose-custom h3, .prose-custom h4 {
+      text-align: left;
+    }
+    /* Keep blockquotes, tables, etc. readable */
+    .prose-custom blockquote {
+      text-align: left;
+    }
+  </style>
 </BaseLayout>
