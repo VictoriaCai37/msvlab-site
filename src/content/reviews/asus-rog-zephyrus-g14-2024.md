@@ -1,58 +1,65 @@
 ---
 title: "ASUS ROG Zephyrus G14 (2024, GA403) Review: 1.5 kg of RTX 4070 Gaming Power"
-excerpt: "The thinnest, lightest 14-inch gaming laptop with an RTX 4070 — MacBook Air portability, desktop-replacement performance."
-heroImage: "/images/reviews/asus-rog-zephyrus-g14-2024/hero.jpg"
-heroAlt: "ASUS ROG Zephyrus G14 2024 in Eclipse Gray with AniMe Vision LED lid open"
+excerpt: The thinnest, lightest 14-inch gaming laptop with an RTX 4070 — MacBook
+  Air portability, desktop-replacement performance.
+heroImage: /images/uploads/asus-rog-zephyrus-g14-2024-ga403-3.jpg
+heroAlt: ASUS ROG Zephyrus G14 2024 in Eclipse Gray with AniMe Vision LED lid open
 images:
-  - src: "/images/reviews/asus-rog-zephyrus-g14-2024/anime-vision.jpg"
-    alt: "AniMe Vision LED matrix on lid showing custom animation"
-    caption: "AniMe Vision: 648 mini-LEDs for notifications, animations, system stats"
-  - src: "/images/reviews/asus-rog-zephyrus-g14-2024/oled-display.jpg"
-    alt: "3K 120 Hz OLED display showing Cyberpunk 2077 gameplay"
-    caption: "3K (2880×1800) 120 Hz OLED, NVIDIA G-SYNC, 100% DCI-P3"
-  - src: "/images/reviews/asus-rog-zephyrus-g14-2024/ports.jpg"
-    alt: "Port layout: HDMI 2.1, USB4, USB-C 3.2, USB-A, microSD, audio"
-    caption: "Full port suite: HDMI 2.1, USB4, USB-C 3.2, USB-A 3.2, microSD, 3.5mm"
-category: "computing"
-tags: ["gaming laptop", "RTX 4070", "OLED", "ultraportable", "AMD Ryzen"]
-publishDate: "2024-12-12"
-readTime: "11 min read"
+  - src: /images/uploads/asus-rog-zephyrus-g14-2024-ga403-2.jpg
+    alt: ASUS ROG Zephyrus G14 (2024, GA403)
+  - src: /images/uploads/asus-rog-zephyrus-g14-2024-ga403-4.jpg
+    alt: ASUS ROG Zephyrus G14 (2024, GA403)
+  - src: /images/uploads/asus-rog-zephyrus-g14-2024-ga403-2.jpg
+    alt: ASUS ROG Zephyrus G14 (2024, GA403)
+category: computing
+tags:
+  - gaming laptop
+  - RTX 4070
+  - OLED
+  - ultraportable
+  - AMD Ryzen
+publishDate: 2024-12-12
+readTime: 11 min read
 rating: 4.7
 pros:
   - "Incredible performance/weight ratio: RTX 4070 in 1.5 kg (3.3 lb) chassis"
-  - "3K 120 Hz OLED with G-SYNC — perfect for gaming and content"
-  - "AMD Ryzen 9 8945HS (8C/16T) + RTX 4070 8 GB (90W) = desktop-class speed"
-  - "Full port selection including HDMI 2.1 and USB-A"
-  - "AniMe Vision LED lid is fun and functional (battery, temps, notifications)"
-  - "Excellent keyboard (1.7mm travel) and large haptic touchpad"
+  - 3K 120 Hz OLED with G-SYNC — perfect for gaming and content
+  - AMD Ryzen 9 8945HS (8C/16T) + RTX 4070 8 GB (90W) = desktop-class speed
+  - Full port selection including HDMI 2.1 and USB-A
+  - AniMe Vision LED lid is fun and functional (battery, temps, notifications)
+  - Excellent keyboard (1.7mm travel) and large haptic touchpad
 cons:
-  - "Soldered RAM (16/32 GB) — not upgradable"
-  - "Single SSD slot (2280) — limited storage expansion"
-  - "Fans loud in Turbo mode (52 dB); Silent mode throttles GPU"
+  - Soldered RAM (16/32 GB) — not upgradable
+  - Single SSD slot (2280) — limited storage expansion
+  - Fans loud in Turbo mode (52 dB); Silent mode throttles GPU
   - "Battery life: 5-6 hrs gaming, 8-9 hrs office (OLED tax)"
-  - "No webcam privacy shutter (just IR for Windows Hello)"
+  - No webcam privacy shutter (just IR for Windows Hello)
 whoShouldBuy:
-  - "Gamers who travel / LAN party / move between rooms"
-  - "Students needing gaming + class portability"
-  - "Creators wanting GPU compute in a lightweight package"
-verdict: "The **Zephyrus G14 (2024)** remains the **gold standard for ultraportable gaming**. Ryzen 9 8945HS + RTX 4070 90W in 1.5 kg with a 3K OLED G-SYNC display and full ports is an engineering marvel. Soldered RAM and single SSD slot are the cost of miniaturization. If you need a gaming laptop you'll actually carry daily, this is it."
-specs:
-  CPU: "AMD Ryzen 9 8945HS (8-core, 16-thread, up to 5.2 GHz)"
-  GPU: "NVIDIA RTX 4070 8 GB (90W max TGP) + MUX Switch + NVIDIA Advanced Optimus"
-  NPU: "AMD Ryzen AI (16 TOPS)"
-  RAM: "16 / 32 GB LPDDR5X-7500 (soldered)"
-  Storage: "1 TB / 2 TB PCIe 4.0 (single 2280 slot)"
-  Display: "14\" 3K (2880×1800) 120 Hz OLED, G-SYNC, 100% DCI-P3, 500 nits HDR"
-  Camera: "1080p IR (Windows Hello), no privacy shutter"
-  Audio: "6-speaker system (2× woofer + 4× tweeter), Dolby Atmos"
-  Ports: "HDMI 2.1, USB4 (40Gbps), USB-C 3.2 Gen 2, USB-A 3.2 Gen 2, microSD, 3.5mm"
-  Battery: "73 Wh, 180W USB-C adapter (100W PD support)"
-  Weight: "3.31 lb (1.5 kg)"
-  Colors: "Eclipse Gray, Platinum White (AniMe Vision only on Gray)"
+  - Gamers who travel / LAN party / move between rooms
+  - Students needing gaming + class portability
+  - Creators wanting GPU compute in a lightweight package
+verdict: The **Zephyrus G14 (2024)** remains the **gold standard for
+  ultraportable gaming**. Ryzen 9 8945HS + RTX 4070 90W in 1.5 kg with a 3K OLED
+  G-SYNC display and full ports is an engineering marvel. Soldered RAM and
+  single SSD slot are the cost of miniaturization. If you need a gaming laptop
+  you'll actually carry daily, this is it.
 price: 1999
-affiliateUrl: "https://www.asus.com/laptops/for-gaming/rog-zephyrus-g14-2024-ga403/"
+affiliateUrl: https://www.asus.com/laptops/for-gaming/rog-zephyrus-g14-2024-ga403/
 featured: true
 draft: false
+specs:
+  Display: 14" 3K (2880×1800) 120 Hz OLED, G-SYNC, 100% DCI-P3, 500 nits HDR
+  Camera: 1080p IR (Windows Hello), no privacy shutter
+  CPU: AMD Ryzen 9 8945HS (8-core, 16-thread, up to 5.2 GHz)
+  GPU: NVIDIA RTX 4070 8 GB (90W max TGP) + MUX Switch + NVIDIA Advanced Optimus
+  Battery: 73 Wh, 180W USB-C adapter (100W PD support)
+  Colors: Eclipse Gray, Platinum White (AniMe Vision only on Gray)
+  Ports: HDMI 2.1, USB4 (40Gbps), USB-C 3.2 Gen 2, USB-A 3.2 Gen 2, microSD, 3.5mm
+  NPU: AMD Ryzen AI (16 TOPS)
+  Audio: 6-speaker system (2× woofer + 4× tweeter), Dolby Atmos
+  Weight: 3.31 lb (1.5 kg)
+  Storage: 1 TB / 2 TB PCIe 4.0 (single 2280 slot)
+  RAM: 16 / 32 GB LPDDR5X-7500 (soldered)
 ---
 
 ## The Impossible Engineering Feat
