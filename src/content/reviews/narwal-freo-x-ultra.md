@@ -1,52 +1,61 @@
 ---
 title: "Narwal Freo X Ultra Review: Zero-Tangle Brush and Full-Chain Disinfection"
-excerpt: "The first robot with a zero-tangle floating brush, 78°C wash, and electrolyzed water disinfection — built for pet owners."
-heroImage: "/images/reviews/narwal-freo-x-ultra/hero.jpg"
-heroAlt: "Narwal Freo X Ultra in dark gray with unique zero-tangle brush visible"
+excerpt: The first robot with a zero-tangle floating brush, 78°C wash, and
+  electrolyzed water disinfection — built for pet owners.
+heroImage: /images/uploads/narwal-freo-x-ultra1.jpg
+heroAlt: Narwal Freo X Ultra in dark gray with unique zero-tangle brush visible
 images:
-  - src: "/images/reviews/narwal-freo-x-ultra/zero-tangle-brush.jpg"
-    alt: "Close-up of Narwal Freo X Ultra's conical zero-tangle floating brush"
-    caption: "Conical floating brush prevents hair wrap — a first for robot vacuums"
-  - src: "/images/reviews/narwal-freo-x-ultra/disinfection.jpg"
-    alt: "Narwal base station showing electrolyzed water generation"
-    caption: "Electrolyzed water disinfects mops and floors without chemicals"
-  - src: "/images/reviews/narwal-freo-x-ultra/mop-detail.jpg"
-    alt: "Dual triangular mop pads on the Narwal Freo X Ultra"
-    caption: "Triangular mops rotate at 180 RPM with 12N downward pressure"
-category: "smart-home"
-tags: ["robot vacuum", "pet hair", "zero-tangle", "disinfection"]
-publishDate: "2024-11-28"
-readTime: "10 min read"
+  - src: /images/uploads/narwal-freo-x-ultra2.jpg
+    alt: Narwal Freo X Ultra
+  - src: /images/uploads/narwal-freo-x-ultra3.jpg
+    alt: Narwal Freo X Ultra
+  - src: /images/uploads/narwal-freo-x-ultra4.jpg
+    alt: Narwal Freo X Ultra
+  - src: /images/uploads/narwal-freo-x-ultra5.jpg
+    alt: Narwal Freo X Ultra
+category: smart-home
+tags:
+  - robot vacuum
+  - pet hair
+  - zero-tangle
+  - disinfection
+publishDate: 2024-11-28
+readTime: 10 min read
 rating: 4.4
 pros:
-  - "Zero-tangle conical floating brush — hair never wraps, ever"
-  - "78°C hot water wash + electrolyzed water disinfection (kills 99.9% bacteria)"
-  - "Triangular mops with 12N pressure clean grout lines better than round pads"
-  - "DirtSense 2.0 detects soil level and re-mops until clean"
-  - "Quietest dock emptying in class (58 dB)"
+  - Zero-tangle conical floating brush — hair never wraps, ever
+  - 78°C hot water wash + electrolyzed water disinfection (kills 99.9% bacteria)
+  - Triangular mops with 12N pressure clean grout lines better than round pads
+  - DirtSense 2.0 detects soil level and re-mops until clean
+  - Quietest dock emptying in class (58 dB)
 cons:
-  - "No extending mop arms — edges cleaned by triangular shape only"
-  - "App is basic; lacks advanced map editing and room-specific settings"
-  - "Single side brush (not dual) misses some debris near walls"
-  - "Proprietary cleaning solution required for electrolyzed water"
+  - No extending mop arms — edges cleaned by triangular shape only
+  - App is basic; lacks advanced map editing and room-specific settings
+  - Single side brush (not dual) misses some debris near walls
+  - Proprietary cleaning solution required for electrolyzed water
 whoShouldBuy:
-  - "Pet owners tired of cutting hair off roller brushes"
-  - "Families with crawling babies wanting chemical-free disinfection"
-  - "Allergy sufferers needing HEPA + antibacterial floors"
-verdict: "The Narwal Freo X Ultra solves the pet hair problem at its source with the **zero-tangle conical brush** — a genuine innovation. Add 78°C wash, electrolyzed water disinfection, and DirtSense re-mopping, and you have the most hygienic robot floor cleaner available. The lack of extending mops and basic app hold it back from 'best overall,' but for pet homes, it's arguably the best choice."
-specs:
-  Suction: "8,200 Pa"
-  Battery: "5,200 mAh (up to 180 min)"
-  Navigation: "LiDAR + tri-laser obstacle avoidance"
-  Mop: "Dual triangular, 180 RPM, 12N pressure, 78°C wash + electrolyzed water"
-  Brush: "Conical zero-tangle floating brush + single side brush"
-  Dustbin: "2.5 L (dock) / 0.45 L (robot)"
-  Water Tank: "4 L clean / 3.5 L dirty (dock)"
-  Dimensions: "13.8 x 13.8 x 4.2 in (robot)"
+  - Pet owners tired of cutting hair off roller brushes
+  - Families with crawling babies wanting chemical-free disinfection
+  - Allergy sufferers needing HEPA + antibacterial floors
+verdict: The Narwal Freo X Ultra solves the pet hair problem at its source with
+  the **zero-tangle conical brush** — a genuine innovation. Add 78°C wash,
+  electrolyzed water disinfection, and DirtSense re-mopping, and you have the
+  most hygienic robot floor cleaner available. The lack of extending mops and
+  basic app hold it back from 'best overall,' but for pet homes, it's arguably
+  the best choice.
 price: 1399
-affiliateUrl: "https://narwal.com/products/freo-x-ultra"
+affiliateUrl: https://narwal.com/products/freo-x-ultra
 featured: false
 draft: false
+specs:
+  Suction: 8,200 Pa
+  Battery: 5,200 mAh (up to 180 min)
+  Navigation: LiDAR + tri-laser obstacle avoidance
+  Mop: Dual triangular, 180 RPM, 12N pressure, 78°C wash + electrolyzed water
+  Brush: Conical zero-tangle floating brush + single side brush
+  Dustbin: 2.5 L (dock) / 0.45 L (robot)
+  Water Tank: 4 L clean / 3.5 L dirty (dock)
+  Dimensions: 13.8 x 13.8 x 4.2 in (robot)
 ---
 
 ## The Brush That Changed Everything
