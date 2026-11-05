@@ -1,58 +1,75 @@
 ---
-title: "Sonos Era 300 Review: Spatial Audio That Fills the Room — No Soundbar Required"
-excerpt: "Six drivers, beamforming, Trueplay tuning, and Dolby Atmos — the first wireless speaker that makes spatial audio feel real, not a gimmick."
-heroImage: "/images/reviews/sonos-era-300/hero.jpg"
-heroAlt: "Sonos Era 300 in white on a bookshelf showing its distinctive hourglass shape"
+title: "Sonos Era 300 Review: Spatial Audio That Fills the Room — No Soundbar
+  Required"
+excerpt: Six drivers, beamforming, Trueplay tuning, and Dolby Atmos — the first
+  wireless speaker that makes spatial audio feel real, not a gimmick.
+heroImage: /images/uploads/sonos-era-3001.jpg
+heroAlt: Sonos Era 300 in white on a bookshelf showing its distinctive hourglass shape
 images:
-  - src: "/images/reviews/sonos-era-300/drivers.jpg"
-    alt: "Cutaway showing six drivers: 2 woofers, 2 side tweeters, 1 upward tweeter, 1 forward tweeter"
-    caption: "Six drivers: dual woofers (bass), dual side tweeters (width), upward tweeter (height), forward tweeter (clarity)"
-  - src: "/images/reviews/sonos-era-300/trueplay.jpg"
-    alt: "iPhone running Trueplay tuning with microphone waving around the speaker"
-    caption: "Trueplay: iPhone mic measures room acoustics, optimizes EQ per position"
-  - src: "/images/reviews/sonos-era-300/stereo-pair.jpg"
-    alt: "Two Era 300s as stereo pair flanking a TV"
-    caption: "Stereo pair + TV eARC = immersive home theater without soundbar"
-category: "audio"
-tags: ["speaker", "spatial audio", "Dolby Atmos", "Sonos", "Trueplay", "smart speaker"]
-publishDate: "2024-12-05"
-readTime: "9 min read"
+  - src: /images/uploads/sonos-era-3003.jpg
+    alt: Sonos Era 300
+  - src: /images/uploads/sonos-era-3004.jpg
+    alt: Sonos Era 300
+  - src: /images/uploads/sonos-era-3005.jpg
+    alt: Sonos Era 300
+  - src: /images/uploads/sonos-era-3002.jpg
+    alt: Sonos Era 300
+category: audio
+tags:
+  - speaker
+  - spatial audio
+  - Dolby Atmos
+  - Sonos
+  - Trueplay
+  - smart speaker
+publishDate: 2024-12-05
+readTime: 9 min read
 rating: 4.7
 pros:
-  - "Genuine spatial audio: 6 drivers beam Dolby Atmos height/width — sounds *around* you"
-  - "Trueplay (iOS) + Quick Tune (Android) = room-corrected sound in 2 minutes"
-  - "Sonos ecosystem: multiroom, AirPlay 2, Spotify Connect, Alexa, line-in (via adapter)"
-  - "Stereo pair = incredible soundstage; add Sub + 2 Era 300s = 7.1.4 Atmos home theater"
-  - "Bluetooth 5.0 + USB-C line-in (with combo adapter) for turntables/TV"
-  - "Hourglass design is beautiful, stable, fingerprint-resistant matte finish"
+  - "Genuine spatial audio: 6 drivers beam Dolby Atmos height/width — sounds
+    *around* you"
+  - Trueplay (iOS) + Quick Tune (Android) = room-corrected sound in 2 minutes
+  - "Sonos ecosystem: multiroom, AirPlay 2, Spotify Connect, Alexa, line-in (via
+    adapter)"
+  - Stereo pair = incredible soundstage; add Sub + 2 Era 300s = 7.1.4 Atmos home
+    theater
+  - Bluetooth 5.0 + USB-C line-in (with combo adapter) for turntables/TV
+  - Hourglass design is beautiful, stable, fingerprint-resistant matte finish
 cons:
-  - "$449 each — stereo pair = $898, full Atmos setup = $2,000+"
-  - "No Google Assistant (Alexa only, or Sonos Voice Control)"
-  - "Line-in requires $19 USB-C combo adapter (not included)"
-  - "Trueplay requires iPhone (Android gets basic Quick Tune only)"
-  - "App still has occasional connectivity bugs on mesh networks"
+  - $449 each — stereo pair = $898, full Atmos setup = $2,000+
+  - No Google Assistant (Alexa only, or Sonos Voice Control)
+  - Line-in requires $19 USB-C combo adapter (not included)
+  - Trueplay requires iPhone (Android gets basic Quick Tune only)
+  - App still has occasional connectivity bugs on mesh networks
 whoShouldBuy:
-  - "Music lovers wanting spatial audio without headphones"
-  - "Home theater builders wanting wireless Atmos (stereo pair + Sub)"
-  - "Sonos ecosystem users expanding multiroom"
-verdict: "The **Sonos Era 300** is the **first wireless speaker that makes Dolby Atmos spatial audio feel real**. Six drivers beam sound off walls/ceiling — you hear height, width, immersion. Trueplay tuning makes it work in any room. At $449, it's an investment; a stereo pair transforms music and movies. For Sonos households, it's a no-brainer. For newcomers, it's the gateway to wireless immersive audio."
-specs:
-  Drivers: "6 Class-D amplifiers: 2× woofer (bass), 2× side tweeter (width), 1× upward tweeter (height), 1× forward tweeter (clarity)"
-  Spatial Audio: "Dolby Atmos (Apple Music, Amazon Music, Tidal), Sony 360 Reality Audio"
-  Tuning: "Trueplay (iOS mic), Quick Tune (Android, less precise)"
-  Connectivity: "Wi-Fi 6, Bluetooth 5.0, AirPlay 2, Spotify Connect, Alexa, Sonos Voice Control"
-  Ports: "USB-C (line-in with Sonos Combo Adapter, $19), Ethernet (via adapter)"
-  Multiroom: "Sonos S2 app — group with any Sonos speaker"
-  Stereo Pair: "Two Era 300s = L/R spatial; add Sub (Gen 3) + 2 Era 300s rear = 7.1.4 Atmos"
-  TV Audio: "eARC via Sonos Arc/Arc Ultra/Beam; Era 300s as surrounds"
-  Dimensions: "7.2 x 6.3 x 4.8 in (183 x 160 x 122 mm)"
-  Weight: "9.85 lb (4.47 kg)"
-  Colors: "White, Black"
-  Power: "45W typical, 65W max"
+  - Music lovers wanting spatial audio without headphones
+  - Home theater builders wanting wireless Atmos (stereo pair + Sub)
+  - Sonos ecosystem users expanding multiroom
+verdict: The **Sonos Era 300** is the **first wireless speaker that makes Dolby
+  Atmos spatial audio feel real**. Six drivers beam sound off walls/ceiling —
+  you hear height, width, immersion. Trueplay tuning makes it work in any room.
+  At $449, it's an investment; a stereo pair transforms music and movies. For
+  Sonos households, it's a no-brainer. For newcomers, it's the gateway to
+  wireless immersive audio.
 price: 449
-affiliateUrl: "https://www.sonos.com/en-us/shop/era-300"
+affiliateUrl: https://www.sonos.com/en-us/shop/era-300
 featured: true
 draft: false
+specs:
+  Stereo Pair: Two Era 300s = L/R spatial; add Sub (Gen 3) + 2 Era 300s rear = 7.1.4 Atmos
+  Power: 45W typical, 65W max
+  Drivers: "6 Class-D amplifiers: 2× woofer (bass), 2× side tweeter (width), 1×
+    upward tweeter (height), 1× forward tweeter (clarity)"
+  Dimensions: 7.2 x 6.3 x 4.8 in (183 x 160 x 122 mm)
+  Colors: White, Black
+  Ports: USB-C (line-in with Sonos Combo Adapter, $19), Ethernet (via adapter)
+  Multiroom: Sonos S2 app — group with any Sonos speaker
+  Tuning: Trueplay (iOS mic), Quick Tune (Android, less precise)
+  Connectivity: Wi-Fi 6, Bluetooth 5.0, AirPlay 2, Spotify Connect, Alexa, Sonos
+    Voice Control
+  TV Audio: eARC via Sonos Arc/Arc Ultra/Beam; Era 300s as surrounds
+  Weight: 9.85 lb (4.47 kg)
+  Spatial Audio: Dolby Atmos (Apple Music, Amazon Music, Tidal), Sony 360 Reality Audio
 ---
 
 ## Spatial Audio Without the Headphones
