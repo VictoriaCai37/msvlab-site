@@ -21,7 +21,7 @@ collections:
       - {label: "摘要", name: "excerpt", widget: "text", required: true, max_length: 200}
       - {label: "主图", name: "heroImage", widget: "image", required: true}
       - {label: "主图 Alt", name: "heroAlt", widget: "string", required: true}
-      - {label: "图库 (至少3张)", name: "images", widget: "list", required: true, min: 3, fields:
+      - {label: "图库 (可选)", name: "images", widget: "list", required: false, fields:
         [
           {label: "图片", name: "src", widget: "image", required: true},
           {label: "Alt 文字", name: "alt", widget: "string", required: true},
@@ -33,9 +33,9 @@ collections:
       - {label: "更新日期 (可选)", name: "updateDate", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
       - {label: "阅读时间", name: "readTime", widget: "string", required: true, hint: "例如: '12 min read'"}
       - {label: "评分 (1-5)", name: "rating", widget: "number", required: true, min: 1, max: 5, step: 0.1}
-      - {label: "优点 (至少3条)", name: "pros", widget: "list", required: true, min: 3, fields: [{label: "优点", name: "pro", widget: "string", required: true}]}
-      - {label: "缺点 (至少2条)", name: "cons", widget: "list", required: true, min: 2, fields: [{label: "缺点", name: "con", widget: "string", required: true}]}
-      - {label: "适用人群 (至少3条)", name: "whoShouldBuy", widget: "list", required: true, min: 3, fields: [{label: "理由", name: "reason", widget: "string", required: true}]}
+      - {label: "优点 (可选)", name: "pros", widget: "list", required: false, fields: [{label: "优点", name: "pro", widget: "string", required: true}]}
+      - {label: "缺点 (可选)", name: "cons", widget: "list", required: false, fields: [{label: "缺点", name: "con", widget: "string", required: true}]}
+      - {label: "适用人群 (可选)", name: "whoShouldBuy", widget: "list", required: false, fields: [{label: "理由", name: "reason", widget: "string", required: true}]}
       - {label: "结论", name: "verdict", widget: "text", required: true}
       - {label: "规格参数 (可选)", name: "specs", widget: "object", required: false}
       - {label: "价格 (可选)", name: "price", widget: "number", required: false, min: 0}
