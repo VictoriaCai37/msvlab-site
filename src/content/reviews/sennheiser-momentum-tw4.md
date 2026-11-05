@@ -1,56 +1,69 @@
 ---
-title: "Sennheiser Momentum True Wireless 4 Review: The Audiophile's True Wireless Choice"
-excerpt: "aptX Lossless, 7mm TrueResponse driver, 30h battery, and stellar ANC — the best-sounding TWS if you can live with the bulky case."
-heroImage: "/images/reviews/sennheiser-momentum-tw4/hero.jpg"
-heroAlt: "Sennheiser Momentum True Wireless 4 in Black Copper with charging case"
+title: "Sennheiser Momentum True Wireless 4 Review: The Audiophile's True
+  Wireless Choice"
+excerpt: aptX Lossless, 7mm TrueResponse driver, 30h battery, and stellar ANC —
+  the best-sounding TWS if you can live with the bulky case.
+heroImage: /images/uploads/sennheiser-momentum-true-wireless-41.jpg
+heroAlt: Sennheiser Momentum True Wireless 4 in Black Copper with charging case
 images:
-  - src: "/images/reviews/sennheiser-momentum-tw4/driver.jpg"
-    alt: "Cutaway rendering of 7mm TrueResponse transducer"
-    caption: "7mm TrueResponse driver: angled port, minimized resonance, audiophile tuning"
-  - src: "/images/reviews/sennheiser-momentum-tw4/aptx-lossless.jpg"
-    alt: "Smart Control app showing aptX Lossless codec active"
-    caption: "aptX Lossless: 16-bit/44.1kHz CD-quality over Bluetooth (Snapdragon Sound devices)"
-  - src: "/images/reviews/sennheiser-momentum-tw4/case-size.jpg"
-    alt: "Momentum TW4 case next to AirPods Pro and Sony WF-1000XM5 cases"
-    caption: "Case is significantly larger — trades portability for 30h battery"
-category: "audio"
-tags: ["earbuds", "audiophile", "aptX Lossless", "Sennheiser", "TrueResponse"]
-publishDate: "2024-12-10"
-readTime: "9 min read"
+  - src: /images/uploads/sennheiser-momentum-true-wireless-43.jpg
+    alt: Sennheiser Momentum True Wireless 4
+  - src: /images/uploads/sennheiser-momentum-true-wireless-44.jpg
+    alt: Sennheiser Momentum True Wireless 4
+  - src: /images/uploads/sennheiser-momentum-true-wireless-45.jpg
+    alt: Sennheiser Momentum True Wireless 4
+  - src: /images/uploads/sennheiser-momentum-true-wireless-42.jpg
+    alt: Sennheiser Momentum True Wireless 4
+category: audio
+tags:
+  - earbuds
+  - audiophile
+  - aptX Lossless
+  - Sennheiser
+  - TrueResponse
+publishDate: 2024-12-10
+readTime: 9 min read
 rating: 4.6
 pros:
-  - "Best-in-class sound: 7mm TrueResponse driver, neutral tuning, wide soundstage"
-  - "aptX Lossless (16-bit/44.1kHz) + aptX Adaptive + LDAC + AAC + SBC"
+  - "Best-in-class sound: 7mm TrueResponse driver, neutral tuning, wide
+    soundstage"
+  - aptX Lossless (16-bit/44.1kHz) + aptX Adaptive + LDAC + AAC + SBC
   - "Excellent ANC: adaptive, wind-noise mode, adjustable transparency"
-  - "30h battery (ANC on), 42h (off) — class-leading"
-  - "IP54 (buds), wireless charging, multipoint (2 devices)"
+  - 30h battery (ANC on), 42h (off) — class-leading
+  - IP54 (buds), wireless charging, multipoint (2 devices)
   - "Smart Control app: 5-band EQ, Sound Zones, Sound Check hearing test"
 cons:
-  - "Bulky case (72 x 48 x 32 mm) — doesn't fit coin pocket, heavy (65g)"
+  - Bulky case (72 x 48 x 32 mm) — doesn't fit coin pocket, heavy (65g)
   - "Fit: large nozzle, no wingtips — small ears may struggle"
   - "Touch controls: small surface, occasional misfires"
-  - "No spatial audio / head tracking"
-  - "$299 MSRP — premium pricing"
+  - No spatial audio / head tracking
+  - $299 MSRP — premium pricing
 whoShouldBuy:
-  - "Audiophiles wanting wired-like sound in true wireless"
-  - "Snapdragon Sound phone users wanting aptX Lossless"
-  - "Battery life maximizers (30h ANC is class-best)"
-verdict: "The **Momentum True Wireless 4** is the **sound quality king of TWS**. 7mm TrueResponse + aptX Lossless + neutral tuning = closest to wired IEM experience. ANC is excellent, battery is class-leading. But the **bulky case**, **fit issues for small ears**, and **$299 price** limit its appeal. If sound > everything else, and you have a Snapdragon Sound phone, this is the endgame TWS."
-specs:
-  Driver: "7mm TrueResponse dynamic transducer (angled acoustic port)"
-  ANC: "Adaptive Hybrid ANC (3 mics per bud), Wind Noise mode, Adjustable Transparency"
-  Bluetooth: "5.4, Multipoint (2 devices), LE Audio ready"
-  Codec: "aptX Lossless (16-bit/44.1kHz), aptX Adaptive, LDAC, AAC, SBC"
-  Battery: "30 hrs (ANC on), 42 hrs (ANC off), 8 mins = 1 hr"
-  Charging: "USB-C, Qi wireless"
-  Resistance: "IP54 (buds), IPX4 (case)"
-  App: "Smart Control (iOS/Android) — 5-band EQ, Sound Zones, Sound Check"
-  Weight: "6.2 g (each), 65 g (case)"
-  Colors: "Black Copper, Metallic Silver, Graphite"
+  - Audiophiles wanting wired-like sound in true wireless
+  - Snapdragon Sound phone users wanting aptX Lossless
+  - Battery life maximizers (30h ANC is class-best)
+verdict: The **Momentum True Wireless 4** is the **sound quality king of TWS**.
+  7mm TrueResponse + aptX Lossless + neutral tuning = closest to wired IEM
+  experience. ANC is excellent, battery is class-leading. But the **bulky
+  case**, **fit issues for small ears**, and **$299 price** limit its appeal. If
+  sound > everything else, and you have a Snapdragon Sound phone, this is the
+  endgame TWS.
 price: 299
-affiliateUrl: "https://www.sennheiser-hearing.com/en-US/p/momentum-true-wireless-4/"
+affiliateUrl: https://www.sennheiser-hearing.com/en-US/p/momentum-true-wireless-4/
 featured: false
 draft: false
+specs:
+  App: Smart Control (iOS/Android) — 5-band EQ, Sound Zones, Sound Check
+  Driver: 7mm TrueResponse dynamic transducer (angled acoustic port)
+  Battery: 30 hrs (ANC on), 42 hrs (ANC off), 8 mins = 1 hr
+  Bluetooth: 5.4, Multipoint (2 devices), LE Audio ready
+  Colors: Black Copper, Metallic Silver, Graphite
+  Charging: USB-C, Qi wireless
+  ANC: Adaptive Hybrid ANC (3 mics per bud), Wind Noise mode, Adjustable
+    Transparency
+  Codec: aptX Lossless (16-bit/44.1kHz), aptX Adaptive, LDAC, AAC, SBC
+  Weight: 6.2 g (each), 65 g (case)
+  Resistance: IP54 (buds), IPX4 (case)
 ---
 
 ## The Audiophile TWS, Finally Fully Realized
