@@ -3,21 +3,9 @@ title: "Apple AirPods Pro (2nd Gen, USB-C) Review: The Apple Ecosystem Earbuds
   Perfected"
 excerpt: H2 chip, Adaptive Audio, Conversation Awareness, USB-C case, Precision
   Finding — the only earbuds that feel like an extension of your iPhone.
-heroImage: https://www.apple.com/newsroom/images/2023/09/apple-introduces-new-airpods-pro-2nd-generation/article/Apple-AirPods-Pro-2nd-generation-USB-C-connection-230912_inline.jpg.large.jpg
+heroImage: /images/uploads/12.jpeg
 heroAlt: AirPods Pro 2nd Gen USB-C in white case with earbuds on a minimal desk
-images:
-  - src: /images/reviews/airpods-pro-2-usbc/adaptive-audio.jpg
-    alt: iOS Control Center showing Adaptive Audio mode blending ANC and
-      Transparency
-    caption: "Adaptive Audio: dynamically blends ANC + Transparency based on
-      environment"
-  - src: /images/reviews/airpods-pro-2-usbc/conversation.jpg
-    alt: "Conversation Awareness demo: music lowers, voices amplify when you speak"
-    caption: "Conversation Awareness: detects your voice, lowers media, amplifies
-      people"
-  - src: /images/reviews/airpods-pro-2-usbc/usb-c-case.jpg
-    alt: AirPods Pro USB-C case showing USB-C port and speaker for Find My
-    caption: USB-C charging + built-in speaker for Precision Finding + lanyard loop
+images: []
 category: audio
 tags:
   - earbuds
