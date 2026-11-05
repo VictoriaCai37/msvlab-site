@@ -1,57 +1,64 @@
 ---
-title: "Bose QuietComfort Ultra Headphones Review: Immersive Audio Meets Legendary Comfort"
-excerpt: "Bose's best ANC yet, spatial audio with head tracking, and the comfort crown — but at $429, it's a premium ask."
-heroImage: "/images/reviews/bose-qc-ultra-headphones/hero.jpg"
-heroAlt: "Bose QuietComfort Ultra Headphones in Lunar Blue showing plush earcups and slim headband"
+title: "Bose QuietComfort Ultra Headphones Review: Immersive Audio Meets
+  Legendary Comfort"
+excerpt: Bose's best ANC yet, spatial audio with head tracking, and the comfort
+  crown — but at $429, it's a premium ask.
+heroImage: /images/uploads/bose-quietcomfort-ultra-headphones5.jpg
+heroAlt: Bose QuietComfort Ultra Headphones in Lunar Blue showing plush earcups
+  and slim headband
 images:
-  - src: "/images/reviews/bose-qc-ultra-headphones/immersive-audio.jpg"
-    alt: "Bose Music app showing Immersive Audio modes: Still and Motion"
-    caption: "Immersive Audio: Still (fixed virtual room) or Motion (head-tracked)"
-  - src: "/images/reviews/bose-qc-ultra-headphones/comfort.jpg"
-    alt: "Top-down view showing ultra-plush earcups and minimal clamping force"
-    caption: "Plush protein leather + minimal clamp = wearable for 10+ hours"
-  - src: "/images/reviews/bose-qc-ultra-headphones/anc-modes.jpg"
-    alt: "Bose app showing Quiet, Aware, and Immersion modes"
-    caption: "Three modes: Quiet (max ANC), Aware (transparency), Immersion (ANC + spatial)"
-category: "audio"
-tags: ["headphones", "noise canceling", "spatial audio", "comfort", "Bose"]
-publishDate: "2024-12-18"
-readTime: "9 min read"
+  - src: /images/uploads/bose-quietcomfort-ultra-headphones2.jpg
+    alt: Bose QuietComfort Ultra Headphones
+  - src: /images/uploads/bose-quietcomfort-ultra-headphones4.jpg
+    alt: Bose QuietComfort Ultra Headphones
+category: audio
+tags:
+  - headphones
+  - noise canceling
+  - spatial audio
+  - comfort
+  - Bose
+publishDate: 2024-12-18
+readTime: 9 min read
 rating: 4.6
 pros:
   - "Best-in-class comfort: plush pads, minimal clamp, 254g — wearable all day"
   - "Excellent ANC: Quiet mode matches XM5 lows, beats it on mid/high isolation"
-  - "Immersive Audio (spatial) with head tracking — works with any content"
-  - "aptX Adaptive (Lossless ready) + AAC + SBC"
+  - Immersive Audio (spatial) with head tracking — works with any content
+  - aptX Adaptive (Lossless ready) + AAC + SBC
   - "Touch controls are intuitive: swipe volume, tap play, hold for mode"
-  - "CustomTune auto-EQ calibrates to your ears in 30 seconds"
+  - CustomTune auto-EQ calibrates to your ears in 30 seconds
 cons:
-  - "24-hour battery (ANC on) — 6h less than XM5"
-  - "Case is huge rigid clamshell — not travel-friendly"
-  - "No multipoint at launch (added in 2023 firmware, but still finicky)"
-  - "Immersive Audio drains battery fast (~18h with Motion mode)"
-  - "$429 MSRP — $30 more than XM5, often less discounted"
+  - 24-hour battery (ANC on) — 6h less than XM5
+  - Case is huge rigid clamshell — not travel-friendly
+  - No multipoint at launch (added in 2023 firmware, but still finicky)
+  - Immersive Audio drains battery fast (~18h with Motion mode)
+  - $429 MSRP — $30 more than XM5, often less discounted
 whoShouldBuy:
-  - "Comfort absolutists who wear headphones 8+ hours daily"
-  - "Spatial audio fans wanting head-tracking with any source"
-  - "aptX Adaptive users (Android, Windows) wanting lossless potential"
-verdict: "The **Bose QC Ultra** takes the **comfort crown** and adds **legitimately good spatial audio**. ANC matches XM5 on lows, beats it on voices. But 24h battery, bulky case, and $429 price make it a niche pick. If comfort > battery, or you want spatial audio without Apple lock-in, it's the one. For pure ANC + battery + value, XM5 still wins."
-specs:
-  Driver: "Custom 40mm dynamic, proprietary geometry"
-  ANC: "Proprietary digital ANC (8 mics), Quiet/Aware/Immersion modes"
-  Spatial Audio: "Immersive Audio (Still + Motion head-tracked), works with any stereo source"
-  Bluetooth: "5.3, Multipoint (2 devices, via firmware), SBC, AAC, aptX Adaptive"
-  Codec: "aptX Adaptive (24-bit/48kHz), AAC, SBC"
-  Battery: "24 hrs (ANC on), 18 hrs (Immersion Motion), 3-min USB-C = 1 hr"
-  Charging: "USB-C, wireless charging (Qi) on case"
-  Weight: "254 g (8.9 oz)"
-  Colors: "Black, White Smoke, Lunar Blue"
-  App: "Bose Music (iOS/Android)"
-  Wired: "2.5mm-to-3.5mm analog (included), USB-C audio (digital, 24-bit/96kHz)"
+  - Comfort absolutists who wear headphones 8+ hours daily
+  - Spatial audio fans wanting head-tracking with any source
+  - aptX Adaptive users (Android, Windows) wanting lossless potential
+verdict: The **Bose QC Ultra** takes the **comfort crown** and adds
+  **legitimately good spatial audio**. ANC matches XM5 on lows, beats it on
+  voices. But 24h battery, bulky case, and $429 price make it a niche pick. If
+  comfort > battery, or you want spatial audio without Apple lock-in, it's the
+  one. For pure ANC + battery + value, XM5 still wins.
 price: 429
-affiliateUrl: "https://www.bose.com/en_us/products/headphones/quietcomfort-ultra-headphones.html"
+affiliateUrl: https://www.bose.com/en_us/products/headphones/quietcomfort-ultra-headphones.html
 featured: true
 draft: false
+specs:
+  App: Bose Music (iOS/Android)
+  Driver: Custom 40mm dynamic, proprietary geometry
+  Battery: 24 hrs (ANC on), 18 hrs (Immersion Motion), 3-min USB-C = 1 hr
+  Bluetooth: 5.3, Multipoint (2 devices, via firmware), SBC, AAC, aptX Adaptive
+  Colors: Black, White Smoke, Lunar Blue
+  Charging: USB-C, wireless charging (Qi) on case
+  ANC: Proprietary digital ANC (8 mics), Quiet/Aware/Immersion modes
+  Codec: aptX Adaptive (24-bit/48kHz), AAC, SBC
+  Weight: 254 g (8.9 oz)
+  Spatial Audio: Immersive Audio (Still + Motion head-tracked), works with any stereo source
+  Wired: 2.5mm-to-3.5mm analog (included), USB-C audio (digital, 24-bit/96kHz)
 ---
 
 ## Comfort King Gets a Spatial Upgrade
