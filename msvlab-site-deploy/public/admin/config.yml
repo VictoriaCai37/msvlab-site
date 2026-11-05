@@ -2,11 +2,8 @@ backend:
   name: git-gateway
   branch: main
   repo: VictoriaCai37/msvlab-site
-  site_domain: msvlab.site
-  auth_endpoint: https://msvlab.site/api/auth
 
 locale: 'zh'
-
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
@@ -15,97 +12,9 @@ collections:
     label: "评测文章"
     folder: "src/content/reviews"
     extension: "mdx"
-    format: "yaml-frontmatter"
+    format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "标题", name: "title", widget: "string", required: true, max_length: 120}
-      - {label: "摘要", name: "excerpt", widget: "text", required: true, max_length: 200}
-      - {label: "主图", name: "heroImage", widget: "image", required: true}
-      - {label: "主图 Alt", name: "heroAlt", widget: "string", required: true}
-      - {label: "图库 (至少3张)", name: "images", widget: "list", required: false, min: 3, fields:
-        [
-          {label: "图片", name: "src", widget: "image", required: true},
-          {label: "Alt 文字", name: "alt", widget: "string", required: true},
-          {label: "说明 (可选)", name: "caption", widget: "string", required: false}
-        ]}
-      - {label: "分类", name: "category", widget: "select", required: true, options: ["smart-home", "computing", "audio"]}
-      - {label: "标签", name: "tags", widget: "list", required: false, fields: [{label: "标签", name: "tag", widget: "string"}]}
-      - {label: "发布日期", name: "publishDate", widget: "datetime", required: true, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
-      - {label: "更新日期 (可选)", name: "updateDate", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
-      - {label: "阅读时间", name: "readTime", widget: "string", required: true, hint: "例如: '12 min read'"}
-      - {label: "评分 (1-5)", name: "rating", widget: "number", required: true, min: 1, max: 5, step: 0.1}
-      - {label: "优点 (至少3条)", name: "pros", widget: "list", required: false, min: 3, fields: [{label: "优点", name: "pro", widget: "string", required: true}]}
-      - {label: "缺点 (至少2条)", name: "cons", widget: "list", required: false, min: 2, fields: [{label: "缺点", name: "con", widget: "string", required: true}]}
-      - {label: "适用人群 (至少3条)", name: "whoShouldBuy", widget: "list", required: false, min: 3, fields: [{label: "理由", name: "reason", widget: "string", required: true}]}
-      - {label: "结论", name: "verdict", widget: "text", required: true}
-      - {label: "规格参数 (可选)", name: "specs", widget: "object", required: false}
-      - {label: "价格 (可选)", name: "price", widget: "number", required: false, min: 0}
-      - {label: "联盟链接 (可选)", name: "affiliateUrl", widget: "string", required: false, pattern: ["^https?://.+", "必须是有效 URL"]}
-      - {label: "推荐", name: "featured", widget: "boolean", required: false, default: false}
-      - {label: "草稿", name: "draft", widget: "boolean", required: false, default: false}
-      - {label: "正文", name: "body", widget: "markdown", required: true}
-
-  - name: "best-products"
-    label: "精选推荐"
-    folder: "src/content/best-products"
-    extension: "mdx"
-    format: "yaml-frontmatter"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "标题", name: "title", widget: "string", required: true, max_length: 120}
-      - {label: "摘要", name: "excerpt", widget: "text", required: true, max_length: 200}
-      - {label: "主图", name: "heroImage", widget: "image", required: true}
-      - {label: "主图 Alt", name: "heroAlt", widget: "string", required: true}
-      - {label: "分类", name: "category", widget: "select", required: true, options: ["smart-home", "computing", "audio"]}
-      - {label: "发布日期", name: "publishDate", widget: "datetime", required: true, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
-      - {label: "更新日期 (可选)", name: "updateDate", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
-      - {label: "产品列表 (至少3个)", name: "products", widget: "list", required: true, min: 3, fields:
-        [
-          {label: "排名", name: "rank", widget: "number", required: true, min: 1},
-          {label: "产品名", name: "name", widget: "string", required: true},
-          {label: "图片", name: "image", widget: "image", required: true},
-          {label: "评分 (1-5)", name: "rating", widget: "number", required: true, min: 1, max: 5, step: 0.1},
-          {label: "优点", name: "pros", widget: "string", required: true},
-          {label: "缺点", name: "cons", widget: "string", required: true},
-          {label: "适用场景", name: "bestFor", widget: "string", required: true},
-          {label: "价格", name: "price", widget: "number", required: true, min: 0},
-          {label: "联盟链接", name: "affiliateUrl", widget: "string", required: true, pattern: ["^https?://.+", "必须是有效 URL"]}
-        ]}
-      - {label: "推荐", name: "featured", widget: "boolean", required: false, default: false}
-      - {label: "草稿", name: "draft", widget: "boolean", required: false, default: false}
-      - {label: "正文", name: "body", widget: "markdown", required: true}
-
-  - name: "deals"
-    label: "优惠信息"
-    folder: "src/content/deals"
-    extension: "mdx"
-    format: "yaml-frontmatter"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "标题", name: "title", widget: "string", required: true, max_length: 120}
-      - {label: "摘要", name: "excerpt", widget: "text", required: true, max_length: 200}
-      - {label: "主图", name: "heroImage", widget: "image", required: true}
-      - {label: "主图 Alt", name: "heroAlt", widget: "string", required: true}
-      - {label: "产品名", name: "productName", widget: "string", required: true}
-      - {label: "原价", name: "originalPrice", widget: "number", required: true, min: 0}
-      - {label: "现价", name: "salePrice", widget: "number", required: true, min: 0}
-      - {label: "折扣百分比", name: "discountPercent", widget: "number", required: true, min: 1, max: 100}
-      - {label: "分类", name: "category", widget: "select", required: true, options: ["smart-home", "computing", "audio"]}
-      - {label: "商家", name: "merchant", widget: "string", required: true}
-      - {label: "联盟链接", name: "affiliateUrl", widget: "string", required: true, pattern: ["^https?://.+", "必须是有效 URL"]}
-      - {label: "过期时间 (可选)", name: "expiresAt", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
-      - {label: "发布日期", name: "publishDate", widget: "datetime", required: true, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
-      - {label: "推荐", name: "featured", widget: "boolean", required: false, default: false}
-      - {label: "草稿", name: "draft", widget: "boolean", required: false, default: false}
-      - {label: "正文", name: "body", widget: "markdown", required: true}
-
-site_url: https://msvlab.site
-display_url: https://msvlab.site
-logo_url: /favicon.svg
-
-slug:
-  encoding: "ascii"
-  sanitize_replacement: "-"
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "正文", name: "body", widget: "markdown"}
