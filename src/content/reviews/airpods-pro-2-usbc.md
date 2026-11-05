@@ -5,7 +5,9 @@ excerpt: H2 chip, Adaptive Audio, Conversation Awareness, USB-C case, Precision
   Finding — the only earbuds that feel like an extension of your iPhone.
 heroImage: /images/uploads/12.jpeg
 heroAlt: AirPods Pro 2nd Gen USB-C in white case with earbuds on a minimal desk
-images: []
+images:
+  - src: /images/uploads/11.png
+    alt: AirPods Pro 2nd Gen USB-C in white case with earbuds on a minimal desk
 category: audio
 tags:
   - earbuds
