@@ -1,7 +1,6 @@
 ---
 title: "Best Robot Vacuums of 2024: Tested & Ranked"
-excerpt: We tested 12 robot vacuums for 6 months. These 5 stand out for
-  navigation, mopping, pet hair, and value.
+excerpt: We tested 12 robot vacuums for 6 months. These 5 stand out for navigation, mopping, pet hair, and value.
 heroImage: /images/uploads/roborock-s8-maxv-ultra3.jpg
 heroAlt: Top 5 robot vacuums lined up on a hardwood floor
 category: smart-home
@@ -16,6 +15,7 @@ products:
     cons: $1,799, large dock, complex app
     image: /images/uploads/roborock-s8-maxv-ultra1.jpg
     rating: 4.8
+    reviewSlug: roborock-s8-maxv-ultra
   - affiliateUrl: https://www.ecovacs.com/us/deebot-x2-omni
     bestFor: Corner-heavy homes, tighter dock space
     pros: Square design cleans corners, 15mm mop lift, 60°C wash, compact dock
@@ -25,6 +25,7 @@ products:
     cons: Taller LiDAR module, single extending arm
     image: /images/uploads/ecovacs-deebot-x2-omni3.jpg
     rating: 4.6
+    reviewSlug: ecovacs-deebot-x2-omni
   - affiliateUrl: https://www.dreame.tech/products/l20-ultra
     bestFor: Best bang-for-buck flagship
     pros: 70°C wash, MopExtend, 7,000 Pa, $1,299 value king
@@ -34,6 +35,7 @@ products:
     cons: Single extending arm, bulkier dock, app quirks
     image: /images/uploads/dreame-l20-ultra1.jpg
     rating: 4.5
+    reviewSlug: dreame-l20-ultra
   - affiliateUrl: https://narwal.com/products/freo-x-ultra
     bestFor: Pet owners, hygiene-focused homes
     pros: Zero-tangle brush, 78°C + electrolyzed water, DirtSense, quiet dock
@@ -43,6 +45,16 @@ products:
     cons: No extending arms, basic app, proprietary solution
     image: /images/uploads/narwal-freo-x-ultra1.jpg
     rating: 4.4
+    reviewSlug: narwal-freo-x-ultra
+  - affiliateUrl: https://www.roborock.com/products/q-revo
+    bestFor: Budget heated wash
+    pros: 60°C wash, extending mop, $899 value
+    price: 899
+    name: Roborock Q Revo
+    rank: 5
+    cons: No AI obstacle avoidance, smaller dustbin
+    image: /images/uploads/roborock-q-revo1.jpg
+    rating: 4.3
 featured: true
 draft: false
 ---

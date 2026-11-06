@@ -35,7 +35,7 @@ import { getImageUrl } from '@/utils/helpers';
                     excerpt={product.bestFor}
                     image={getImageUrl(product.image)}
                     imageAlt={product.name}
-                    href={`/reviews/${list.slug}`}
+                    reviewSlug={product.reviewSlug}
                     category={list.data.category}
                     publishDate={list.data.publishDate}
                     readTime={`${Math.ceil(list.data.products.length / 3)} min read`}

@@ -65,6 +65,7 @@ const bestProducts = defineCollection({
       bestFor: z.string(),
       price: z.number(),
       affiliateUrl: z.string().url(),
+      reviewSlug: z.string().optional(),
     })).min(3),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),

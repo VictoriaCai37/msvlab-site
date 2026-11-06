@@ -1,53 +1,41 @@
 ---
 title: "Best Laptops of 2024: MacBook Air M3, XPS 14, Zephyrus G14 & More"
-excerpt: We tested 18 laptops across categories. Here are the top picks for
-  students, creators, gamers, and professionals.
+excerpt: We tested 18 laptops across categories. Here are the top picks for students, creators, gamers, and professionals.
 heroImage: /images/uploads/macbook-air-13-m3-2024-2.jpg
-heroAlt: "Best laptops of 2024 arranged on a clean desk: MacBook Air, XPS 14,
-  Zephyrus G14"
+heroAlt: "Best laptops of 2024 arranged on a clean desk: MacBook Air, XPS 14, Zephyrus G14"
 category: computing
 publishDate: 2024-12-18
 products:
   - affiliateUrl: https://www.apple.com/macbook-air-13/
-    bestFor: Ideal for students and mobile professionals who need all-day battery
-      life and silent fanless performance for office apps, browsing, and light
-      coding. It also suits light creative work such as photo editing and short
-      4K video clips thanks to the M3 chip and 16GB RAM, but not sustained heavy
-      workloads.
-    pros: 18h battery, fanless silence, M3 speed, 2.7 lb, 2 ext displays (lid
-      closed) 60 Hz screen, 2 ports left side only, 8GB base insufficient
-      Students, travelers, office workers — 90% of users
+    bestFor: Ideal for students and mobile professionals who need all-day battery life and silent fanless performance for office apps, browsing, and light coding. It also suits light creative work such as photo editing and short 4K video clips thanks to the M3 chip and 16GB RAM, but not sustained heavy workloads.
+    pros: 18h battery, fanless silence, M3 speed, 2.7 lb, 2 ext displays (lid closed) 60 Hz screen, 2 ports left side only, 8GB base insufficient Students, travelers, office workers — 90% of users
     price: 1299
     name: MacBook Air 13" M3 (16GB/512GB)
     rank: 1
-    cons: Limited to two Thunderbolt/USB-C ports on the same side, with no HDMI,
-      USB-A, or SD card slot, so most external devices require dongles or
-      adapters.
+    cons: Limited to two Thunderbolt/USB-C ports on the same side, with no HDMI, USB-A, or SD card slot, so most external devices require dongles or adapters.
     image: /images/uploads/macbook-air-13-m3-2024-6.jpg
     rating: 5
+    reviewSlug: macbook-air-m3-13
   - affiliateUrl: https://www.dell.com/en-us/shop/laptops/xps-14
     bestFor: Video editors, 3D artists, Windows creative pros
-    pros: "Gorgeous 3.2K 120Hz OLED, RTX 4050 creator GPU, premium build 6-7h
-      battery, zero-lattice keyboard learning curve, port poverty "
+    pros: "Gorgeous 3.2K 120Hz OLED, RTX 4050 creator GPU, premium build 6-7h battery, zero-lattice keyboard learning curve, port poverty "
     price: 2299
     name: Dell XPS 14 (Core Ultra 7 / RTX 4050 / 3.2K OLED)
     rank: 2
-    cons: The RTX 4050 is severely power-limited to 30W, making it the slowest 4050
-      laptop in its class, while the chassis remains heavy (around 1.77 kg) for
-      a 14-inch machine.
+    cons: The RTX 4050 is severely power-limited to 30W, making it the slowest 4050 laptop in its class, while the chassis remains heavy (around 1.77 kg) for a 14-inch machine.
     image: /images/uploads/Dell XPS 14 (9440)3.jpg
     rating: 4
+    reviewSlug: dell-xps-14-9440
   - affiliateUrl: https://www.asus.com/laptops/for-gaming/rog-zephyrus-g14-2024-ga403/
     bestFor: Gamers who travel, students needing GPU compute
-    pros: RTX 4070 in 1.5kg, 3K OLED G-SYNC, full ports, AniMe Vision Soldered RAM
-      (32GB max), single SSD, loud fans in Turbo
+    pros: RTX 4070 in 1.5kg, 3K OLED G-SYNC, full ports, AniMe Vision Soldered RAM (32GB max), single SSD, loud fans in Turbo
     price: 2399
     name: ASUS ROG Zephyrus G14 (2024, RTX 4070)
     rank: 3
-    cons: The RAM is soldered to the motherboard and cannot be upgraded, locking you
-      into the initial configuration for the entire lifespan of the laptop.
+    cons: The RAM is soldered to the motherboard and cannot be upgraded, locking you into the initial configuration for the entire lifespan of the laptop.
     image: /images/uploads/asus-rog-zephyrus-g14-2024-ga403-5.jpg
     rating: 4
+    reviewSlug: asus-rog-zephyrus-g14-2024
   - affiliateUrl: https://www.apple.com/macbook-pro-14/
     bestFor: Developers, video pros, power users staying in macOS
     pros: 120Hz Mini-LED, M3 Pro/Max power, 14h battery, best speakers
