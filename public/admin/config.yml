@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: github
   repo: VictoriaCai37/msvlab-site
-  site_domain: msvlab.site
-  auth_endpoint: https://msvlab.site/api/auth
+  branch: main
+  base_url: https://round-hat-afdc.victoriacai2026.workers.dev
+  auth_endpoint: auth
 
 locale: 'zh'
 
