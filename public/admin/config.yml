@@ -4,6 +4,7 @@ backend:
   branch: main
   base_url: https://round-hat-afdc.victoriacai2026.workers.dev
   auth_endpoint: auth
+  auth_scope: repo
 
 locale: 'zh'
 
