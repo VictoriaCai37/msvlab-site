@@ -1,39 +1,47 @@
 ---
 import { getCollection } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout';
+import ReviewItem from '@/components/ReviewItem.astro';
+
+const allReviews = await getCollection('reviews', (entry) => !entry.data.draft);
+const sortedReviews = allReviews.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const pageSize = 10;
+const totalPages = Math.ceil(sortedReviews.length / pageSize);
+const pageReviews = sortedReviews.slice(0, pageSize);
+const totalItems = sortedReviews.length;
+const hasMore = totalPages > 1;
 ---
-<PageLayout 
-  title="All Reviews" 
-  description="Browse all our in-depth product reviews across Smart Home, Computing, and Audio categories. Expert-tested, unbiased opinions."
+<PageLayout
+  title="All Reviews"
+  description="Browse all our in-depth product reviews across Smart Home, Computing, and Audio categories. Expert-tested, unbiased opinions. Sorted by latest first."
 >
-  {(async () => {
-    const allReviews = await getCollection('reviews', (entry) => !entry.data.draft);
-    const sortedReviews = allReviews.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
-    
-    return (
-      <>
-        <div class="mb-8">
-          <h2 class="font-sans text-2xl font-semibold text-surface-900 mb-4">All Reviews ({sortedReviews.length})</h2>
-        </div>
+  <div class="mb-8">
+    <h2 class="font-sans text-2xl md:text-3xl font-semibold text-surface-900 mb-2">All Reviews</h2>
+    <p class="text-surface-600">{totalItems} reviews, newest first</p>
+  </div>
 
-        {sortedReviews.length === 0 && (
-          <div class="text-center py-16">
-            <p class="text-surface-600">No reviews published yet.</p>
-          </div>
-        )}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+    {pageReviews.map((review) => (
+      <ReviewItem review={review} />
+    ))}
+  </div>
 
-        {sortedReviews.length > 0 && (
-          <div class="space-y-4">
-            {sortedReviews.slice(0, 3).map(review => (
-              <div class="p-4 border border-surface-200 rounded-lg">
-                <h3 class="font-sans text-lg font-semibold text-surface-900">{review.data.title}</h3>
-                <p class="text-sm text-surface-600 mt-1">{review.data.excerpt}</p>
-                <a href={`/reviews/${review.slug}`} class="text-sm text-brand-600 hover:text-brand-700">Read more</a>
-              </div>
-            ))}
-          </div>
+  {hasMore ? (
+    <nav class="mt-12 flex items-center justify-center gap-2" aria-label="Pagination">
+      <span class="flex items-center gap-1" aria-label="Page numbers">
+        <span class="px-4 py-2 text-sm font-semibold text-white bg-brand-600 rounded-lg" aria-current="page">1</span>
+        <a href="/reviews/2/" class="px-4 py-2 text-sm font-medium text-surface-700 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 hover:border-brand-400 transition-colors">2</a>
+        {totalPages > 2 && (
+          <span class="px-4 py-2 text-sm text-surface-500">…</span>
         )}
-      </>
-    );
-  })()}
+        {totalPages > 2 && (
+          <a href={`/reviews/${totalPages}/`} class="px-4 py-2 text-sm font-medium text-surface-700 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 hover:border-brand-400 transition-colors">{totalPages}</a>
+        )}
+      </span>
+      <a href="/reviews/2/" class="px-4 py-2 text-sm font-medium text-surface-700 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 hover:border-brand-400 transition-colors">
+        Next →
+      </a>
+    </nav>
+  ) : null}
 </PageLayout>

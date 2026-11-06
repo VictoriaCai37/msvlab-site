@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '@/layouts/PageLayout';
+import ReviewItem from '@/components/ReviewItem.astro';
+
+export async function getStaticPaths() {
+  const allReviews = await getCollection('reviews', (entry) => !entry.data.draft);
+  const sortedReviews = allReviews.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+  
+  const pageSize = 10;
+  const totalItems = sortedReviews.length;
+  const totalPages = Math.ceil(totalItems / pageSize);
+  
+  // Generate pages 2, 3, ... (page 1 is handled by index.astro)
+  const paths = [];
+  for (let pageNum = 2; pageNum <= totalPages; pageNum++) {
+    const start = (pageNum - 1) * pageSize;
+    const pageReviews = sortedReviews.slice(start, start + pageSize);
+    paths.push({
+      params: { page: String(pageNum) },
+      props: { pageReviews, currentPage: pageNum, totalPages, totalItems }
+    });
+  }
+  return paths;
+}
+
+const { pageReviews, currentPage, totalPages, totalItems } = Astro.props;
+const pageNum = currentPage;
+---
+<PageLayout
+  title="All Reviews"
+  description="Browse all our in-depth product reviews across Smart Home, Computing, and Audio categories. Expert-tested, unbiased opinions. Sorted by latest first."
+>
+  <div class="mb-8">
+    <h2 class="font-sans text-2xl md:text-3xl font-semibold text-surface-900 mb-2">All Reviews</h2>
+    <p class="text-surface-600">{totalItems} reviews, newest first</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+    {pageReviews.map((review) => (
+      <ReviewItem review={review} />
+    ))}
+  </div>
+
+  {totalPages > 1 ? (
+    <nav class="mt-12 flex items-center justify-center gap-2" aria-label="Pagination">
+      {pageNum > 1 ? (
+        <a href={pageNum === 2 ? '/reviews/' : `/reviews/${pageNum - 1}/`} class="px-4 py-2 text-sm font-medium text-surface-700 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 hover:border-brand-400 transition-colors">
+          ← Previous
+        </a>
+      ) : null}
+
+      <span class="flex items-center gap-1" aria-label="Page numbers">
+        <a href="/reviews/" class="px-4 py-2 text-sm font-medium text-surface-700 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 hover:border-brand-400 transition-colors">1</a>
+        {pageNum > 3 && <span class="px-4 py-2 text-sm text-surface-500">…</span>}
+        {Array.from({ length: totalPages }, (_, i) => i + 1)
+          .filter((p) => p > 1 && (p === totalPages || Math.abs(p - pageNum) <= 1))
+          .map((p) => (
+            p === pageNum ? (
+              <span key={p} class="px-4 py-2 text-sm font-semibold text-white bg-brand-600 rounded-lg" aria-current="page">{p}</span>
+            ) : (
+              <a key={p} href={`/reviews/${p}/`} class="px-4 py-2 text-sm font-medium text-surface-700 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 hover:border-brand-400 transition-colors">{p}</a>
+            )
+          ))}
+      </span>
+
+      {pageNum < totalPages ? (
+        <a href={`/reviews/${pageNum + 1}/`} class="px-4 py-2 text-sm font-medium text-surface-700 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 hover:border-brand-400 transition-colors">
+          Next →
+        </a>
+      ) : null}
+    </nav>
+  ) : null}
+</PageLayout>
