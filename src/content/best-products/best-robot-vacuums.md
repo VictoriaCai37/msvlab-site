@@ -3,7 +3,7 @@ title: 'Best Robot Vacuums of 2024: Tested & Ranked'
 excerpt: We tested 12 robot vacuums for 6 months. These 5 stand out for navigation, mopping, pet hair, and value.
 heroImage: /images/uploads/roborock-s8-maxv-ultra3.jpg
 heroAlt: Top 5 robot vacuums lined up on a hardwood floor
-heroPosition: center
+heroPosition: bottom
 category: smart-living
 publishDate: 2024-12-20
 products:
