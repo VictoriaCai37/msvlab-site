@@ -2,12 +2,14 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
 import { fileURLToPath } from 'node:url';
+import remarkGfm from 'remark-gfm';
 
 export default defineConfig({
   site: 'https://msvlab.site',
   integrations: [tailwind(), mdx()],
   markdown: {
     shikiConfig: { theme: 'github-light' },
+    remarkPlugins: [remarkGfm],
   },
   compressHTML: true,
   build: { inlineStylesheets: 'auto' },

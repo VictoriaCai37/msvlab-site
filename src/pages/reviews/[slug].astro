@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import ArticleLayout from '@/layouts/ArticleLayout';
 import { getCategoryColor } from '@/data/categories';
 import { getImageUrl } from '@/utils/helpers';
@@ -15,6 +15,9 @@ interface Props {
 }
 const { review } = Astro.props;
 const { title, excerpt, heroImage, heroAlt, images, category, tags, publishDate, updateDate, readTime, rating, pros, cons, whoShouldBuy, verdict, specs, price, affiliateUrl } = review.data;
+
+// Render the MDX content
+const { Content } = await render(review);
 ---
 <ArticleLayout
   title={title}
@@ -38,8 +41,6 @@ const { title, excerpt, heroImage, heroAlt, images, category, tags, publishDate,
   description={excerpt}
   ogImage={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)}
 >
-  <slot name="content">
-    <!-- Review content is rendered from the MDX file -->
-    <div class="prose-custom" set:html={review.rendered?.html || ''} />
-  </slot>
+  <!-- Render the full MDX body content -->
+  <Content />
 </ArticleLayout>
