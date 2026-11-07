@@ -13,7 +13,7 @@ images:
     alt: Samsung 990 Pro 2TB
   - src: /images/uploads/samsung-990-pro-2tb4.jpg
     alt: Samsung 990 Pro 2TB
-category: computing
+category: smart-living
 tags:
   - SSD
   - NVMe

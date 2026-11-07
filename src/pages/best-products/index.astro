@@ -6,7 +6,7 @@ import { getImageUrl } from '@/utils/helpers';
 ---
 <PageLayout 
   title="Best Products & Buying Guides" 
-  description="Our expert-tested buying guides help you find the best gear across Smart Home, Computing, and Audio categories."
+  description="Our expert-tested buying guides help you find the best gear for every room and routine."
 >
   {(async () => {
     const allBest = await getCollection('best-products', (entry) => !entry.data.draft);
@@ -19,7 +19,7 @@ import { getImageUrl } from '@/utils/helpers';
             <article class="border-t border-surface-200 pt-12 first:border-0 first:pt-0">
               <header class="mb-8">
                 <div class="flex items-center gap-2 mb-3">
-                  <span class="badge badge-{list.data.category === 'smart-home' ? 'smart-home' : list.data.category === 'computing' ? 'computing' : 'audio'}">
+                  <span class="badge badge-{list.data.category === 'smart-living' ? 'smart-living' : list.data.category === 'home-bath' ? 'home-bath' : 'audio-entertainment'}">
                     {list.data.category.charAt(0).toUpperCase() + list.data.category.slice(1).replace('-', ' ')}
                   </span>
                   {list.data.featured && <span class="badge badge-amber">Featured</span>}

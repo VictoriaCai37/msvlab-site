@@ -6,7 +6,7 @@ import { formatDate, getImageUrl } from '@/utils/helpers';
 ---
 <PageLayout 
   title="Deals & Discounts" 
-  description="Find the best discounts on tech, smart home, and audio gear. Updated daily with verified deals."
+  description="Find the best discounts on modern living essentials. Updated daily with verified deals."
 >
   {(async () => {
     const allDeals = await getCollection('deals', (entry) => !entry.data.draft);
@@ -18,15 +18,13 @@ import { formatDate, getImageUrl } from '@/utils/helpers';
           {sortedDeals.map(deal => (
             <article class="card overflow-hidden">
               <a href={`/deals/${deal.slug}`} class="block" aria-label={`View deal: ${deal.data.productName}`}>
-                <div class="relative w-full h-56 md:h-64 overflow-hidden bg-surface-100">
-                  <img src={getImageUrl(deal.data.heroImage)} alt={deal.data.heroAlt} loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                  <div class="absolute top-3 left-3 flex flex-col gap-1">
-                    <span class="badge badge-amber">-{deal.data.discountPercent}%</span>
-                    <span class="badge bg-surface-900 text-white text-xs">${deal.data.salePrice.toLocaleString()}</span>
+                <div class="relative aspect-video overflow-hidden bg-surface-100">
+                  <img src={getImageUrl(deal.data.heroImage)} alt={deal.data.heroAlt} loading="lazy" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+                  {/* Redesigned discount badge - floating in top-left */}
+                  <div class="absolute top-3 left-3 z-10 flex flex-col gap-0.5 bg-brand-600 text-white rounded-lg px-3 py-2 shadow-md">
+                    <span class="font-bold text-sm">-{deal.data.discountPercent}%</span>
+                    <span class="text-xs font-medium opacity-90">${deal.data.salePrice.toLocaleString()}</span>
                   </div>
-                  <span class="absolute top-3 right-3 badge {deal.data.category === 'smart-home' ? 'badge-smart-home' : deal.data.category === 'computing' ? 'badge-computing' : 'badge-audio'} text-xs">
-                    {deal.data.category.charAt(0).toUpperCase() + deal.data.category.slice(1).replace('-', ' ')}
-                  </span>
                 </div>
                 <div class="p-4">
                   <h3 class="font-sans text-lg font-semibold text-surface-900 line-clamp-2 mb-1">{deal.data.productName}</h3>

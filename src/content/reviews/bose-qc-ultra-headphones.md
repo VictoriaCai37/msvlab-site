@@ -11,7 +11,7 @@ images:
     alt: Bose QuietComfort Ultra Headphones
   - src: /images/uploads/bose-quietcomfort-ultra-headphones4.jpg
     alt: Bose QuietComfort Ultra Headphones
-category: audio
+category: audio-entertainment
 tags:
   - headphones
   - noise canceling

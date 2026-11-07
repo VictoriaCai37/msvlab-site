@@ -8,7 +8,7 @@ productName: MacBook Air 13" M3 (16GB/512GB)
 originalPrice: 1299
 salePrice: 1149
 discountPercent: 12
-category: computing
+category: smart-living
 merchant: Amazon
 affiliateUrl: https://www.amazon.com/dp/B0CX1Y7Z7Z?tag=msvlab-20
 publishDate: 2024-12-18

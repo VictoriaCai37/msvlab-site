@@ -15,7 +15,7 @@ images:
     alt: Ecobee Smart Thermostat Premium
   - src: /images/uploads/Ecobee Smart Thermostat Premium4.jpg
     alt: Ecobee Smart Thermostat Premium
-category: smart-home
+category: smart-living
 tags:
   - smart thermostat
   - air quality

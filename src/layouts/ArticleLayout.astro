@@ -9,7 +9,7 @@ interface Props {
   excerpt: string;
   heroImage: ImageMetadata | string;
   heroAlt: string;
-  // Optional fields - use fallback empty arrays
+  heroPosition?: 'top' | 'center' | 'bottom';
   images?: { src: ImageMetadata | string; alt: string; caption?: string }[];
   category: string;
   tags: string[];
@@ -17,7 +17,6 @@ interface Props {
   updateDate?: string;
   readTime: string;
   rating: number;
-  // Support both old string[] and new object[] formats
   pros?: string[] | { pro: string }[];
   cons?: string[] | { con: string }[];
   whoShouldBuy?: string[] | { reason: string }[];
@@ -30,7 +29,7 @@ interface Props {
 }
 
 const {
-  title, excerpt, heroImage, heroAlt, images = [], category, tags = [],
+  title, excerpt, heroImage, heroAlt, heroPosition, images = [], category, tags = [],
   publishDate, updateDate, readTime, rating, pros = [], cons = [],
   whoShouldBuy = [], verdict, specs, price, affiliateUrl,
   description, ogImage
@@ -39,7 +38,9 @@ const {
 const heroSrc = getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src);
 const imageSrcs = (images || []).map(img => getImageUrl(typeof img.src === 'string' ? img.src : img.src.src));
 
-// Helper to extract string from either format
+// Map heroPosition to Tailwind object-position class
+const heroPositionClass = heroPosition === 'top' ? 'object-top' : heroPosition === 'bottom' ? 'object-bottom' : 'object-center';
+
 function extractString(item: string | { pro: string } | { con: string } | { reason: string }): string {
   if (typeof item === 'string') return item;
   if ('pro' in item) return item.pro;
@@ -54,15 +55,14 @@ const whoShouldBuyStrings = (whoShouldBuy || []).map(extractString);
 
 function getBadgeClass(cat: string) {
   switch(cat) {
-    case 'smart-home': return 'badge-smart-home';
-    case 'computing': return 'badge-computing';
-    default: return 'badge-audio';
+    case 'smart-living': return 'badge-smart-living';
+    case 'home-bath': return 'badge-home-bath';
+    default: return 'badge-audio-entertainment';
   }
 }
 ---
 <BaseLayout title={title} description={description || excerpt} ogImage={ogImage || heroSrc}>
   <article class="container-main py-8 md:py-12 lg:py-16">
-    <!-- Breadcrumb -->
     <nav class="mb-6 text-sm text-surface-500" aria-label="Breadcrumb">
       <ol class="flex items-center gap-2">
         <li><a href="/" class="hover:text-brand-600 transition-colors">Home</a></li>
@@ -75,7 +75,6 @@ function getBadgeClass(cat: string) {
       </ol>
     </nav>
 
-    <!-- Article Header -->
     <header class="mb-8 md:mb-12 text-center">
       <div class="flex flex-wrap items-center gap-2 mb-4 justify-center">
         <span class="badge {getBadgeClass(category)}">
@@ -111,39 +110,35 @@ function getBadgeClass(cat: string) {
       </div>
     </header>
 
-    <!-- Hero Image -->
-    <figure class="mb-10 md:mb-12 max-w-4xl mx-auto">
-      <img src={heroSrc} alt={heroAlt} class="w-full max-h-[500px] h-auto object-cover object-center rounded-xl shadow-lg" loading="eager" fetchpriority="high" />
+    <!-- Hero Image - Fixed max height 450px with dynamic object-position -->
+    <figure class="mb-10 md:mb-12 max-w-4xl mx-auto w-full max-h-[450px] overflow-hidden rounded-xl shadow-lg">
+      <img src={heroSrc} alt={heroAlt} class="w-full h-full object-cover {heroPositionClass}" loading="eager" fetchpriority="high" />
     </figure>
 
-    <!-- Affiliate Disclosure Banner -->
     <div class="mb-10 max-w-3xl mx-auto">
       <p class="text-sm text-brand-800 p-4 bg-brand-50 border border-brand-200 rounded-xl">
         <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links, at no extra cost to you. This supports our independent testing. <a href="/affiliate-disclosure" class="underline hover:text-brand-700">Learn more</a>.
       </p>
     </div>
 
-    <!-- Table of Contents -->
     <nav id="toc" class="hidden lg:block fixed left-0 top-24 w-56 -ml-64">
       <h4 class="font-medium text-surface-900 mb-3 sticky top-24">On This Page</h4>
       <ul class="space-y-1 text-sm text-surface-600" id="toc-list"></ul>
     </nav>
 
-    <!-- Article Content - Constrained width for readability -->
     <div class="max-w-3xl mx-auto px-4 md:px-8 text-left">
       <div class="prose-custom lg:prose-lg xl:prose-xl max-w-none leading-relaxed">
         <slot name="content" />
       </div>
     </div>
 
-    <!-- Gallery Images -->
     {(images || []).length > 0 && (
       <section class="mt-12 md:mt-16 max-w-3xl mx-auto px-4 md:px-8" aria-label="Product gallery">
         <h2 class="font-sans text-2xl font-medium text-surface-900 mb-6">Gallery</h2>
         <div class="grid md:grid-cols-2 gap-4">
           {(images || []).map((img, i) => (
-            <figure class="rounded-xl overflow-hidden">
-              <img src={imageSrcs[i]} alt={img.alt} class="w-full h-64 md:h-80 object-cover" loading="lazy" />
+            <figure class="aspect-video overflow-hidden rounded-xl">
+              <img src={imageSrcs[i]} alt={img.alt} class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy" />
               {img.caption && <figcaption class="text-sm text-surface-500 mt-2 text-center">{img.caption}</figcaption>}
             </figure>
           ))}
@@ -151,12 +146,10 @@ function getBadgeClass(cat: string) {
       </section>
     )}
 
-    <!-- Pros & Cons -->
     <div class="max-w-3xl mx-auto px-4 md:px-8">
       <ProsCons pros={prosStrings} cons={consStrings} />
     </div>
 
-    <!-- Who Should Buy -->
     {whoShouldBuyStrings.length > 0 && (
       <section class="mt-10 md:mt-14 max-w-3xl mx-auto px-4 md:px-8">
         <h2 class="font-sans text-2xl font-medium text-surface-900 mb-4">Who Should Buy This</h2>
@@ -171,7 +164,6 @@ function getBadgeClass(cat: string) {
       </section>
     )}
 
-    <!-- Verdict -->
     <div class="max-w-3xl mx-auto px-4 md:px-8">
       <section class="mt-10 md:mt-14 p-6 bg-brand-50 border border-brand-200 rounded-xl">
         <h2 class="font-sans text-xl font-medium text-brand-900 mb-3">Our Verdict</h2>
@@ -179,7 +171,6 @@ function getBadgeClass(cat: string) {
       </section>
     </div>
 
-    <!-- Specs Table -->
     {specs && (
       <section class="mt-10 md:mt-14 max-w-3xl mx-auto px-4 md:px-8">
         <h2 class="font-sans text-2xl font-medium text-surface-900 mb-4">Specifications</h2>
@@ -194,7 +185,6 @@ function getBadgeClass(cat: string) {
       </section>
     )}
 
-    <!-- Buy Button -->
     {affiliateUrl && price && (
       <div class="mt-10 md:mt-14 text-center max-w-3xl mx-auto px-4 md:px-8">
         <a href={affiliateUrl} target="_blank" rel="noopener sponsored nofollow" class="btn-primary text-lg px-8 py-3 inline-flex items-center gap-2">
@@ -207,7 +197,6 @@ function getBadgeClass(cat: string) {
   </article>
 
   <script is:inline>
-    // Generate Table of Contents from headings
     const tocList = document.getElementById('toc-list');
     const content = document.querySelector('.prose-custom');
     if (tocList && content) {
@@ -225,7 +214,6 @@ function getBadgeClass(cat: string) {
       });
     }
 
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         const target = document.querySelector(this.getAttribute('href'));
@@ -239,19 +227,9 @@ function getBadgeClass(cat: string) {
   </script>
 
   <style is:global>
-    /* Ensure article content is left-aligned with comfortable line height */
-    .prose-custom {
-      text-align: left;
-    }
-    .prose-custom p {
-      line-height: 1.875; /* leading-relaxed equivalent */
-    }
-    .prose-custom h2, .prose-custom h3, .prose-custom h4 {
-      text-align: left;
-    }
-    /* Keep blockquotes, tables, etc. readable */
-    .prose-custom blockquote {
-      text-align: left;
-    }
+    .prose-custom { text-align: left; }
+    .prose-custom p { line-height: 1.875; }
+    .prose-custom h2, .prose-custom h3, .prose-custom h4 { text-align: left; }
+    .prose-custom blockquote { text-align: left; }
   </style>
 </BaseLayout>

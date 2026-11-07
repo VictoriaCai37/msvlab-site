@@ -14,7 +14,7 @@ images:
     alt: Sennheiser Momentum True Wireless 4
   - src: /images/uploads/sennheiser-momentum-true-wireless-42.jpg
     alt: Sennheiser Momentum True Wireless 4
-category: audio
+category: audio-entertainment
 tags:
   - earbuds
   - audiophile

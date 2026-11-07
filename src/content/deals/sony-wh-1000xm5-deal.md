@@ -8,7 +8,7 @@ productName: Sony WH-1000XM5
 originalPrice: 399
 salePrice: 298
 discountPercent: 25
-category: audio
+category: audio-entertainment
 merchant: Amazon
 affiliateUrl: https://www.amazon.com/dp/B09XS7JWHH?tag=msvlab-20
 publishDate: 2024-12-22

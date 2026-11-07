@@ -13,7 +13,7 @@ images:
     alt: Dreame L20 Ultra
   - src: /images/uploads/Dreame L20 Ultra5.jpg
     alt: Dreame L20 Ultra
-category: smart-home
+category: smart-living
 tags:
   - robot vacuum
   - mopping

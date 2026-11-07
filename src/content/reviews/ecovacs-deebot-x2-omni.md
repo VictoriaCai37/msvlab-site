@@ -13,7 +13,7 @@ images:
     alt: Ecovacs Deebot X2 Omni
   - src: /images/uploads/ecovacs-deebot-x2-omni6.jpg
     alt: Ecovacs Deebot X2 Omni
-category: smart-home
+category: smart-living
 tags:
   - robot vacuum
   - mopping

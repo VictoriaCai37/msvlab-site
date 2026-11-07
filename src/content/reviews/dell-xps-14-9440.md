@@ -14,7 +14,7 @@ images:
     alt: Dell XPS 14 (9440)
   - src: /images/uploads/Dell XPS 14 (9440)6.jpg
     alt: Dell XPS 14 (9440)
-category: computing
+category: smart-living
 tags:
   - laptop
   - creator

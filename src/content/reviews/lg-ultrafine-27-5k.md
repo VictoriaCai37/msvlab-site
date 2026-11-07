@@ -12,7 +12,7 @@ images:
     alt: LG UltraFine 27" 5K (27MD5KL-B)
   - src: /images/uploads/lg-ultrafine-27-5k-27md5kl-b-5.jpg
     alt: LG UltraFine 27" 5K (27MD5KL-B)
-category: computing
+category: smart-living
 tags:
   - monitor
   - 5K

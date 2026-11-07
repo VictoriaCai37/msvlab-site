@@ -1,23 +1,23 @@
 export const categories = [
   {
-    slug: 'smart-home',
-    name: 'Smart Home',
-    description: 'Robot vacuums, smart locks, lighting, thermostats, and home automation devices.',
+    slug: 'smart-living',
+    name: 'Smart Living',
+    description: 'Computers, smart home devices, digital peripherals, and tech for modern living.',
     icon: 'home',
     color: 'blue',
-    count: 7,
+    count: 14,
   },
   {
-    slug: 'computing',
-    name: 'Computing',
-    description: 'Laptops, monitors, keyboards, mice, storage, and accessories for work and play.',
-    icon: 'laptop',
-    color: 'indigo',
-    count: 7,
+    slug: 'home-bath',
+    name: 'Home & Bath',
+    description: 'Faucets, smart toilets, kitchen appliances, and bathroom fixtures for modern living.',
+    icon: 'kitchen',
+    color: 'amber',
+    count: 0,
   },
   {
-    slug: 'audio',
-    name: 'Audio',
+    slug: 'audio-entertainment',
+    name: 'Audio & Entertainment',
     description: 'Headphones, earbuds, speakers, and audio gear for every listening scenario.',
     icon: 'music',
     color: 'cyan',
@@ -35,10 +35,9 @@ export function getCategoryColor(slug: string) {
   const cat = getCategory(slug);
   if (!cat) return 'gray';
   const colors: Record<string, string> = {
-    blue: 'badge-smart-home',
-    indigo: 'badge-computing',
-    cyan: 'badge-audio',
-    amber: 'badge-deals',
+    blue: 'badge-smart-living',
+    amber: 'badge-home-bath',
+    cyan: 'badge-audio-entertainment',
   };
   return colors[cat.color] || 'bg-brand-50 text-brand-700 border border-brand-100';
 }

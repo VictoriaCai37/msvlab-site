@@ -11,7 +11,7 @@ images:
     alt: ASUS ROG Zephyrus G14 (2024, GA403)
   - src: /images/uploads/asus-rog-zephyrus-g14-2024-ga403-2.jpg
     alt: ASUS ROG Zephyrus G14 (2024, GA403)
-category: computing
+category: smart-living
 tags:
   - gaming laptop
   - RTX 4070

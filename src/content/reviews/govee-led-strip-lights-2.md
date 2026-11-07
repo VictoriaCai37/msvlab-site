@@ -15,7 +15,7 @@ images:
     alt: Govee LED Strip Lights 2 (H6199)
   - src: /images/uploads/govee-led-strip-lights-2-h6199-5.jpg
     alt: Govee LED Strip Lights 2 (H6199)
-category: smart-home
+category: smart-living
 tags:
   - smart lighting
   - LED strip

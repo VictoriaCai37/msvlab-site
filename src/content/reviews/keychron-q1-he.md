@@ -17,7 +17,7 @@ images:
     alt: Keychron Q1 HE
   - src: /images/uploads/keychron-q1-he6.jpg
     alt: Keychron Q1 HE
-category: computing
+category: smart-living
 tags:
   - keyboard
   - Hall Effect

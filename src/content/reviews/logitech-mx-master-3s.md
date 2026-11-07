@@ -13,7 +13,7 @@ images:
     alt: Logitech MX Master 3S
   - src: /images/uploads/logitech-mx-master-3s5.jpg
     alt: Logitech MX Master 3S
-category: computing
+category: smart-living
 tags:
   - mouse
   - productivity

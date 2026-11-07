@@ -13,7 +13,7 @@ images:
     alt: MacBook Air 13" M3 (2024)
   - src: /images/uploads/macbook-air-13-m3-2024-6.jpg
     alt: MacBook Air 13" M3 (2024)
-category: computing
+category: smart-living
 tags:
   - laptop
   - MacBook

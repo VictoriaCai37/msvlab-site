@@ -8,7 +8,7 @@ productName: Roborock S8 MaxV Ultra
 originalPrice: 1799
 salePrice: 1599
 discountPercent: 11
-category: smart-home
+category: smart-living
 merchant: Amazon
 affiliateUrl: https://www.amazon.com/dp/B0D1X7Y7Z7?tag=msvlab-20
 publishDate: 2024-12-20

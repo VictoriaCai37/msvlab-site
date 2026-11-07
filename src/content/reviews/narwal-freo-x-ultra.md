@@ -13,7 +13,7 @@ images:
     alt: Narwal Freo X Ultra
   - src: /images/uploads/narwal-freo-x-ultra5.jpg
     alt: Narwal Freo X Ultra
-category: smart-home
+category: smart-living
 tags:
   - robot vacuum
   - pet hair

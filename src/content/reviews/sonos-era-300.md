@@ -14,7 +14,7 @@ images:
     alt: Sonos Era 300
   - src: /images/uploads/sonos-era-3002.jpg
     alt: Sonos Era 300
-category: audio
+category: audio-entertainment
 tags:
   - speaker
   - spatial audio

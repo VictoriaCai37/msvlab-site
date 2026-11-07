@@ -13,7 +13,7 @@ images:
     alt: Roborock S8 MaxV Ultra
   - src: /images/uploads/roborock-s8-maxv-ultra5.jpg
     alt: Roborock S8 MaxV Ultra
-category: smart-home
+category: smart-living
 tags:
   - robot vacuum
   - mopping

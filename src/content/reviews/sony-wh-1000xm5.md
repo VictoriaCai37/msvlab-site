@@ -13,7 +13,7 @@ images:
     alt: Sony WH-1000XM5
   - src: /images/uploads/sony-wh-1000xm55.jpg
     alt: Sony WH-1000XM5
-category: audio
+category: audio-entertainment
 tags:
   - headphones
   - noise canceling

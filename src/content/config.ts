@@ -7,23 +7,19 @@ const reviews = defineCollection({
     excerpt: z.string().max(200),
     heroImage: z.string(),
     heroAlt: z.string(),
-    // Decap CMS stores images as list of objects: [{src, alt, caption?}]
-    // Existing content may not have this field
+    // Hero image position for object-position CSS
+    heroPosition: z.enum(['top', 'center', 'bottom']).optional(),
     images: z.array(z.object({
       src: z.string(),
       alt: z.string(),
       caption: z.string().optional(),
     })).optional(),
-    category: z.enum(['smart-home', 'computing', 'audio']),
+    category: z.enum(['smart-living', 'home-bath', 'audio-entertainment']),
     tags: z.array(z.string()).default([]),
-    // Decap CMS datetime widget may pass string (YYYY-MM-DD) or Date object
     publishDate: z.union([z.string(), z.date()]),
     updateDate: z.union([z.string(), z.date()]).optional(),
     readTime: z.string(),
     rating: z.number().min(1).max(5),
-    // Support both formats:
-    // - Old content: array of strings: ["pro 1", "pro 2"]
-    // - New CMS content: array of objects: [{pro: "..."}, {con: "..."}, {reason: "..."}]
     pros: z.union([
       z.array(z.string()),
       z.array(z.object({ pro: z.string() }))
@@ -52,7 +48,9 @@ const bestProducts = defineCollection({
     excerpt: z.string().max(200),
     heroImage: z.string(),
     heroAlt: z.string(),
-    category: z.enum(['smart-home', 'computing', 'audio']),
+    // Hero image position for object-position CSS
+    heroPosition: z.enum(['top', 'center', 'bottom']).optional(),
+    category: z.enum(['smart-living', 'home-bath', 'audio-entertainment']),
     publishDate: z.union([z.string(), z.date()]),
     updateDate: z.union([z.string(), z.date()]).optional(),
     products: z.array(z.object({
@@ -83,7 +81,7 @@ const deals = defineCollection({
     originalPrice: z.number(),
     salePrice: z.number(),
     discountPercent: z.number(),
-    category: z.enum(['smart-home', 'computing', 'audio']),
+    category: z.enum(['smart-living', 'home-bath', 'audio-entertainment']),
     merchant: z.string(),
     affiliateUrl: z.string().url(),
     expiresAt: z.union([z.string(), z.date()]).optional(),

@@ -14,7 +14,7 @@ images:
     alt: JBL Charge 5 Wi-Fi
   - src: /images/uploads/jbl-charge-5-wi-fi5.jpg
     alt: JBL Charge 5 Wi-Fi
-category: audio
+category: audio-entertainment
 tags:
   - speaker
   - portable

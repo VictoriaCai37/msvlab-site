@@ -33,8 +33,9 @@ const { title, excerpt, heroImage, heroAlt, productName, originalPrice, salePric
       </div>
     </header>
 
-    <figure class="mb-8">
-      <img src={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)} alt={heroAlt} class="w-full rounded-xl shadow-lg" loading="eager" />
+    <!-- Hero Image - Fixed max height 450px -->
+    <figure class="mb-8 w-full max-h-[450px] overflow-hidden rounded-xl shadow-lg">
+      <img src={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)} alt={heroAlt} class="w-full h-full object-cover object-center" loading="eager" />
     </figure>
 
     <div class="grid md:grid-cols-2 gap-8 mb-10">

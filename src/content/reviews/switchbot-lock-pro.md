@@ -14,7 +14,7 @@ images:
     alt: SwitchBot Lock Pro
   - src: /images/uploads/switchbot-lock-pro5.jpg
     alt: SwitchBot Lock Pro
-category: smart-home
+category: smart-living
 tags:
   - smart lock
   - retrofit

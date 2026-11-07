@@ -3,8 +3,9 @@ title: "Best Robot Vacuums of 2024: Tested & Ranked"
 excerpt: We tested 12 robot vacuums for 6 months. These 5 stand out for navigation, mopping, pet hair, and value.
 heroImage: /images/uploads/roborock-s8-maxv-ultra3.jpg
 heroAlt: Top 5 robot vacuums lined up on a hardwood floor
-category: smart-home
+category: smart-living
 publishDate: 2024-12-20
+heroPosition: bottom
 products:
   - affiliateUrl: https://www.roborock.com/products/s8-maxv-ultra
     bestFor: Hands-free cleaning perfectionists
@@ -36,7 +37,7 @@ products:
     image: /images/uploads/dreame-l20-ultra1.jpg
     rating: 4.5
     reviewSlug: dreame-l20-ultra
-  - affiliateUrl: https://narwal.com/products/freo-x-ultra
+  - affiliateUrl: https://www.narwal.com/products/freo-x-ultra
     bestFor: Pet owners, hygiene-focused homes
     pros: Zero-tangle brush, 78°C + electrolyzed water, DirtSense, quiet dock
     price: 1399
@@ -109,3 +110,4 @@ A: Yes. 60°C+ kills bacteria, prevents mildew smell, removes dried stains bette
 
 **Q: Can robot vacuums handle high-pile carpet?**
 A: Most struggle with >1 inch pile. Look for high suction (7,000+ Pa) and carpet boost. For shag/rugs, manual vacuum still needed.
+

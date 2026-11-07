@@ -3,7 +3,7 @@ title: "Best Laptops of 2024: MacBook Air M3, XPS 14, Zephyrus G14 & More"
 excerpt: We tested 18 laptops across categories. Here are the top picks for students, creators, gamers, and professionals.
 heroImage: /images/uploads/macbook-air-13-m3-2024-2.jpg
 heroAlt: "Best laptops of 2024 arranged on a clean desk: MacBook Air, XPS 14, Zephyrus G14"
-category: computing
+category: smart-living
 publishDate: 2024-12-18
 products:
   - affiliateUrl: https://www.apple.com/macbook-air-13/

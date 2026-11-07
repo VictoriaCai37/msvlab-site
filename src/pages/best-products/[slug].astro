@@ -14,7 +14,10 @@ interface Props {
   list: any;
 }
 const { list } = Astro.props;
-const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, products, featured } = list.data;
+const { title, excerpt, heroImage, heroAlt, heroPosition, category, publishDate, updateDate, products, featured } = list.data;
+
+// Map heroPosition to Tailwind object-position class
+const heroPositionClass = heroPosition === 'top' ? 'object-top' : heroPosition === 'bottom' ? 'object-bottom' : 'object-center';
 ---
 <PageLayout title={title} description={excerpt} ogImage={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)}>
   <article class="prose-custom lg:prose-lg xl:prose-xl max-w-none">
@@ -31,8 +34,13 @@ const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, p
       </div>
     </header>
 
-    <figure class="mb-10">
-      <img src={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)} alt={heroAlt} class="w-full rounded-xl shadow-lg" loading="eager" />
+    <figure class="mb-10 w-full max-h-[450px] overflow-hidden rounded-xl shadow-lg">
+      <img 
+        src={getImageUrl(typeof heroImage === 'string' ? heroImage : heroImage.src)} 
+        alt={heroAlt} 
+        class="w-full h-full object-cover {heroPositionClass}" 
+        loading="eager" 
+      />
     </figure>
 
     <div class="mb-10 p-4 bg-brand-50 border border-brand-200 rounded-xl">
@@ -49,17 +57,19 @@ const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, p
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, i) => (
             <article class="card p-0 overflow-hidden flex flex-col">
-              {/* 大图占满卡片宽度，圆角 - 只有有 reviewSlug 时才加链接 */}
               {product.reviewSlug ? (
                 <a href={`/reviews/${product.reviewSlug}/`} class="block" aria-label={`View review: ${product.name}`}>
-                  <img src={getImageUrl(product.image)} alt={product.name} class="w-full h-56 md:h-64 object-cover rounded-t-xl" loading="lazy" />
+                  <div class="relative aspect-video overflow-hidden rounded-t-xl">
+                    <img src={getImageUrl(product.image)} alt={product.name} class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy" />
+                  </div>
                 </a>
               ) : (
-                <img src={getImageUrl(product.image)} alt={product.name} class="w-full h-56 md:h-64 object-cover rounded-t-xl" loading="lazy" />
+                <div class="relative aspect-video overflow-hidden rounded-t-xl">
+                  <img src={getImageUrl(product.image)} alt={product.name} class="w-full h-full object-cover" loading="lazy" />
+                </div>
               )}
               
               <div class="p-6 space-y-4 flex-1 flex flex-col">
-                {/* 标题 - 只有有 reviewSlug 时才加链接 */}
                 {product.reviewSlug ? (
                   <h3 class="font-sans text-lg md:text-xl font-semibold text-surface-900 leading-tight">
                     <a href={`/reviews/${product.reviewSlug}/`} class="hover:text-brand-600 transition-colors">{product.name}</a>
@@ -68,31 +78,26 @@ const { title, excerpt, heroImage, heroAlt, category, publishDate, updateDate, p
                   <h3 class="font-sans text-lg md:text-xl font-semibold text-surface-900 leading-tight">{product.name}</h3>
                 )}
                 
-                {/* 简短描述 bestFor */}
                 <p class="text-sm text-surface-600 line-clamp-2">{product.bestFor}</p>
                 
-                {/* 星级评分 */}
                 <div class="flex items-center gap-2 text-amber-500">
                   {[...Array(5)].map((_, j) => (
                     <svg key={j} class="w-5 h-5" fill={j < Math.floor(product.rating) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8 2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8 2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                   <span class="text-sm font-medium text-surface-700">{product.rating.toFixed(1)}</span>
                 </div>
                 
-                {/* 优缺点 */}
                 <div class="space-y-2 pt-2 border-t border-surface-100">
                   <p class="text-sm text-green-700"><strong>Pro:</strong> {product.pros}</p>
                   <p class="text-sm text-red-700"><strong>Con:</strong> {product.cons}</p>
                 </div>
                 
-                {/* 价格 */}
                 <div class="pt-2 border-t border-surface-100 flex-1">
                   <span class="font-semibold text-brand-600">$${product.price.toLocaleString()}</span>
                 </div>
                 
-                {/* 底部 Read review 按钮 - 只有有 reviewSlug 时才显示 */}
                 {product.reviewSlug && (
                   <div class="pt-4 border-t border-surface-100">
                     <a href={`/reviews/${product.reviewSlug}/`} class="text-brand-600 font-medium text-sm flex items-center justify-between hover:underline" aria-label={`Read review: ${product.name}`}>
